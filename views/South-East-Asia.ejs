@@ -1,0 +1,2003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Jetsave Theme Packages: Dreams Become Reality When You Travel</title>
+	<!-- Bootstrap CSS -->
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/jetsavecss.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/navbar.css">
+	<link rel="stylesheet" type="text/css" media="(max-width: 600px)" href="./assets/css/jetsave-tablet.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/loader.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+	.open {
+		fill: black;
+	}
+
+	.svglogo {
+		fill: black;
+	}
+
+	.southasia {
+		height: 464px;
+		width: 100%;
+		left: 18%;
+		margin-top: 12%;
+
+	}
+
+	.image img {
+		width: 508px;
+		height: auto;
+
+		/* right: 31%; */
+		margin-top: 6%;
+	}
+
+	.cls-1 {
+		fill: #e6e6e6;
+		stroke: #fff;
+		stroke-width: 0.5px;
+	}
+
+	.cls-1,
+	.cls-3 {
+		stroke-miterlimit: 10;
+	}
+
+	.cls-2 {
+		fill: #4d4d4d;
+	}
+
+	.cls-3 {
+		fill: none;
+		stroke: #4d4d4d;
+		stroke-width: 3px;
+	}
+
+	.itinaeary-detail {
+
+		/* bottom: 0; */
+		top: 0;
+		margin-top: -2.5%;
+		width: 500px;
+
+		background-color: #252424;
+		height: auto;
+		color: white !important;
+		border-radius: 20px;
+		padding: 5%;
+	}
+
+	.itinaeary-detail p {
+		color: white !important;
+	}
+
+	.thailand:hover {
+		fill: red !important;
+		cursor: pointer;
+	}
+
+	.vietnam:hover {
+		fill: red !important;
+		cursor: pointer;
+	}
+
+	.singapore:hover {
+		fill: red !important;
+		cursor: pointer;
+	}
+
+	.bali:hover {
+		fill: red !important;
+		cursor: pointer;
+	}
+
+	.thailand,
+	.vietnam,
+	.singapore,
+	.bali {
+		fill: #f7d0d0 !important;
+		-webkit-transition: fill 2s ease-out;
+		-moz-transition: fill 2s ease-out;
+		-o-transition: fill 2s ease-out;
+		transition: fill 2s ease-out;
+	}
+
+	.indiabackgroundimage {
+		background-image: url(http://khaleejtimes.com/assets/jpg/KT442815.JPG);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-y: 35%;
+	}
+
+	.indiabackgroundimage h1 {
+		position: absolute;
+		top: 60%;
+		color: white;
+		right: 5%;
+		font-style: oblique;
+		font-size: 55px;
+		font-family: 'Parisienne';
+	}
+
+	.card-title {
+		font-size: 25px;
+	}
+
+	.card-thai {
+		background-image: url(http://journeys.jetsavetours.in/CSS/img/jetsave/Thai/1.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-x: 48%;
+		border-radius: .4em;
+		height: 500px;
+		margin: 5% 0;
+
+	}
+
+	.card-thai-body {
+		display: none;
+	}
+
+	.card-thai:hover {
+		background-image: linear-gradient(0deg, rgba(2, 2, 2, 0.88), rgba(214, 0, 0, 0.41)),
+			url(http://journeys.jetsavetours.in/CSS/img/jetsave/Thai/1.jpg);
+		background-size: cover;
+		color: black;
+		text-align: center;
+		width: 100%;
+		color: white !important;
+
+	}
+
+	.card-thai:hover .card-thai-body {
+		display: block;
+		padding: 60px 5% 0 5%;
+
+	}
+
+	.hoveringcity {
+		padding-left: 8%;
+	}
+
+	.card-sing {
+		background-image: url(http://journeys.jetsavetours.in/CSS/img/jetsave/singapore/sinimg4.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-x: 47%;
+		border-radius: .4em;
+		height: 500px;
+		margin: 5% 0;
+
+	}
+
+	.card-sing-body {
+		display: none;
+	}
+
+	.card-sing:hover {
+		background-image: linear-gradient(0deg, rgba(2, 2, 2, 0.88), rgba(214, 0, 0, 0.41)),
+			url(http://journeys.jetsavetours.in/CSS/img/jetsave/singapore/sinimg4.jpg);
+		background-size: cover;
+		color: black;
+		text-align: center;
+		width: 100%;
+		color: white !important;
+	}
+
+	.card-sing:hover .card-sing-body {
+		display: block;
+		padding: 60px 5% 0 5%;
+
+	}
+
+
+	.card-inside {
+		background-image: url(http://journeys.jetsavetours.in/image/inside/7.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-x: 49%;
+		border-radius: .4em;
+		height: 500px;
+		margin: 5% 0;
+
+	}
+
+	.card-inside-body {
+		display: none;
+	}
+
+	.card-inside:hover {
+		background-image: linear-gradient(0deg, rgba(2, 2, 2, 0.88), rgba(214, 0, 0, 0.41)),
+			url(http://journeys.jetsavetours.in/image/inside/7.jpg);
+		background-size: cover;
+		color: black;
+		text-align: center;
+		width: 100%;
+		color: white !important;
+	}
+
+	.card-inside:hover .card-inside-body {
+		display: block;
+		padding: 60px 5% 0 5%;
+
+	}
+
+
+	/**/
+
+
+	.card-central {
+		background-image: url(http://journeys.jetsavetours.in/image/central/s11.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-x: 49%;
+		border-radius: .4em;
+		height: 500px;
+		margin: 5% 0;
+
+	}
+
+	.card-central-body {
+		display: none;
+	}
+
+	.card-central:hover {
+		background-image: linear-gradient(0deg, rgba(2, 2, 2, 0.88), rgba(214, 0, 0, 0.41)),
+			url(http://journeys.jetsavetours.in/image/central/s11.jpg);
+		background-size: cover;
+		color: black;
+		text-align: center;
+		width: 100%;
+		color: white !important;
+	}
+
+	.card-central:hover .card-central-body {
+		display: block;
+		padding: 60px 5% 0 5%;
+
+	}
+
+
+	.card-bali {
+		background-image: url(http://journeys.jetsavetours.in/CSS/img/jetsave/indo/bali9.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-x: 49%;
+		border-radius: .4em;
+		height: 500px;
+		margin: 5% 0;
+
+	}
+
+	.card-bali-body {
+		display: none;
+	}
+
+	.card-bali:hover {
+		background-image: linear-gradient(0deg, rgba(2, 2, 2, 0.88), rgba(214, 0, 0, 0.41)),
+			url(http://journeys.jetsavetours.in/CSS/img/jetsave/indo/bali9.jpg);
+		background-size: cover;
+		color: black;
+		text-align: center;
+		width: 100%;
+		color: white !important;
+	}
+
+	.card-bali:hover .card-bali-body {
+		display: block;
+		padding: 60px 5% 0 5%;
+
+	}
+
+
+
+
+
+
+
+
+
+
+	.card-title {
+		font-size: 25px;
+	}
+
+	a {
+		text-decoration: none !important;
+		color: white !important;
+	}
+
+	.ftrditi1 {
+		margin-top: 8% !important;
+	}
+
+	.ftrditi1 h1 {
+		color: black;
+		text-align: center;
+		font-family: 'parisienne';
+	}
+</style>
+
+<body class="pacakagemane">
+	<script>
+
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+			document.getElementById(".open").style.width = "0%";
+		}
+
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+	</script>
+
+
+
+
+
+
+	<script>
+		$(document).ready(function () {
+			$(".our-hover").hide();
+			$(".map-hover").hide();
+			$(".closebutn").hide();
+			$(".get").hide();
+			$(".box").hide();
+			$(".embark").hide();
+			$(".main-nav1-item").hide();
+			$(".header-top-item").hide();
+			$(".open").click(function () {
+				$(".closebutn").show();
+				$(".open").hide();
+				$(".carousel-people").hide();
+				$(".carousel-indicators").hide();
+				$(".main-nav1-item").show();
+				$(".svglogo").css("fill", "white");
+				$(".header-top-item").show();
+				$("#carouselslider").hide();
+				$(".filter").hide();
+				// full website hide
+				$("#aboutjetsavedetails").hide();
+				$("#our-expertcarousesl").hide();
+				$("#travellerblogcarousel").hide();
+				$("#peoplechoicetours").hide();
+				$("#verifiedtravellercarousel").hide();
+				$(".trade").hide();
+				$(".footer").hide();
+				$(".bgfooter").hide();
+				$(".advanture").show();
+				$(".wrapper").hide();
+				$(".follow").hide();
+				$(".blog").hide();
+				$(".leftmenufix").hide();
+
+
+				// fullwebsite hide end
+			});
+		});
+
+		$(document).ready(function () {
+			$(".closebutn").hide();
+			$(".our-hover").hide();
+			$(".activity-hover").hide();
+			$(".embark").hide();
+			$(".get").hide();
+			$(".box").hide();
+			$(".closebutn").click(function () {
+				$(".open").show();
+				$(".closebutn").hide();
+				$(".carousel-people").show();
+				//$(".carousel-indicators").show();
+				$(".main-nav1-item").hide();
+				$(".header-top-item").hide();
+				// full website show
+				$("#carouselslider").show();
+				$(".svglogo").css("fill", "black");
+				$(".filter").show();
+				$("#aboutjetsavedetails").show();
+				$("#our-expertcarousesl").show();
+				$("#travellerblogcarousel").show();
+				$("#peoplechoicetours").show();
+				$("#verifiedtravellercarousel").show();
+				$(".trade").show();
+				$(".footer").show();
+				$(".bgfooter").show();
+				$(".advanture").show();
+				$(".wrapper").show();
+				$(".follow").show();
+				$(".blog").show();
+				$(".our-hover").hide();
+				$(".activity-hover").hide();
+				$(".map-hover").hide();
+				$(".box").hide();
+				$(".embark").hide();
+				$(".get").hide();
+				$(".leftmenufix").show();
+
+				// fullwebsite show end
+			});
+		});
+
+
+		// our hover part
+		$(document).ready(function () {
+			$(".our-hover").hide();
+			$(".activity-hover").hide();
+			$(".map-hover").hide();
+			$(".get").hide();
+			$(".box").hide();
+			$(".embark").hide();
+			$(".our").hover(function () {
+
+				$(".our-hover").show();
+				$(".activity-hover").hide();
+				$(".map-hover").hide();
+				$(".get").hide();
+				$(".box").hide();
+				$(".embark").hide();
+
+			});
+		});
+
+		// our hover part end
+
+		// activity hover part
+		$(document).ready(function () {
+			$(".activity-hover").hide();
+			$(".our-hover").hide();
+			$(".map-hover").hide();
+			$(".get").hide();
+			$(".box").hide();
+			$(".embark").hide();
+			$(".activity").hover(function () {
+
+				$(".activity-hover").show();
+				$(".our-hover").hide();
+				$(".map-hover").hide();
+				$(".get").hide();
+				$(".box").hide();
+				$(".embark").hide();
+
+			});
+		});
+
+		// activity	 hover part end
+		// hover part start
+		$(document).ready(function () {
+			$(".activity-hover").hide();
+			$(".our-hover").hide();
+			$(".map-hover").hide();
+			$(".box").hide();
+			$(".get").hide();
+			$(".embark").hide();
+			$(".india-hover").hover(function () {
+
+				$(".map-hover").show();
+				$(".activity-hover").hide();
+				$(".our-hover").hide();
+				$(".get").hide();
+				$(".box").hide();
+				$(".embark").hide();
+
+			});
+		});
+		// hover part end
+
+		// now part start
+		$(document).ready(function () {
+			$(".activity-hover").hide();
+			$(".our-hover").hide();
+			$(".map-hover").hide();
+			$(".get").hide();
+			$(".box").hide();
+			$(".embark").hide();
+			$(".inspire").hover(function () {
+				$(".get").show();
+				$(".activity-hover").hide();
+				$(".our-hover").hide();
+				$(".map-hover").hide();
+				$(".box").hide();
+				$(".embark").hide();
+			});
+		});
+		// now part end
+
+		// box part start
+		$(document).ready(function () {
+			$(".activity-hover").hide();
+			$(".our-hover").hide();
+			$(".map-hover").hide();
+			$(".get").hide();
+			$(".box").hide();
+			$(".embark").hide();
+			$(".meeting").hover(function () {
+				$(".box").show();
+				$(".activity-hover").hide();
+				$(".our-hover").hide();
+				$(".map-hover").hide();
+				$(".get").hide();
+				$(".embark").hide();
+
+			});
+		});
+		// box part end
+
+
+		// about part start
+		$(document).ready(function () {
+			$(".activity-hover").hide();
+			$(".our-hover").hide();
+
+			+								$(".map-hover").hide();
+			$(".get").hide();
+			$(".box").hide();
+			$(".embark").hide();
+			$(".redplane").hover(function () {
+				$(".embark").show();
+				$(".activity-hover").hide();
+				$(".our-hover").hide();
+				$(".map-hover").hide();
+				$(".get").hide();
+				$(".box").hide();
+			});
+		});
+			// about part end
+
+	</script>
+
+
+
+
+
+	<script>
+
+		$(window).on("load", function () {
+			$(".loadersmrt").fadeOut("slow");
+		});
+
+	</script>
+
+	<body>
+		<div class="loadersmrt">
+			<svg class="svg-calLoadersmrt" xmlns="http://www.w3.org/2000/svg" width="230" height="230">
+				<path class="cal-loader__pathsmrt"
+					d="M86.429 40c63.616-20.04 101.511 25.08 107.265 61.93 6.487 41.54-18.593 76.99-50.6 87.643-59.46 19.791-101.262-23.577-107.142-62.616C29.398 83.441 59.945 48.343 86.43 40z"
+					fill="none" stroke="#0099cc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+					stroke-dasharray="10 10 10 10 10 10 10 432" stroke-dashoffset="77" />
+				<path class="cal-loader__planesmrt"
+					d="M141.493 37.93c-1.087-.927-2.942-2.002-4.32-2.501-2.259-.824-3.252-.955-9.293-1.172-4.017-.146-5.197-.23-5.47-.37-.766-.407-1.526-1.448-7.114-9.773-4.8-7.145-5.344-7.914-6.327-8.976-1.214-1.306-1.396-1.378-3.79-1.473-1.036-.04-2-.043-2.153-.002-.353.1-.87.586-1 .952-.139.399-.076.71.431 2.22.241.72 1.029 3.386 1.742 5.918 1.644 5.844 2.378 8.343 2.863 9.705.206.601.33 1.1.275 1.125-.24.097-10.56 1.066-11.014 1.032a3.532 3.532 0 0 1-1.002-.276l-.487-.246-2.044-2.613c-2.234-2.87-2.228-2.864-3.35-3.309-.717-.287-2.82-.386-3.276-.163-.457.237-.727.644-.737 1.152-.018.39.167.805 1.916 4.373 1.06 2.166 1.964 4.083 1.998 4.27.04.179.004.521-.076.75-.093.228-1.109 2.064-2.269 4.088-1.921 3.34-2.11 3.711-2.123 4.107-.008.25.061.557.168.725.328.512.72.644 1.966.676 1.32.029 2.352-.236 3.05-.762.222-.171 1.275-1.313 2.412-2.611 1.918-2.185 2.048-2.32 2.45-2.505.241-.111.601-.232.82-.271.267-.058 2.213.201 5.912.8 3.036.48 5.525.894 5.518.914 0 .026-.121.306-.27.638-.54 1.198-1.515 3.842-3.35 9.021-1.029 2.913-2.107 5.897-2.4 6.62-.703 1.748-.725 1.833-.594 2.286.137.46.45.833.872 1.012.41.177 3.823.24 4.37.085.852-.25 1.44-.688 2.312-1.724 1.166-1.39 3.169-3.948 6.771-8.661 5.8-7.583 6.561-8.49 7.387-8.702.233-.065 2.828-.056 5.784.011 5.827.138 6.64.09 8.62-.5 2.24-.67 4.035-1.65 5.517-3.016 1.136-1.054 1.135-1.014.207-1.962-.357-.38-.767-.777-.902-.893z"
+					class="cal-loader__plane" fill="#000033" /></svg>
+		</div>
+
+
+
+	 <header>
+        <div class="headersmall">
+    
+            <div id="myNav1" class="overlay1">
+                <a href="javascript:void(0)" class="closebtn1" onclick="closeNav1()">&times;</a>
+                <div class="overlay-content1">
+                    <a href="/our-destination">Our Destinations</a>
+                    <a href="/activity">Our Themed Activities</a>
+                    <a href="/itineraries">Explore Itineraries</a>
+                    <a href="/profile">All Travel Blogs</a>
+                    <a href="/myprofile">Jet-settern Travelogue</a>
+                    <a href="/about">About Jetsave</a>
+                </div>
+            </div>
+            <span class="open1" style="font-size:30px;cursor:pointer" onclick="openNav1()">&#9776;
+            </span>
+            <div>
+    
+                <div class="container-fluid full-width header on-top">
+                    <div class="header-wrapper on-top">
+                        <div id="logo" class="d-inline on-top">
+                            <a href="/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"
+                                    class="svglogo on-top">
+                                    <g class="svglogo on-top">
+                                        <g>
+                                            <path d="M52.839,282.828h1.649v22.211h-1.649V282.828z" />
+                                            <path
+                                                d="M60.963,288.856h1.555v3.015c1.079-1.903,2.887-3.395,5.838-3.395c4.094,0,6.474,2.792,6.474,6.663v9.899
+                                                                        h-1.555v-9.614c0-3.331-1.873-5.521-5.141-5.521c-3.173,0-5.616,2.41-5.616,5.774v9.36h-1.555V288.856z" />
+                                            <path d="M79.37,297.012v-0.063c0-5.268,3.966-8.472,7.869-8.472c3.237,0,5.331,1.84,6.664,3.87v-10.471h1.555
+                                                                        v23.163h-1.555v-3.617c-1.396,2.126-3.458,3.999-6.664,3.999C83.336,305.421,79.37,302.279,79.37,297.012z M93.998,296.979v-0.063
+                                                                        c0-4.156-3.236-6.948-6.6-6.948c-3.522,0-6.347,2.57-6.347,6.917v0.063c0,4.252,2.951,6.981,6.347,6.981
+                                                                        C90.762,303.93,93.998,301.105,93.998,296.979z" />
+                                            <path
+                                                d="M101.395,282.511h1.936v2.126h-1.936V282.511z M101.585,288.856h1.555v16.183h-1.555V288.856z" />
+                                            <path
+                                                d="M107.933,300.344v-0.064c0-3.363,2.887-5.267,7.076-5.267c2.253,0,3.808,0.285,5.363,0.698v-0.698
+                                                                        c0-3.268-1.999-4.95-5.331-4.95c-1.968,0-3.586,0.54-5.077,1.301l-0.571-1.364c1.777-0.825,3.522-1.396,5.744-1.396
+                                                                        c2.189,0,3.935,0.603,5.109,1.777c1.079,1.079,1.65,2.57,1.65,4.569v10.09h-1.523v-2.696c-1.111,1.554-3.11,3.078-6.188,3.078
+                                                                        C111.169,305.421,107.933,303.707,107.933,300.344z M120.403,298.979v-1.841c-1.364-0.349-3.173-0.73-5.489-0.73
+                                                                        c-3.427,0-5.331,1.523-5.331,3.776v0.063c0,2.349,2.221,3.713,4.696,3.713C117.579,303.961,120.403,301.93,120.403,298.979z" />
+                                            <path
+                                                d="M143.507,284.351h-7.742v-1.522H152.9v1.522h-7.743v20.688h-1.65V284.351z" />
+                                            <path d="M152.173,297.012v-0.063c0-4.538,3.522-8.472,8.346-8.472c4.791,0,8.282,3.87,8.282,8.408v0.063
+                                                                        c0,4.538-3.522,8.473-8.346,8.473C155.664,305.421,152.173,301.549,152.173,297.012z M167.119,297.012v-0.063
+                                                                        c0-3.903-2.919-7.013-6.664-7.013c-3.84,0-6.6,3.142-6.6,6.949v0.063c0,3.903,2.919,7.013,6.664,7.013
+                                                                        C164.358,303.961,167.119,300.819,167.119,297.012z" />
+                                            <path
+                                                d="M173.278,298.757v-9.9h1.555v9.615c0,3.332,1.872,5.521,5.14,5.521c3.174,0,5.617-2.411,5.617-5.774
+                                                                        v-9.361h1.555v16.183h-1.555v-3.014c-1.079,1.904-2.888,3.396-5.839,3.396C175.658,305.421,173.278,302.629,173.278,298.757z" />
+                                            <path d="M193.05,288.856h1.555v4.601c1.27-2.888,3.966-4.98,7.171-4.854v1.714h-0.158
+                                                                        c-3.745,0-7.013,2.823-7.013,8.092v6.631h-1.555V288.856z" />
+                                            <path d="M204.348,303.009l0.921-1.237c1.776,1.365,3.744,2.125,5.807,2.125c2.189,0,3.902-1.205,3.902-3.077
+                                                                        v-0.063c0-1.903-2.031-2.602-4.283-3.236c-2.634-0.762-5.553-1.556-5.553-4.442v-0.063c0-2.602,2.189-4.475,5.33-4.475
+                                                                        c1.937,0,4.125,0.698,5.744,1.777l-0.825,1.301c-1.491-0.983-3.269-1.618-4.982-1.618c-2.221,0-3.68,1.206-3.68,2.824v0.063
+                                                                        c0,1.809,2.189,2.476,4.506,3.142c2.602,0.729,5.33,1.682,5.33,4.537v0.063c0,2.888-2.476,4.728-5.585,4.728
+                                                                        C208.632,305.356,206.062,304.405,204.348,303.009z" />
+                                            <path
+                                                d="M231.387,282.828h8.061c4.886,0,8.25,2.507,8.25,6.791v0.062c0,4.665-4.03,7.077-8.663,7.077h-5.997v8.281
+                                                                        h-1.65V282.828z M239.13,295.234c4.125,0,6.917-2.157,6.917-5.458v-0.063c0-3.522-2.729-5.363-6.728-5.363h-6.282v10.884H239.13z" />
+                                            <path
+                                                d="M250.904,288.856h1.809l6.125,14.438l6.188-14.438h1.744l-7.266,16.311h-1.333L250.904,288.856z" />
+                                            <path d="M271.882,300.883v-10.598h-2.348v-1.429h2.348v-5.172h1.556v5.172h5.68v1.429h-5.68v10.439
+                                                                        c0,2.316,1.364,3.141,3.235,3.141c0.794,0,1.46-0.158,2.381-0.571v1.46c-0.825,0.381-1.618,0.571-2.633,0.571
+                                                                        C273.913,305.325,271.882,303.961,271.882,300.883z" />
+                                            <path d="M293.59,282.828h1.649v20.688h13.043v1.522H293.59V282.828z" />
+                                            <path d="M313.107,300.883v-10.598h-2.348v-1.429h2.348v-5.172h1.556v5.172h5.68v1.429h-5.68v10.439
+                                                                        c0,2.316,1.363,3.141,3.236,3.141c0.793,0,1.46-0.158,2.379-0.571v1.46c-0.824,0.381-1.617,0.571-2.633,0.571
+                                                                        C315.138,305.325,313.107,303.961,313.107,300.883z" />
+                                            <path d="M323.423,297.012v-0.063c0-5.268,3.966-8.472,7.87-8.472c3.235,0,5.33,1.84,6.662,3.87v-10.471h1.556
+                                                                        v23.163h-1.556v-3.617c-1.396,2.126-3.459,3.999-6.662,3.999C327.389,305.421,323.423,302.279,323.423,297.012z M338.051,296.979
+                                                                        v-0.063c0-4.156-3.236-6.948-6.601-6.948c-3.521,0-6.346,2.57-6.346,6.917v0.063c0,4.252,2.95,6.981,6.346,6.981
+                                                                        C334.814,303.93,338.051,301.105,338.051,296.979z" />
+                                            <path d="M345.066,302.343h2.095v2.696h-2.095V302.343z" />
+                                        </g>
+                                        <g>
+                                            <path d="M182.684,254.675h-2.93c-1.401,0-2.166-0.637-2.675-1.656l-10.191-19.745h-0.255l-7.006,19.745
+                                                                        c7.261,2.549,16.178,3.95,23.439,3.95c1.063,0,2.104-0.03,3.123-0.088l1.073-2.782
+                                                                        C185.893,254.469,184.365,254.675,182.684,254.675z" />
+                                            <path
+                                                d="M72.881,221.555v0.254c0,16.562,8.408,23.312,18.217,23.312c7.643,0,15.159-3.312,19.363-11.719h0.255
+                                                                        c-3.313,16.051-13.249,23.567-28.153,23.567c-16.051,0-31.209-9.683-31.209-32.103c0-23.566,15.031-32.994,31.974-32.994
+                                                                        c13.503,0,27.897,6.369,27.897,26.878c0,0.383,0,1.274-0.127,2.804H72.881z M72.881,219.261h18.726
+                                                                        c0.127-1.655,0.127-3.312,0.127-3.821c0-16.689-3.439-21.146-8.662-21.146C76.703,194.293,73.136,200.79,72.881,219.261z" />
+                                            <path d="M157.718,195.439H142.05v42.548c0,5.732,2.548,9.044,6.751,9.044c3.312,0,5.988-2.166,7.389-4.713
+                                                                        l0.255,0.127c-1.274,7.134-6.497,14.523-18.599,14.523c-11.083,0-16.561-5.988-16.561-17.453v-44.077h-7.006v-2.547h5.732
+                                                                        c2.038,0,2.675,0,3.949-1.401l17.834-20h0.255v21.401h15.668V195.439z" />
+                                            <path
+                                                d="M315.543,255.948h-14.521l-16.688-48.407c-1.019-2.93-1.528-4.458-2.676-6.751l-3.948-7.644v-0.255h31.847
+                                                                        v0.255l-4.331,7.262c-0.764,1.273-0.892,1.654-0.382,3.184l12.738,38.473l9.81-28.663c0.891-2.42,0.509-2.93-0.383-4.841
+                                                                        l-7.516-15.414v-0.255h21.911v0.255l-8.663,14.904c-1.528,2.548-2.165,3.44-2.93,5.732L315.543,255.948z" />
+                                            <path
+                                                d="M361.656,221.555v0.254c0,16.562,8.407,23.312,18.216,23.312c7.644,0,15.159-3.312,19.363-11.719h0.255
+                                                                        c-3.312,16.051-13.248,23.567-28.152,23.567c-16.051,0-31.211-9.683-31.211-32.103c0-23.566,15.032-32.994,31.976-32.994
+                                                                        c13.502,0,27.897,6.369,27.897,26.878c0,0.383,0,1.274-0.127,2.804H361.656z M361.656,219.261h18.726
+                                                                        c0.127-1.655,0.127-3.312,0.127-3.821c0-16.689-3.438-21.146-8.661-21.146C365.478,194.293,361.91,200.79,361.656,219.261z" />
+                                            <path d="M17.16,177.962c0-1.652-0.127-2.034-1.271-3.051l-8.389-8.007v-0.254h42.328v0.254l-8.389,8.007
+                                                                        c-1.144,1.017-1.271,1.398-1.271,3.051v63.047c0,25.168-13.728,40.93-40.04,41.819L0,282.573
+                                                                        c11.948-6.102,17.16-18.049,17.16-34.064V177.962z" />
+                                            <path d="M197.461,218.242l-8.153-3.567c-7.516-3.312-11.72-5.987-11.72-11.593c0-5.986,4.713-8.916,10.318-8.916
+                                                                        h1.783c1.784,0,2.166,0.636,2.93,1.911l9.936,17.707h0.255l7.134-18.471c-8.28-2.547-16.178-3.439-22.42-3.439
+                                                                        c-16.179,0-26.115,8.026-26.115,20.127c0,9.045,5.35,14.777,12.356,18.089l8.663,4.076c4.889,2.257,8.257,3.939,10.204,6.012
+                                                                        l7.906-20.488C199.55,219.185,198.522,218.704,197.461,218.242z" />
+                                            <path
+                                                d="M279.367,245.376c-0.764,1.528-1.911,2.292-3.567,2.292c-2.547,0-3.694-2.42-3.438-7.387l0.764-18.09
+                                                                        c0-0.383,0.128-3.313,0.128-4.586c0-9.81-2.293-16.051-6.37-19.873c-4.585-4.331-11.21-5.86-19.745-5.86
+                                                                        c-8.152,0-17.197,0.414-25.731,3.471l7.13,18.479h0.256l11.212-18.001c0.765-1.402,0.892-1.529,3.44-1.529
+                                                                        c6.623,0,9.3,5.858,9.3,14.649v0.638l-0.256,13.63c-3.44-2.421-8.025-3.439-13.503-3.439c-2.59,0-5.209,0.409-7.687,1.214
+                                                                        l6.161,15.966c0-0.037-0.003-0.071-0.003-0.109c0-7.39,3.694-13.122,10.317-13.122c1.656,0,3.185,0.257,4.714,0.765l-0.255,18.6
+                                                                        v0.127c-1.656,2.547-4.459,4.458-7.261,4.458c-1.44,0-2.749-0.432-3.861-1.254l3.126,8.101c3.709-2.159,6.52-5.62,7.996-9.902
+                                                                        c0.383,8.024,6.625,12.356,13.886,12.356c6.114,0,10.446-2.803,12.484-7.007c0.764-1.528,1.018-3.439,1.018-4.586H279.367z" />
+                                            <polygon points="248.329,265.087 248.316,265.087 248.329,265.119 	" />
+                                            <polygon points="228.536,213.823 221.406,195.344 228.536,213.823 	" />
+                                            <polygon class="logojet"
+                                                points="247.667,146.066 247.667,139.905 222.799,120.079 222.799,101.412 217.15,94.579 214.201,94.579 
+                                                                        208.552,101.412 208.552,120.079 183.684,139.905 183.684,146.066 209.534,137.678 211.796,161.163 204.545,168.278 
+                                                                        204.545,171.49 215.676,168.278 226.807,171.49 226.807,168.278 219.555,161.163 221.817,137.678 	" />
+                                        </g>
+                                    </g>
+                                </svg>
+                        </div>
+                        <!-- Main Menu -->
+                        <div id="myNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400"
+                                    class="closebutn">
+                                    <g>
+                                        <rect width="60.607" height="60.607" />
+                                        <rect x="339.393" width="60.607" height="60.607" />
+                                        <rect x="84.855" y="84.849" width="60.607" height="60.606" />
+                                        <rect x="254.537" y="84.849" width="60.607" height="60.606" />
+                                        <rect x="169.696" y="169.697" width="60.607" height="60.606" />
+                                        <rect x="84.855" y="254.537" width="60.607" height="60.607" />
+                                        <rect x="254.537" y="254.537" width="60.607" height="60.607" />
+                                        <rect y="339.394" width="60.607" height="60.606" />
+                                        <rect x="339.393" y="339.394" width="60.607" height="60.606" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <div class="overlay-content">
+                                <nav class="main-nav1 on-top">
+                                    <!-- Top Menu -->
+                                    <div class="header-top d-inline-flex on-top">
+                                        <div class="header-top-newsletter header-top-item">
+                                            <a href="#newsletter">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 400 400">
+                                                    <path d="M399.231,69.371c-3.333-12.157-12.45-19.251-25.156-19.27
+                                                                                            c-42.292-0.037-84.548-0.018-126.84-0.018c-72.867,0-145.771,0.046-218.601-0.055c-8.642-0.018-16.551,1.556-22.08,8.504
+                                                                                            C3.662,62.157,2.124,66.899,0,71.138c0,85.93,0,171.86,0,257.78c0.256,0.604,0.586,1.172,0.769,1.795
+                                                                                            c3.332,12.12,12.633,19.26,25.156,19.26c41.083,0,82.204,0,123.325,0c74.295,0,148.59,0,222.885,0
+                                                                                            c15.05,0,22.886-5.858,27.426-20.395c0.073-0.238,0.293-0.439,0.439-0.66c0-85.92,0-171.851,0-257.78
+                                                                                            C399.744,70.552,399.414,69.975,399.231,69.371z M26.181,82.314c2.6-5.236,6.921-7.369,12.669-7.36
+                                                                                            c33.065,0.055,66.13,0.028,99.195,0.028c74.332,0.009,148.663,0.027,222.995-0.019c4.76,0,8.715,1.318,11.534,5.245
+                                                                                            c3.295,4.559,3.003,6.5-1.392,9.877c-55.987,42.915-111.937,85.82-167.924,128.726c-1.025,0.787-2.087,1.501-3.369,2.435
+                                                                                            c-22.08-16.935-43.867-33.632-65.69-50.329c-35.408-27.17-70.816-54.367-106.298-81.408C24.899,87.249,24.716,85.207,26.181,82.314z
+                                                                                             M374.845,281.17c-1.136-0.622-2.124-1.062-3.04-1.684c-25.229-16.99-50.494-34.018-75.686-51.08
+                                                                                            c-7.287-4.926-14.574-4.156-18.857,2.087c-4.321,6.279-2.49,13.273,4.796,18.382c29.659,20.688,59.319,41.395,88.979,62.102
+                                                                                            c4.211,2.929,4.504,4.54,1.538,8.751c-2.783,3.954-6.701,5.383-11.461,5.383c-33.871-0.073-67.704-0.036-101.538-0.036
+                                                                                            c-73.307,0-146.613,0-219.883,0.036c-5.163,0-9.484-1.208-12.45-5.712c-1.684-2.527-1.867-4.229,1.099-6.335
+                                                                                            c30.208-21.494,60.308-43.189,90.443-64.774c4.687-3.369,7.067-7.689,5.822-13.42c-1.978-8.972-11.937-12.578-19.7-7.195
+                                                                                            c-18.272,12.724-36.47,25.484-54.742,38.209c-7.14,4.998-14.28,9.979-21.457,14.958c-1.025,0.714-2.087,1.354-3.515,2.252
+                                                                                            c0-54.54,0-108.605,0-163.301c1.611,1.199,2.966,2.124,4.248,3.112c53.863,41.147,107.763,82.305,161.662,123.443
+                                                                                            c6.372,4.889,11.351,4.907,17.686,0.073c53.899-41.157,107.763-82.296,161.662-123.443c1.318-0.989,2.673-1.932,4.395-3.177
+                                                                                            C374.845,173.829,374.845,227.271,374.845,281.17z" />
+                                                </svg>
+                                                <h4 class="d-inline top-link">Newsletter</h4>
+                                            </a>
+                                        </div>
+                                        <div class="header-top-contact header-top-item">
+                                            <a href="/contactus">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 400 400">
+                                                    <path d="M368.067,296.197c-21.953-14.245-44.344-27.782-67.078-40.637
+                                                                                        c-13.22-7.489-26.244-4.244-35.806,6.634c-16.294,18.611-24.978,19.221-41.563,0.805c-28.979-32.173-57.468-64.857-85.812-97.604
+                                                                                        c-16.732-19.27-16.098-26.734,2.245-44.308c14.684-14.111,17.025-26.209,7.805-44.687c-9.806-19.537-19.855-38.953-30.197-58.198
+                                                                                        c-9.513-17.77-18.05-21.197-37.466-15.977C37.119,13.825,13.118,52.827,23.265,96.33c2.976,12.855,6.537,26.258,13.123,37.466
+                                                                                        c20.196,34.355,40.539,68.784,63.467,101.349c39.222,55.687,85.079,105.299,145.717,138.521
+                                                                                        c20.409,11.182,42.702,27.12,67.107,26.304c6.598-0.221,13.463-2.459,19.231-5.646c26.393-14.659,36.985-40.758,45.767-68.71
+                                                                                        C381.092,314.76,378.214,302.831,368.067,296.197z" />
+                                                </svg>
+                                                <h4 class="d-inline top-link">Contact Us</h4>
+                                            </a>
+                                        </div>
+    
+                                        <div class="header-top-book header-top-item">
+                                            <a href="https://jetsavetours.in">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 400 400">
+                                                    <path d="M399.9,13.641c-4.49-4.464-8.93-8.916-13.418-13.393
+                                            c-50.403-2-81.191,30.117-111.148,63.832c-4.198,4.684-8.149,10.563-13.516,13.039c-11.369,5.184-23.956,12.796-35.424,11.844
+                                            c-52.548-4.33-105.097-10.16-157.256-17.797c-22.59-3.306-35.325,5.051-46.157,24.481c50.012,25.86,98.999,51.22,150.182,77.689
+                                            c-22.005,27.408-43.425,50.61-60.795,76.568c-21.811,32.495-48.646,48.692-88.46,41.569c-6.587-1.17-14.296,4.171-21.517,6.513
+                                            c-0.83,2.611-1.61,5.246-2.391,7.882c48.841,14.051,79.141,46.644,94.998,93.972c22.054-14.343,13.467-32.591,13.613-47.426
+                                            c0.195-20.175,1.903-38.447,22.933-47.889c4.83-2.146,8.051-6.465,12.344-9.93c27.03-22.054,54.11-44.009,83.092-67.503
+                                            c27.129,52.428,52.451,101.341,78.066,150.793c26.445-21.323,26.348-21.323,23.177-49.039c-5.123-44.595-8.1-89.556-15.857-133.7
+                                            c-5.513-31.496,1.903-54.196,26.787-73.944C373.6,93.879,401.9,62.018,399.9,13.641z" />
+                                                </svg>
+    
+                                                <h4 class="d-inline top-link" id="test">VISA</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="main-nav1-item text-center our">
+                                        <div><a href="/our-destination">
+                                                <h5>Our</h5>
+                                                <h4>Destinations</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="main-nav1-item text-center activity">
+                                        <div> <a href="/our-themed-packages">
+                                                <h5>Our Themed</h5>
+                                                <h4>Activities</h4>
+                                            </a></div>
+                                    </div>
+                                    <!-- <div class="main-nav1-item text-center india-hover">
+                                        <div><a href="/destinationpage">
+                                                <h5>Explore</h5>
+                                                <h4>Itineraries</h4>
+                                            </a></div>
+                                    </div> -->
+                                    <div class="main-nav1-item text-center inspire">
+                                        <div><a href="/travelogue-guest">
+                                                <h5>All Travel</h5>
+                                                <h4>Blog</h4>
+                                            </a></div>
+                                    </div>
+                                    <div class="main-nav1-item text-center meeting">
+                                        <div><a href="/my-profile">
+                                                <h5>Jet-setter</h5>
+                                                <h4>Travelogue</h4>
+                                            </a></div>
+                                    </div>
+                                    <div class="main-nav1-item text-center redplane">
+                                        <div><a href="/about-jetsave">
+                                                <h5>About</h5>
+                                                <h4>Jetsave</h4>
+                                            </a></div>
+                                    </div>
+    
+                                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400"
+                                            viewBox="0 0 400 400" class="open" fill="black">
+                                            <g>
+                                                <rect width="60.607" height="60.607" />
+                                                <rect x="84.855" width="60.607" height="60.607" />
+                                                <rect x="169.696" width="60.607" height="60.607" />
+                                                <rect x="254.537" width="60.607" height="60.607" />
+                                                <rect x="339.393" width="60.607" height="60.607" />
+                                                <rect y="84.849" width="60.607" height="60.606" />
+                                                <rect x="84.855" y="84.849" width="60.607" height="60.606" />
+                                                <rect x="169.696" y="84.849" width="60.607" height="60.606" />
+                                                <rect x="254.537" y="84.849" width="60.607" height="60.606" />
+                                                <rect x="339.393" y="84.849" width="60.607" height="60.606" />
+                                                <rect y="169.697" width="60.607" height="60.606" />
+                                                <rect x="84.855" y="169.697" width="60.607" height="60.606" />
+                                                <rect x="169.696" y="169.697" width="60.607" height="60.606" />
+                                                <rect x="254.537" y="169.697" width="60.607" height="60.606" />
+                                                <rect x="339.393" y="169.697" width="60.607" height="60.606" />
+                                                <rect y="254.537" width="60.607" height="60.607" />
+                                                <rect x="84.855" y="254.537" width="60.607" height="60.607" />
+                                                <rect x="169.696" y="254.537" width="60.607" height="60.607" />
+                                                <rect x="254.537" y="254.537" width="60.607" height="60.607" />
+                                                <rect x="339.393" y="254.537" width="60.607" height="60.607" />
+                                                <rect y="339.394" width="60.607" height="60.606" />
+                                                <rect x="84.855" y="339.394" width="60.607" height="60.606" />
+                                                <rect x="169.696" y="339.394" width="60.607" height="60.606" />
+                                                <rect x="254.537" y="339.394" width="60.607" height="60.606" />
+                                                <rect x="339.393" y="339.394" width="60.607" height="60.606" />
+                                            </g>
+                                        </svg>
+                                    </span>
+    
+                                </nav>
+                                <!--
+                                                            our hover part
+                                                        -->
+                                <div class="container col-md-4 our-hover">
+                                    <h1>
+                                        <center>Travel With Us</center>
+                                    </h1>
+                                    <center>
+                                        <h3>To Facinating Destinations</h3>
+                                    </center>
+                                    <img style="float: left; margin: 0px 90px 80px 0px;"
+                                        src="/CSS/img/followjetsave.png" width="120%" />
+                                    <a href="/our-destination"><svg xmlns="http://www.w3.org/2000/svg" class="aeroplanered"
+                                            width="80" height="80" fill="red" viewBox="0 0 400 400">
+                                            <path d="M400,207.826c-26.76,29.073-61.535,31.146-97.268,27.039
+                                                                            c-25.803-2.991-43.191,5.862-58.227,27.238c-21.017,30.03-45.264,57.707-68.075,86.461c-14.197,17.826-14.157,17.906-41.755,14.955
+                                                                            c13.759-43.39,27.398-86.301,42.034-132.283c-26.17-2.755-52.358-5.417-78.497-8.45c-25.948-3.013-42.396-7.081-62.36,12.479
+                                                                            c-8.654,8.454-14.237,23.968-35.254,19.541C18.784,218.275,20.1,181.904,0,145.573c1.954-1.077,3.948-2.153,5.942-3.19
+                                                                            c5.503,2.832,13.041,4.188,16.191,8.694c18.903,27.118,43.749,33.26,75.134,27.078c25.044-4.945,50.847-5.981,79.402-9.092
+                                                                            c-14.277-44.905-27.916-87.856-41.914-131.725c17.508-4.945,29.711-2.433,40.838,12.563c25.762,34.536,52.721,68.275,80.598,101.177
+                                                                            c6.102,7.138,17.746,10.05,27.318,13.599c4.546,1.675,10.209,0.559,15.354,0.279c36.81-2.153,73.181-2.951,101.137,27.358
+                                                                            C400,197.498,400,202.603,400,207.826z" />
+                                        </svg></a>
+    
+    
+                                </div>
+                                <!--our hover end-->
+    
+                                <!--Activity hover start-->
+                                <div class="container-activity activity-hover container">
+                                    <h1 style="color: white;">Pick Your Kind of Tour</h1>
+                                    <div class="activity" ">
+                                        <ul class="mekajet" style="display: flex; margin-left: 15%;">
+                                           
+                                                <div class="item">
+                                                    <a href="family-tour-packages"><img class="navimage" src="/image/Home-Page/5.jpg" width="150" height="auto;"></a>
+                                                </div>
+                    
+                                                <div class="item">
+                                                    <a href="honeymoon-tour-packages"><img class="navimage" src="/image/Home-Page/honey.jpg" width="150" height="auto;"></a>
+                                                </div>
+                                            
+                                           
+                                                <div class="item">
+                                                    <a href="friends-tour-packages"><img class="navimage" src="/image/Home-Page/7.jpg" width="150" height="auto;"></a>
+                                                </div>
+                                            
+                                            
+                                                <div class="item">
+                                                    <a href="wildlife-tour-packages"><img class="navimage" src="image/Home-Page/wildlife.jpg" width="150" height="auto;"></a>
+                                                </div>
+                                            
+                                          
+                                                <div class="item">
+                                                    <a href="solo-tour-packages"> <img class="navimage" src="image/Home-Page/solotravel.jpg" width="150" height="auto;"></a>
+                                                </div>
+                                              
+                                            
+                                                <div class="item">
+                                                    <a href="fixed-departure-tour-packages">  <img class="navimage" src="image/fixed.jpg" width="150" height="auto;"></a>
+                                                </div>
+
+                                                <div class="item">
+                                                    <a href="spritual-tour-packages"> <img class="navimage" src="/image/Home-Page/spritual.jpg" width="150" height="auto;"></a>			
+                                                </div>
+                                                                    
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--Activity hover end-->
+                                <!--Hover part Start-->
+                                <!-- <div class="container-fluid full-width header on-top map-hover">
+                                    <div class="container-hover">
+                                        <div class="row">
+                                            <a href="/destinationpage">
+                                                <div class="map col-md-6 col-xs-12">
+                                                </div>
+                                            </a>
+                                            <a href="/travel_east">
+                                                <div class="globe col-md-6 col-xs-12">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!--Now part start-->
+    
+                                <div class="get">
+    
+                                    <a href="/travelogue-guest"><button class="now">
+    
+                                            Read On...
+                                        </button></a>
+                                </div>
+                                <!--Now part end-->
+                                <!--input box start-->
+                                <div class="input-box box">
+    
+                                    <a href="/travelogue-guest"><button class="browser">Browser
+                                            Travelogue</button></a>
+                                    <h3 style="color:white; text-decoration:none;">See Where your fellow jetsetters
+                                        are <a href="/travelogue-guest"
+                                            style="text-decoration: none; color:red">Travelling</a></h3>
+    
+                                    <h3 style="color: white;">Become a Part of the Jetsave Community.<span
+                                            style="color: red" color="red"><a href="/signup"
+                                                style="text-decoration: none; color:red"> Signup</a></span></h3>
+    
+                                    <h3 style="color: white;">Just want to see how aswome we are? <span
+                                            style="color: red" color="red"> <a href="/travelogue-guest"
+                                                style="text-decoration: none; color:red">Browse as Guest</a></span>
+    
+                                </div>
+                                <!--Input box end-->
+                                <!--About page-->
+                                <div class="embark">
+                                    <h2 style="font-family:arial; font-size:50px; color:white;">Embark on the</h2>
+                                    <h2
+                                        style="color:white; font-family:Brush Script MT, Brush Script Std, cursive; font-size:75px; margin-left:200px;">
+                                        Jetsave Journey <a href="/about-jetsave"><svg xmlns="http://www.w3.org/2000/svg"
+                                                fill="red" class="aboutjet" width="100" height="100"
+                                                viewBox="0 0 400 400">
+                                                <path d="M400,207.826c-26.76,29.073-61.535,31.146-97.268,27.039
+                                                                                    c-25.803-2.991-43.191,5.862-58.227,27.238c-21.017,30.03-45.264,57.707-68.075,86.461c-14.197,17.826-14.157,17.906-41.755,14.955
+                                                                                    c13.759-43.39,27.398-86.301,42.034-132.283c-26.17-2.755-52.358-5.417-78.497-8.45c-25.948-3.013-42.396-7.081-62.36,12.479
+                                                                                    c-8.654,8.454-14.237,23.968-35.254,19.541C18.784,218.275,20.1,181.904,0,145.573c1.954-1.077,3.948-2.153,5.942-3.19
+                                                                                    c5.503,2.832,13.041,4.188,16.191,8.694c18.903,27.118,43.749,33.26,75.134,27.078c25.044-4.945,50.847-5.981,79.402-9.092
+                                                                                    c-14.277-44.905-27.916-87.856-41.914-131.725c17.508-4.945,29.711-2.433,40.838,12.563c25.762,34.536,52.721,68.275,80.598,101.177
+                                                                                    c6.102,7.138,17.746,10.05,27.318,13.599c4.546,1.675,10.209,0.559,15.354,0.279c36.81-2.153,73.181-2.951,101.137,27.358
+                                                                                    C400,197.498,400,202.603,400,207.826z" />
+                                            </svg></a>
+                                    </h2>
+                                    <a href="/about-jetsave"><svg xmlns="http://www.w3.org/2000/svg" class="playbutton"
+                                            fill="white" width="50" height="50" viewBox="0 0 400 400">
+                                            <g>
+                                                <path
+                                                    d="M52.352,400c-8.14,0-27.471-3.43-31.151-35.228l-0.07-1.235l0.066-330.695C22.468,21.482,30.771,0,53.085,0
+                                                                                        c3.873,0,7.982,0.691,12.218,2.057l2.04,0.901l292.772,167.586c2.416,1.554,18.969,12.854,18.752,30.645
+                                                                                        c-0.146,12.124-7.878,23.013-22.978,32.35L77.843,391.73C75.356,393.351,64.42,400,52.352,400z M42.585,362.895
+                                                                                        c1.952,15.65,7.619,15.65,9.767,15.65c5.591,0,12.341-3.806,13.846-4.826l0.723-0.453l278.02-158.179
+                                                                                        c7.759-4.806,12.424-10.032,12.473-14.157c0.063-5.35-6.781-10.982-8.485-12.089L57.74,22.181
+                                                                                        c-1.718-0.482-3.279-0.727-4.655-0.727c-7.878,0-10.092,10.804-10.5,13.336V362.895z" />
+                                                <path
+                                                    d="M203.438,368.202l159.463-92.056c3.353-1.941,4.498-6.223,2.563-9.581l-0.244-0.419c-1.935-3.359-6.223-4.505-9.575-2.57
+                                                                                        l-159.464,92.062c-3.352,1.935-4.504,6.229-2.563,9.575l0.245,0.433C195.798,368.998,200.086,370.144,203.438,368.202z" />
+                                            </g>
+                                        </svg></a>
+    
+                                </div>
+                                <!--About page end-->
+    </header>
+		<div class="conatiner indiabackgroundimage" style="height:80vh;">
+			<h1>'The Aesthetic Asia'</h1>
+		</div>
+
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-6">
+					<div class="image-thailand image">
+						<img src="image/collagess/Thailand.png" alt="jetsave">
+						<div class="itinaeary-detail">
+							<p>Planning a honeymoon is a lot fun compared to planning a marriage. You merely have one
+								honeymoon, well a minimum of that is what you hope for, thus build it epic! Plan a
+								Kingdom of Thailand honeymoon! Head to some of the best beaches in Kingdom of Thailand,
+								or relax within the Thai jungle.</p>
+						</div>
+					</div>
+					<div class="image-Singapore image">
+						<img src="image/collagess/Singapore.png" alt="jetsave">
+						<div class="itinaeary-detail">
+							<p>The ideal town for people living with a continuing thirst for wanderlust, Singapore is
+								known for its iconic attractions. This mini-nation on the tip of the Malay Peninsula
+								defies the region’s usual stereotypes, and is, in many ways, the complete opposite of
+								its popular neighbors. Be it the Wings of Time</p>
+						</div>
+					</div>
+					<div class="image-vietnam image">
+						<img src="image/collagess/Vietnam.png" alt="jetsave">
+						<div class="itinaeary-detail">
+							<p>Central Vietnam is the nation's most extraordinary part: one that joins and has both
+								world class beach and UNESCO world's legacy site; wilderness of east-meet-west old
+								quarter and culturally unique facets, it also has profoundly protected national parks
+								and modern food. The place is loaded up with majestic urban areas, regal tombs and
+								authentic tourist</p>
+						</div>
+					</div>
+
+
+					<div class="image-bali image">
+						<img src="image/collagess/Bali.png" alt="jetsave">
+						<div class="itinaeary-detail">
+							<p>Central Vietnam is the nation's most extraordinary part: one that joins and has both
+								world class beach and UNESCO world's legacy site; wilderness of east-meet-west old
+								quarter and culturally unique facets, it also has profoundly protected national parks
+								and modern food. The place is loaded up with majestic urban areas, regal tombs and
+								authentic tourist</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-6">
+					<svg id="South_East_Asia" data-name="South East Asia" xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 825.7 988.1">
+						<defs>
+							<style>
+								.cls-1,
+								.cls-2 {
+									fill: #e6e6e6;
+								}
+
+								.cls-1 {
+									stroke: #fff;
+								}
+
+								.cls-1,
+								.cls-4,
+								.cls-7 {
+									stroke-miterlimit: 10;
+								}
+
+								.cls-1,
+								.cls-7 {
+									stroke-width: 2px;
+								}
+
+								.cls-3 {
+									fill: #545353;
+								}
+
+								.cls-4,
+								.cls-7 {
+									fill: none;
+								}
+
+								.cls-4 {
+									stroke: #545353;
+								}
+
+								.cls-5 {
+									fill: #4d4d4d;
+								}
+
+								.cls-6 {
+									isolation: isolate;
+								}
+
+								.cls-7 {
+									stroke: #4d4d4d;
+								}
+							</style>
+						</defs>
+						<title>SOUTH EAST ASIA </title>
+						<polygon class="cls-1"
+							points="132.8 332.8 136.3 332.8 141.7 329.6 137.8 328.5 138.1 326.9 136.3 323 138 323 140.7 326.5 144.8 327.3 151.1 322.1 150.2 319.1 152.4 316.7 152.9 311.7 150.2 309.7 150.5 306.9 151.4 305.3 148.7 302.1 153.1 304.7 153.1 307.5 155.5 307.6 156.4 310.2 161.3 319.7 163.3 322.3 164.6 328.2 168.8 328.2 172.1 326.9 173.8 323.9 173.6 326.7 172.3 328.9 175.3 334.6 175.3 337.6 173.4 338.3 174.4 342.9 177.3 344.9 179.3 363.1 181 363.2 181.2 371.8 187.3 375.3 185.4 377.1 185.8 382.1 189.3 386.3 188.9 397 191.2 401.5 191 405.7 192.4 404.6 193.4 396.9 196.9 402.8 198 408 201.3 410.9 203 425.9 205.4 427.7 206.9 432.1 205.2 434.5 205.4 440.8 207.8 444.3 211.4 448.3 208 450.9 210.3 457.5 209.1 460.4 207.5 461.1 206.7 467.6 208.1 469 208.1 472.9 205.2 477.8 203.4 479.4 201.5 478.7 201.7 481.1 203.4 484 203.5 491 205.9 498.6 206.5 491.4 208.7 486.4 208.6 487.3 209.9 483.6 212.2 479.7 212.9 473.6 218.2 469.7 224 454.2 226.8 452.5 227.1 444.4 224 438.9 224.3 431.9 222.2 427.5 221.2 420.2 218.3 417.3 218.9 412 217.8 407.3 219.6 403.2 216.4 392.8 209.7 386.3 202.3 380.5 196 372.6 195.8 368.2 192.3 359.7 197.4 356.8 198.1 353 195.3 340.5 197.2 337 201.8 334.6 201.3 329.6 196.2 327.2 195.3 321.9 192.5 315.6 188.6 314.2 182.8 301.5 176.4 297.1 175.1 293.4 171.5 290 167.5 283 163.8 282 163.3 278.1 169.6 275.4 174.2 272.1 172.4 268.1 172.4 260.9 175.9 257.5 174.7 249.1 178.6 243.8 187.7 247.5 193.4 242.9 198.8 243 200.3 240.4 200.5 234.4 203.6 231.5 209.8 232.4 211.6 229.8 208.9 226.1 209 223.4 214.5 221.4 221.7 221.1 221.9 220.6 224.7 214.4 227.3 214.4 232.2 210.3 230 207.2 232.8 203.3 232.9 198.7 239.8 197.3 246.7 191.3 247.2 186.7 242.4 185.2 231.4 189.9 225.9 189.9 222.6 193.1 216.9 190.3 215.3 185.7 216.8 179.2 213.4 174.8 209.7 178.1 208.5 176.7 200.7 175.9 197.1 177.6 196.2 174.3 200.7 169.7 206.4 161.8 206.2 158.3 208.3 154 208.3 150.3 203.4 147.2 196.5 148 195.6 150 193.7 146.8 194.9 144.5 188.6 143.1 185.8 139.3 187.4 135 186.1 130.8 179.8 132.4 176.8 129.9 178.4 126.9 177.3 123.1 166.3 125.3 160.4 129.6 158.1 123.9 158.9 118.1 155.4 115 153.7 111.8 149.6 110 149.6 106 151.8 102.3 149.7 99.1 151.6 94.9 155 91.4 158.1 92.6 160.1 89.8 158 85.1 159.2 81.7 161.5 81 162 76.4 166.6 74.3 167.6 71.3 167.6 66.4 169.1 56 168.5 48.6 164.5 40.4 164.5 33 160.1 28 155.9 28.2 154.5 20.6 149.7 17.1 146.6 10.6 140.9 10.4 137.2 12.6 131.6 10.1 127.5 12.1 128.6 13.3 129.1 16.9 124.4 21.4 124.4 27.9 125.6 31.9 120.8 29.8 116.8 26.5 109.9 31.4 102 33.9 99.6 39.7 93.8 46.9 88.3 48.8 80.2 61.5 79 67.3 81.4 70.4 78.1 80.1 71.2 91.2 71.6 94.9 77.4 97.7 72.1 110.6 69.8 121 66 130.1 59.4 130.3 55.2 128.9 50.1 128.5 53.1 140.5 52.9 146.8 52.4 155.6 47.3 154.9 48.2 161.4 47.3 167.4 48.5 172.3 45.7 180.4 43.1 181.8 40.8 180.8 39.8 185.4 39.8 188 39.8 193.8 37.1 199.8 35.2 198.5 30.4 204.4 29.6 209 30 210.6 30.1 210.5 32.5 215.6 34.4 222.1 45.3 231.7 42.8 227.5 42.8 225.3 46.7 228.4 51.3 228 47.7 232.3 48 234.4 52.5 233.8 53 230.6 54.1 233.8 58.4 234.5 60.4 237.6 68 239.1 72.8 246.1 73 250.2 70 251.3 67.2 248.6 63.5 250.8 67.1 254.1 68.5 254.8 67.1 256.5 63.4 254.6 61.7 250.9 57.3 250.6 57.8 253.1 62.4 257.2 62.8 260 67.1 265.2 76.1 267.8 75 259.3 73 255.2 78.9 258.9 78.9 263.1 80.7 267 83.5 270.7 85.3 277.8 88.9 280.5 87.4 281.4 88.9 284 91.2 285.1 91.8 294.7 96.1 305.4 98.4 307.6 92.8 311.1 88.9 335.4 90.3 340.5 89.6 342.4 90.1 344.6 93.8 338.7 99 334.2 101.9 327 101.6 335 95.1 341.1 95.1 347.7 97.9 347.5 98.6 344.2 105.3 340.7 108.1 344.2 110.4 343.7 111 341.3 111.2 342.6 113.8 342.6 114.5 341.5 119.3 342 129.1 335.4 130.4 331.1 132.8 332.8" />
+						<polygon class="cls-1"
+							points="361.9 478.1 364.7 471.1 369.7 470.9 372.3 472.7 383.7 469.9 388.5 472.7 389.7 476 397.5 475.5 395.2 470.4 396.1 467.1 391.6 462.5 386.2 460.9 385.1 452.3 390.1 448.8 399 449.1 401.5 444.4 408.5 439.8 415.2 437.9 416.3 434.7 420.2 433.1 423.7 425.9 422.8 420.2 424.4 413.8 422.6 409 423.7 401.4 419.5 391.6 415 389.3 412.2 381.8 408.5 381.9 403.6 378.7 400.1 377.7 397.8 373.8 389.5 375.6 385.1 379.6 390.4 384.9 389.5 389.5 391.1 394 390.8 397.4 383.2 394.5 378.8 387.4 371.8 387.2 369.7 383.8 364 379.7 360.9 381.2 356.6 377.8 349.8 378.7 344.5 377.3 339.2 377.3 332.4 379.8 330.2 377.7 323.2 377.5 311.8 381.2 307 381.2 301.9 388.4 300.3 395.6 296.3 401.1 295.8 410.6 297.9 420.2 302.1 422.5 304.4 427.3 303.9 436.3 303.2 440 303.3 440 306.6 443.9 306.7 448.5 310 451.4 310.2 456.1 313.6 461 315.5 460.2 317.4 463.8 317 467.7 318.6 470.4 319.3 474.1 323 474.6 326.1 474.1 326.2 470 329.1 467.4 331.1 466 331.1 469 332.8 472.7 332.5 475.9 329.4 479.4 331 481.7 331.6 483.5 334.3 483.7 338.2 480 338.6 478.6 341.3 480.6 346.2 482.2 347.6 481.3 352.1 484.6 356.6 479 361.9 478.1" />
+						<polygon class="cls-2 singapore"
+							points="381.3 714.4 376.2 719.3 367.5 718.6 362.5 729.9 374.4 733.1 377.8 746.9 385 744.3 388.4 727.5 383 721.7 387.4 713 381.3 714.4" />
+						<polygon class="cls-2" points="357.5 730 359.9 725.2 358.9 721.8 352.3 728.3 357.5 730" />
+						<polygon class="cls-2" points="362.2 743.6 364.6 738.8 363.6 735.4 357 741.9 362.2 743.6" />
+						<circle class="cls-3" cx="379.8" cy="728.9" r="3.5" />
+						<line class="cls-4" x1="379.9" y1="729.4" x2="418.9" y2="697.6" />
+						<polygon class="cls-1 vietnam"
+							points="407.9 187.3 405.8 185.6 400.8 187.1 395.9 184.6 391.1 182.5 389.7 179 379.9 175.5 378.5 170.4 375.6 169.3 378.1 160.4 381.6 159.9 382.5 155.1 378.3 151.8 371.8 154.4 369.8 151.9 358.7 152.1 356.6 148.9 351.2 147.9 351.2 144.7 345.9 140.5 342.6 143.8 336.6 143.8 331.3 146.8 331.6 154.4 323.5 157.1 318.7 154.3 312.7 156.1 311.8 159.7 306.4 162.4 305.2 158.9 302.4 158.7 299.9 162.1 294.9 157.3 291.3 160 290.4 164.6 287 164.7 284.9 163 285.2 159.2 282 158.8 276.8 160.9 274.1 163.2 272.9 165.6 270.9 166 269.2 167.4 270.8 170.6 279.2 174.1 283.3 180.3 287.6 184 288.5 189.2 286.6 193.3 295 201.2 300.1 209.5 310.4 209.6 316.3 211.4 321.8 208 328.7 208 332.2 212.5 338.5 213.7 339.4 218.6 339.3 222.9 346.2 224.6 346.2 228 342.7 229.2 339.9 238.8 337.2 241.4 332.5 242.2 325.5 244.6 321.8 244.8 322.5 248.9 327.6 254.7 324.1 258.6 325.1 261.7 329 261.7 332.5 268.1 340.1 268.6 347.3 272.5 352.2 273 358.4 281.4 365.4 284.6 370.4 291.6 370 295.3 377.6 303.8 379.7 309.6 382.9 311.2 388.8 311.2 391.5 315.6 392.2 319.8 395.3 323.1 397.5 322.4 401.1 324 400.3 328.1 402.2 330.5 407.7 330.9 410.6 334.9 413.1 335.6 417.9 333.7 419.5 337.4 415.9 340.9 415.2 347.4 417.2 350.2 420.9 350.8 420.9 356.6 414 362 415 368.4 416.8 371.7 417.5 378.9 412.9 381.7 412.2 381.8 415 389.3 419.5 391.6 423.7 401.4 422.6 409 424.4 413.8 422.8 420.2 423.7 425.9 420.2 433.1 416.3 434.7 415.2 437.9 408.5 439.8 401.5 444.4 399 449.1 390.1 448.8 385.1 452.3 386.2 460.9 391.6 462.5 396.1 467.1 395.2 470.4 397.5 475.5 389.7 476 388.5 472.7 383.7 469.9 372.3 472.7 369.7 470.9 364.7 471.1 361.9 478.1 356.6 479 352.1 484.6 353.3 485.4 353.4 489.5 352.7 490.7 357.4 492 359.7 491.1 362 492.5 365.7 491.3 370.8 492.1 374.3 490.5 372.2 493 365.4 498.4 361.8 504.2 362.3 512 361.4 515.2 362.8 515.6 362.2 516.3 361.6 523.7 365 525.6 367.5 524.6 365.1 527.3 360.7 529.3 357 531.6 362.8 532.4 373.6 527.5 373.3 526.4 374.5 526.5 377.6 523.7 378.2 518.6 379.3 515.9 382.5 516.4 384.6 514.9 389.3 510.8 391.8 510.6 393 508.7 395 507.4 394 506 394.1 504.8 392.9 501.2 395.6 500.7 397.5 503.6 399.7 504.3 401.7 501.6 402.1 499.2 397.7 494.4 403 498.4 406.6 496.5 404.7 492.6 406.2 490.4 399.5 487.4 403.5 488 404.8 487.1 404.9 485.4 402.1 483.1 406.3 484.3 407 483.1 408.1 480.2 408.3 483.1 407.7 486.2 408.6 487.1 413.2 485.9 416 487.3 422.3 486.6 432.9 480.5 435.8 477.2 440.2 477.2 440.7 473.1 445.6 469.7 449.2 467.8 454.7 462.1 457.3 461.1 458 455.1 460.7 454.1 463.9 451.1 462.4 449.1 464.2 444.7 460.8 439.6 464.7 436.6 464.9 433.9 467.4 431.9 467.8 429.8 465.5 427.3 465.2 423.5 467.3 422.4 468.8 424.2 468.9 426.1 470 426.1 470.6 422.5 467.7 416.8 466.6 413.3 464.4 412.4 464.2 410.1 462.5 403.9 463.6 402.2 462 398.1 462.8 395.3 462.7 391 461.1 389.4 459.2 381.6 457.3 380.1 456.2 371.2 451.9 366 453 364 451.8 362 451.8 359.4 446.2 353.6 446.4 350.3 444.9 350.3 444.2 346.4 440.7 340.2 429.8 332 427.2 327.4 415.4 318.7 402.3 311.5 401.7 309.9 396.4 306.7 386.8 299 385.8 296 383.8 290.5 384.7 288.8 384.7 286 381.6 280.5 379.2 280.7 372.7 274.4 365.5 270.1 361.3 268.9 365.3 267.8 365.9 265.2 360.7 260.8 363.5 256.7 365.9 248.6 364 246.1 362.2 245.8 362.4 241.4 364.4 239.7 365.8 235.4 368 233.8 368.2 231.7 369.4 233.4 372.5 233.3 376.1 227.6 377.9 227.1 379.2 224.8 377.8 222 378.5 221.1 378.3 217.2 378.9 213.5 377.7 212 379.5 209.5 379.9 206.1 381.5 206.6 383.1 208.9 384.8 208.3 387.1 206.1 390.7 205.2 393 206.6 394 205 396.4 203.3 395.3 199.8 396.6 197.6 401 196.7 405.3 197 409.5 194.4 411.5 194.4 414.1 193.3 415.8 190.6 414.9 188.7 414.9 188.6 415 188.7 415.3 188.7 415 188.6 410.9 186.4 407.9 187.3" />
+						<line class="cls-4" x1="432.3" y1="386.4" x2="496.3" y2="385.5" />
+						<circle class="cls-3" cx="432" cy="386.5" r="3.5" />
+						<g id="PHILIPPINES">
+							<polygon class="cls-2" points="783.3 407 781.5 407.2 782.5 409.1 784.8 408.5 783.3 407" />
+							<polygon class="cls-2"
+								points="780.4 414.6 782.1 415.8 783.3 413.8 780.2 411.9 780.4 414.6" />
+							<polygon class="cls-2"
+								points="636.8 416.9 635.4 414.7 634.6 416.7 632.8 418.1 631.6 421.1 635 421.4 638.7 421.3 638.8 418.5 636.8 416.9" />
+							<polygon class="cls-2"
+								points="632.8 389.7 634.4 387.5 636.3 386.3 634.7 382.6 629.7 381.2 629.2 384.1 630.6 389.7 632.8 389.7" />
+							<polygon class="cls-2"
+								points="693.3 385.7 688.6 381 683.6 382.4 682.6 385.4 687.7 387.2 690 387.8 689.9 392.5 688.9 397.1 689 405.4 687.3 411.3 689.2 419.5 691.5 418.6 693 416.5 698.4 413.1 701.6 413.3 702.2 411.7 704.8 411.7 706.7 408.4 712.5 403.6 714.9 398.4 717.6 396.4 718.4 392.2 716.2 388.7 713.3 390.5 710.1 394.5 707.2 390 703.7 389.1 698.6 389.4 695.9 389.1 696.8 387.2 693.3 385.7" />
+							<polygon class="cls-2"
+								points="715.8 378.2 716.9 381 720.8 374.6 724.5 374.3 729.7 381 735.7 383.4 739.5 383 739.5 380 736.6 376.2 729.1 371.3 725.9 370.7 721.6 366.8 719.9 367 720.3 365.4 716.9 364.3 717 369.6 718 373.5 715.9 375.4 715.8 378.2" />
+							<polygon class="cls-2"
+								points="706.7 417.5 707 414.5 705.2 413.3 701.2 414.6 699.7 419.5 702.5 421.9 706.7 417.5" />
+							<polygon class="cls-2" points="577.6 478.9 576.5 475.8 575 477.5 577.6 478.9" />
+							<polygon class="cls-2" points="573.8 477.1 574.1 475.1 571.6 477.4 573.8 477.1" />
+							<polygon class="cls-2" points="746.4 416.9 746.5 412.1 744.7 414.5 746.4 416.9" />
+							<polygon class="cls-2"
+								points="744.1 392.2 747.7 394.6 751.5 394.2 752.5 389.5 746.7 390.3 744.1 392.2" />
+							<polygon class="cls-2"
+								points="745.6 365.2 743.5 364.2 743.4 367.5 747.2 375.2 753.4 380.2 759 386.7 761.5 388.3 760.8 390.5 758.4 393.5 757.8 394.6 760 393.7 760.9 395.1 762.7 396.4 766.7 398.8 768.1 402.2 775.3 402.6 776.7 403.3 777.9 402.1 780.4 403.3 778.1 400.3 776.6 395.9 774 393.5 774.3 386.5 773.5 377.8 774 375.1 772 373.6 767.9 368.1 765.3 363.6 762.4 363.3 760.8 364.1 758.5 363 756 363.5 754.3 365.3 749.4 365.1 745.6 365.2" />
+							<polygon class="cls-2"
+								points="681.7 321.9 685.3 323.9 684.4 320.1 680.9 317.9 681.7 321.9" />
+							<polygon class="cls-2"
+								points="772.6 452.5 770.8 452.8 770.8 459.1 769.6 461.4 766.6 459.1 761.3 457 758.9 466.5 760.8 467.9 760.3 471.8 757.3 473.2 754.8 467.8 749.7 469.9 747 478.2 741.5 481.1 736.8 482.2 732.5 486.6 737.6 478.9 737.2 470.7 730.7 465.3 726.8 465.6 724 469.9 718.4 472.3 716.1 476.7 718.2 480.8 711.3 482.2 706.8 480.8 703.3 484.3 698.5 485.5 694.1 490.8 695.7 494.3 694.3 501.4 690.9 508.2 696 513.7 698.1 510.4 701.7 500.2 704.5 497.8 707.2 491.8 709.8 490.5 713.1 493.6 712 498.6 713.5 500 715.7 498.8 718.1 500.3 718.5 495.9 720.3 494.4 722.8 495.3 721.5 498.3 724.1 497.9 728 500.8 729.9 501.1 727.4 497.3 729 495.2 727.9 493 729.8 490.9 732.1 491 736.7 495 740.9 495.9 745.5 499.7 746.4 503.8 750.3 507.6 746.1 506 744.1 507 744.4 509.6 742.2 512.4 744.5 515.1 745 518.9 744 522 747.4 526.6 748.2 530.6 752.8 535.9 758.3 535.9 762.5 539.8 767.5 541.9 771.5 539.6 772.1 537 774.6 535.1 776.2 537.1 774.4 540 776 544.5 777.5 546.5 781 543.9 787.7 535.3 788 530.3 785.7 527.2 783.1 520.8 778.8 517.6 779.8 513.6 785.8 503.2 789.1 501.3 792.5 506.1 793.7 511 796 514.7 795.8 519.1 798 526.5 799.7 529.8 799.9 526.4 800.4 521 798.6 513.9 799.5 511 802.2 510.5 803.9 513.7 803.8 510.7 805.8 510.9 808.3 504.4 807.4 496.5 804.6 491.9 802 487.8 802 482.4 801.3 476.7 799.5 479.6 799.3 473.7 799.7 470.7 797.7 470.6 794.9 467 795.6 464.4 799 464.9 799 458.8 795.5 453.5 795.6 449.8 792.5 452.6 787.7 447.9 781 442.4 780 438.4 778.4 438.7 774.5 437.9 774.3 443.3 776.5 452.8 776.3 456.5 772.6 452.5" />
+							<polygon class="cls-2" points="647.7 190.5 652.2 189.6 648.9 186.4 647.7 190.5" />
+							<polygon class="cls-2"
+								points="703.5 370.4 703.9 368 700.5 366.3 698.3 367.9 698.9 370.7 703.5 370.4" />
+							<polygon class="cls-2"
+								points="777.4 425.8 780.2 431.8 779.5 434.8 780.5 437.1 782.4 437.5 783.5 431.9 780.2 427.8 780.2 423.3 781.9 422.1 780.7 419.4 778.3 420.4 777.4 425.8" />
+							<polygon class="cls-2"
+								points="689.2 362.3 687.1 367 684.1 371.2 686.7 377.5 689.7 376.5 691.5 370.5 689.9 366.1 691 360.6 689.2 362.3" />
+							<polygon class="cls-2"
+								points="730.2 369.7 732.3 369.7 728.3 364.5 724.9 363.4 726.3 365.9 730.2 369.7" />
+							<polygon class="cls-2"
+								points="672.8 350.2 667.9 348.3 657.7 339.3 651.9 340.7 646.3 338.6 641.8 340.9 642.9 343.2 646.3 343 647.5 348.8 650.8 350.1 654 354.3 654 361.8 657.8 364.1 658 368.5 662.8 374.3 666.8 375 671.2 371.3 671.2 367.5 673.5 365.9 673.5 361.7 671.1 358 672.8 354.6 672.8 350.2" />
+							<polygon class="cls-2"
+								points="739.3 401 736.7 402.1 735.1 410.9 730.5 418.3 730 423.9 727.9 431 724.2 435.5 724 440.6 725.1 444.7 728.8 440.5 730.5 430.1 737.2 422.5 738.5 417.8 737.7 413.4 739.5 410.4 739.3 401" />
+							<polygon class="cls-2" points="787.1 441.8 789.3 444.1 790.1 441.1 787.8 439 787.1 441.8" />
+							<polygon class="cls-2"
+								points="700.8 443.6 704.1 444.2 709.8 447.7 714.7 448.1 714.9 453.7 718.6 455.6 723 453 723.1 448.6 720 442.4 719.3 432.9 722.3 419 726.7 414.5 726.8 410.4 723.1 407.6 720.8 409 717.7 407.4 713.8 410 713.8 414.6 711 419 711.9 425.5 709.2 431.2 701.5 433.1 699.4 436.1 700.8 443.6" />
+							<polygon class="cls-2"
+								points="760.1 451.5 755.8 447.9 754.9 450.4 755.9 453.4 759.4 455.7 760.1 451.5" />
+							<polygon class="cls-2"
+								points="726.3 453.7 729.4 456 733.3 454.4 733.8 451.6 732.2 450.3 727.7 450.9 726.3 453.7" />
+							<polygon class="cls-2"
+								points="795.3 437.4 793.5 432.7 791.2 428.2 790.2 433.5 789.4 435.4 791.8 438.6 795.3 437.4" />
+							<polygon class="cls-2"
+								points="692.8 519.4 688.4 519.8 688.6 522.2 691.5 526.6 694.4 527.5 700.5 521.9 701 520.1 698.2 519.2 695.2 517.2 692.8 519.4" />
+							<polygon class="cls-2"
+								points="565.3 483.1 565.2 486.5 567.9 491 570.3 491 570.5 484.8 571.2 482.8 569.6 481.5 565.3 483.1" />
+							<polygon class="cls-2"
+								points="663.1 212.8 659.6 210.5 655.6 205.9 646.3 204.2 639.2 206.6 638.3 212.1 633.4 221.9 634.8 227.9 635 238 632.2 250.1 629.9 255.9 633.8 264 633.8 267.2 630.2 269.1 626 268.4 622.7 264.4 622 270.3 623.2 275.6 626 275.8 626.9 277.5 625.1 280.9 626.9 288 630.6 294.6 630.8 303.4 632.9 305 634.6 303.6 636.6 304.3 636.8 309.2 641.5 315.4 644.7 315.6 647.5 311.9 644.8 309 645 306.1 650.3 306.6 654.5 309.8 649.2 316.6 646.6 319.8 647.1 322.6 646.6 328.4 649.8 333.8 651.2 328.9 654 327.9 655.9 332.1 653.7 336.2 657.5 335.3 660.8 332.3 666.5 337.9 671.1 335.1 670 331.8 672.1 328.6 677.7 328 687.8 332.1 689.7 335.8 695.2 339.7 699.9 347.8 701.8 347.4 700.3 339.3 695.2 330.4 695.9 327.9 698.5 328.4 701.3 331.2 704.5 332.8 707.7 338.4 714.7 341.1 716.6 345.6 716.6 350.9 720.3 352.2 725.8 358.5 730 357.3 729.8 355.5 733.9 356.4 733.5 358.8 729.7 361.1 733.7 366 737.9 367.5 739.7 360.4 739.2 357.4 741.3 355.3 739.3 352.7 735.3 352.9 731.8 351.1 726.8 351.1 727 347.8 723.7 339.3 722.7 335 725.1 333.4 727.6 334.9 731.1 334.3 730 332.6 725.3 329.5 719.4 329.2 716.7 324.5 714.6 326.3 714.9 331.1 711.7 333.2 709.4 330.7 710 325.6 707.1 319.9 699.8 315.3 695.1 315.4 688.5 320.6 687.5 324.5 683.6 325.8 678 323.8 675.7 319.1 671.9 316.1 671.9 310.8 673.9 308 670.7 304.5 668.2 298.1 665.6 296 666.5 290.1 668.9 286.4 668.4 280.9 670.2 276.5 677.7 269.3 680.7 267.5 679.2 271 679.5 273.5 683.5 267 682.1 261.2 685.1 254.2 687.4 242.7 685 239.7 683.4 233.6 680.5 232.5 676.2 224.9 677.2 215.4 680 212.1 680.4 208.6 677.2 204.4 674.9 205.2 674.6 207.5 671.2 210.4 664.4 210.4 663.1 212.8" />
+							<polygon class="cls-2"
+								points="736 436.8 738.3 440 737.9 442.3 744 442 751.3 438.6 753.2 435.4 752.7 430.1 750.1 427.6 747.2 427.8 738.8 432.8 736 436.8" />
+							<polygon class="cls-2"
+								points="763 412.6 762.2 405.2 759.4 399.1 758.5 397.1 753.6 398.8 749.2 396.8 745.9 396.9 747.8 401.6 747.8 406.5 750.9 409.5 753.2 407 756.1 409.7 755.7 416 758 420.4 758.8 427.6 762.8 430.3 763.2 423.5 765.9 427.1 770.1 426 770.5 422.2 766.2 414.9 763 412.6" />
+							<polygon class="cls-2" points="769.6 428.5 768.7 432.7 772 436.6 772 432.9 769.6 428.5" />
+							<polygon class="cls-2"
+								points="581 459.1 573.9 468.3 572.7 470.7 573.2 472.5 578 468.7 581.2 468.1 584.4 464.8 589.6 462.8 595 454.6 600.7 452.6 604.5 449.3 604.9 446.8 608.2 442.8 608.2 435.4 611.1 432 618.5 431.5 620.2 426.6 623.7 423.1 627.6 422.4 629.7 418.3 627.1 412.3 623.6 407.9 623.9 403.4 623.4 396.3 621.3 397.2 620.2 404.8 620.9 411.8 617.2 409.5 620.2 414.3 620 417.8 616 422.5 612.8 422.2 608.4 427.3 608.1 431 603.1 433.8 598.2 444.2 591.2 451 587.3 451.6 583.8 458.3 581 459.1" />
+							<polygon class="cls-2"
+								points="710.8 349.1 708.9 349.6 708.8 352.4 715.2 359.3 716.3 357 715.7 354.2 710.8 349.1" />
+							<polygon class="cls-2"
+								points="736.4 338.9 742.8 337.6 744.6 332.5 742.3 327.5 738.8 323.8 736.4 325.7 737.3 331.1 735.9 334.9 734.2 336.3 736.4 338.9" />
+							<polygon class="cls-2"
+								points="682.5 296 676.7 299.4 679.2 305.9 678.4 308 679.3 311.3 682.7 308.2 683.2 300.8 685.7 298.3 682.5 296" />
+							<path class="cls-2"
+								d="M669.8,191.9l-3,3.7,2.8,2.3,1.9-3.5C670.9,193.6,670.3,192.7,669.8,191.9Z" />
+							<polygon class="cls-2"
+								points="681.4 336.7 678.8 340.2 679.5 343.8 685.3 347.7 686.3 345 688.3 342.5 685.9 338.4 681.4 336.7" />
+							<polygon class="cls-2" points="658.6 185 659.3 179.7 655.6 182.4 658.6 185" />
+							<polygon class="cls-2"
+								points="641.2 335 636.7 330.3 633.4 330.3 634 333.7 640 336.3 641.2 335" />
+							<polygon class="cls-2" points="654.3 199.1 658.2 197 652.1 197 654.3 199.1" />
+							<polygon class="cls-2"
+								points="628.8 372.9 630.5 376.5 632.7 379 637.9 379.4 641.1 380.8 643.2 378.3 642.2 375.8 637.2 374.7 634.3 371.4 630.4 370.8 628.8 372.9" />
+						</g>
+						<polygon class="cls-1"
+							points="231.2 224.8 235.9 230.4 237.2 238.8 233.3 241.7 236.8 247.8 240.7 249.2 244.9 245.7 253.9 245.9 254.1 250.1 251.2 255.7 254.1 260.5 253.9 264.4 251.1 268.1 253.2 274 253.2 282.5 253.6 295.3 260.3 291.8 266.3 290.3 267 285.4 274.7 281.9 282.8 286.1 287.8 285.8 292 291.1 302.2 290 307.5 279.1 315.6 277.3 326.5 280.1 330.1 287.2 340.6 294.8 346.6 299.2 349.1 304.5 348.2 308.7 346.4 311.7 349.1 317.5 348.7 324.4 347.5 328.1 351.9 331.2 357 336.9 361.6 337.2 365.8 339 364.2 341.6 370.4 345.7 371.4 349 369.8 354.4 370.2 357.6 368.4 362.2 370.2 366 369.8 374.9 366.6 378.4 364 379.7 369.7 383.8 371.8 387.2 378.8 387.4 383.2 394.5 390.8 397.4 391.1 394 389.5 389.5 390.4 384.9 385.1 379.6 389.5 375.6 397.8 373.8 400.1 377.7 403.6 378.7 408.5 381.9 412.2 381.8 412.9 381.7 417.5 378.9 416.8 371.7 415 368.4 414 362 420.9 356.6 420.9 350.8 417.2 350.2 415.2 347.4 415.9 340.9 419.5 337.4 417.9 333.7 413.1 335.6 410.6 334.9 407.7 330.9 402.2 330.5 400.3 328.1 401.1 324 397.5 322.4 395.3 323.1 392.2 319.8 391.5 315.6 388.8 311.2 382.9 311.2 379.7 309.6 377.6 303.8 370 295.3 370.4 291.6 365.4 284.6 358.4 281.4 352.2 273 347.3 272.5 340.1 268.6 332.5 268.1 329 261.7 325.1 261.7 324.1 258.6 327.6 254.7 322.5 248.9 321.8 244.8 325.5 244.6 332.5 242.2 337.2 241.4 339.9 238.8 342.7 229.2 346.2 228 346.2 224.6 339.3 222.9 339.4 218.6 338.5 213.7 332.2 212.5 328.7 208 321.8 208 316.3 211.4 310.4 209.6 300.1 209.5 295 201.2 286.6 193.3 288.5 189.2 287.6 184 283.3 180.3 279.2 174.1 270.8 170.6 269 167 259.9 167.4 259.9 170.9 256.5 173.2 256.9 181.5 258.6 186.6 259 192.4 260.4 198.5 256.2 197.5 249.8 199.4 247.7 195.4 244.6 193.1 239.8 197.3 232.9 198.7 232.8 203.3 230 207.2 232.2 210.3 227.3 214.4 224.7 214.4 221.9 220.6 224.7 226.4 231.2 224.8" />
+						<polygon class="cls-1 thailand"
+							points="304.4 427.3 302.1 422.5 297.9 420.2 295.8 410.6 296.3 401.1 300.3 395.6 301.9 388.4 307 381.2 311.8 381.2 323.2 377.5 330.2 377.7 332.4 379.8 339.2 377.3 344.5 377.3 349.8 378.7 356.6 377.8 360.9 381.2 366.6 378.4 369.8 374.9 370.2 366 368.4 362.2 370.2 357.6 369.8 354.4 371.4 349 370.4 345.7 364.2 341.6 365.8 339 361.6 337.2 357 336.9 351.9 331.2 347.5 328.1 348.7 324.4 349.1 317.5 346.4 311.7 348.2 308.7 349.1 304.5 346.6 299.2 340.6 294.8 330.1 287.2 326.5 280.1 315.6 277.3 307.5 279.1 302.2 290 292 291.1 287.8 285.8 282.8 286.1 274.7 281.9 267 285.4 266.3 290.3 260.3 291.8 253.6 295.3 253.2 282.5 253.2 274 251.1 268.1 253.9 264.4 254.1 260.5 251.2 255.7 254.1 250.1 253.9 245.9 244.9 245.7 240.7 249.2 236.8 247.8 233.3 241.7 237.2 238.8 235.9 230.4 231.2 224.8 224.7 226.4 221.9 220.6 221.7 221.1 214.5 221.4 209 223.4 208.9 226.1 211.6 229.8 209.8 232.4 203.6 231.5 200.5 234.4 200.3 240.4 198.8 243 193.4 242.9 187.7 247.5 178.6 243.8 174.7 249.1 175.9 257.5 172.4 260.9 172.4 268.1 174.2 272.1 169.6 275.4 163.3 278.1 163.8 282 167.5 283 171.5 290 175.1 293.4 176.4 297.1 182.8 301.5 188.6 314.2 192.5 315.6 195.3 321.9 196.2 327.2 201.3 329.6 201.8 334.6 197.2 337 195.3 340.5 198.1 353 197.4 356.8 192.3 359.7 195.8 368.2 196 372.6 202.3 380.5 209.7 386.3 216.4 392.8 219.6 403.2 217.8 407.3 218.9 412 218.3 417.3 221.2 420.2 222.2 427.5 224.3 431.9 224 438.9 227.1 444.4 226.8 452.5 224 454.2 218.2 469.7 212.9 473.6 212.2 479.7 209.9 483.6 208.6 487.3 207.6 495.3 210.4 495.7 207.2 500.3 208.4 502.3 204.8 507.3 207.6 507.9 205.8 511.5 203.2 511 203.4 520.4 200.2 521.9 200.9 528.9 199.8 531.1 201.1 539.5 203.4 542.8 206.5 543.1 206.3 538.5 210.9 536.3 210.8 538.7 213.5 540.7 213.5 544.4 217.9 545.2 220.7 554 224.2 554 229.8 561.4 229.8 564.7 234.6 565.5 236.2 569.5 238.8 569.9 238.6 572.5 236.6 574.9 236.9 576.9 247.5 584.4 249.5 587.7 251.1 582.1 254.2 578.1 258.8 582.1 265.5 584.1 266.7 586.9 271.8 586.9 275 590.1 274.3 597.1 271.5 600.6 271.3 604.1 277.8 605.7 283.3 601 287.6 600.4 291 603.3 294.4 600.8 294.4 596.4 295.5 595.2 295 592.8 290.5 590 287.8 586.5 284.7 579.4 280.1 577.7 275.2 577.1 273.2 578.6 270.3 576.3 263.3 569.4 260.1 566.7 259.6 562.4 258.1 561.4 257.3 565 250.2 562.3 250.9 558.8 254.7 556.3 255.9 557.9 256.8 556.2 257.7 554.8 255.8 544.8 253.4 543.5 253.3 539.4 250.6 535.4 249.4 531.6 249 533.6 249.1 536.3 246.4 536.3 243.9 530.9 241.4 530 241.8 524.8 239.6 521.8 239.1 516.8 236.9 514.7 233.3 514 232.1 513.2 229.7 515.8 229 517.8 226.4 518.6 224.9 516.8 227.3 512.1 222.5 505.1 222.5 501.8 221.3 496.8 220.9 494.5 223.2 491.6 222.5 490.4 220 490 222.3 485.1 222.3 479.9 228.1 472.5 229.4 453.9 232.9 448.8 233.6 443.8 237.1 439.3 237.9 432.5 236 431 237 428.1 236.8 422.7 239.4 418.5 238.6 414 234.6 412 235.7 408.7 235.7 407.6 237.1 408.3 239.9 408.3 241.5 406.3 243.2 407.8 246.1 407.5 249.9 405.8 251.7 407.1 253.3 406.6 254.1 407.3 258.3 408.1 259.6 411.3 258.2 412.8 257.9 419.2 260.1 423.1 258.5 424.8 257.2 428.6 260.9 428.3 264.3 429.5 269.2 428.3 274.4 429.5 276.5 431 277 430.1 276.5 429 279.2 426.7 282.7 428 289.1 434.2 292.2 435.8 292.1 438 294 438.1 299.1 442.4 299.9 443.5 300.8 443.2 301 439.8 303.2 440 303.9 436.3 304.4 427.3" />
+						<line class="cls-4" x1="233.4" y1="388.1" x2="169.4" y2="388.1" />
+						<circle class="cls-3" cx="233.7" cy="387.9" r="3.5" />
+						<polygon class="cls-2"
+							points="596.9 625.9 601.2 633 605.9 636.7 608.5 635.5 606.8 624.6 609.5 620.7 611.6 620.4 611.7 618.6 611.4 613.7 606.6 615.4 600.8 619.8 591.9 622.5 590.7 624 594.4 625.6 596.9 625.9" />
+						<polygon class="cls-2"
+							points="613.8 608.5 617 610.3 619.1 606.2 616.2 597.7 615.7 595.8 614.4 597.5 612.3 598 613.3 602.4 613.8 608.5" />
+						<g id="MALASIA">
+							<polygon class="cls-1"
+								points="294.4 600.8 291 603.3 287.6 600.4 283.3 601 277.8 605.7 271.3 604.1 271.5 600.6 274.3 597.1 275 590.1 271.8 586.9 266.7 586.9 265.5 584.1 258.8 582.1 254.2 578.1 251.1 582.1 249.5 587.7 254.5 596 257.1 616.1 259.9 622.8 262.8 628.8 261.9 636.8 260.4 638.1 261 643.4 264.7 646.9 263.4 649.1 266.3 653.4 273 657.3 277.2 663.9 281.6 666.5 284.6 671 280.9 674.5 280.3 677.8 283.4 680.6 292.1 684 299.6 689.9 299.1 694.4 305 700.7 308.5 700.8 312 700 314.6 702.1 318.3 706.2 325.6 710 333.6 711.6 336.8 715.3 341.5 717.6 343.1 716 344.9 718.5 349.8 715.5 349.8 714.4 347.5 714 349 713.5 349.4 710.8 347.9 709 350.6 710.9 350.4 713.6 351.3 715.5 355 716.1 354.9 710 349.8 699.9 348.3 699.2 348.4 697.7 347.4 695.9 345.7 694.5 344.8 687.1 345.4 685.3 344.3 683.2 340.5 683.1 334.9 678 331.7 671.6 331.7 659.5 329.9 656.3 329.9 652 331.1 649.9 330.4 637.9 332.5 635.3 330 625.3 324.7 616.8 307 598.7 303.3 592.1 301.2 592.6 299 595 295.5 595.2 295.5 595.2 294.4 596.4 294.4 600.8" />
+							<polygon class="cls-1"
+								points="499.3 718.2 500.1 720.2 505.7 725.4 507.7 729.5 511.3 729.9 518.4 728 519.2 725.2 525.3 725.6 528.7 723.8 542.1 724.5 555.7 719.1 559.3 715.9 571.1 715.5 577.3 718.5 579.2 721.5 585 721.3 595 715.9 606.7 714.1 606 710.4 615.6 695.8 619.5 685.4 626.9 674.3 632.2 655.5 632.2 651.8 634.7 647.6 634.3 644.4 639.4 638.3 643.5 640 651.2 639.3 661.9 639.5 664.6 641.4 671.4 641.3 676.7 642.8 677.1 640.7 682.9 644.5 687 645.6 692.1 643 698.4 641.7 698.4 638.9 691.9 633.4 691.9 627.1 694.9 625 704.8 625.9 712.9 623.9 718 620.1 716.9 616.2 713 616.2 707.4 615.1 703.2 611.3 699 611.6 693 605.8 689.7 605.8 685.8 609.5 683.5 607.4 688.8 602.8 686.1 599.7 684 600.4 680.7 604.9 678.6 602.3 676.6 601.4 676.8 594.2 681 592.6 680.8 589.5 675 585.6 672.9 587 668.3 582.8 668.2 576.1 663.2 572.9 661 574.3 662.3 578.7 657.1 583.8 655 583.5 656.6 579.1 655.7 575 652.5 574.9 649.2 585.8 645.7 586.7 640.5 598.4 639.7 604.8 630.9 614.1 626.7 614.1 619.6 616.7 617.2 619.9 619.8 619.7 618 622.4 620.3 623.3 626 621.7 623.7 625.2 619.8 627.1 619.1 628 619.6 630 622.6 638.5 620.5 642.6 617.2 640.8 616.7 634.6 615.7 630.3 614.9 630.4 614.9 629.4 612.8 629.7 610.1 633.7 611.8 644.5 609.3 645.8 604.5 642.1 600.3 634.9 597.7 634.6 594 633 590.8 637.2 590.6 643 584.2 648.4 582 653.3 575.1 659.8 573.5 664.2 567.5 671.6 561 677.3 541.2 682 539 683 540.3 689.4 542.6 692 539.6 690.8 536.2 692.7 530.4 693.4 527.7 696.6 526.1 701.7 526 708.8 521.8 714.6 522 716.5 512.3 715.3 502.3 711.5 495.2 711.7 492.6 707.9 488.4 703.1 486.5 703.7 491.5 712.6 499.3 718.2" />
+						</g>
+						<polygon class="cls-2"
+							points="699.5 733.3 702 732.3 702.8 732 707.3 727.5 711.3 726.3 715.8 726.7 725.8 724.8 732.7 720.6 739.8 718.5 741.6 715.6 744.4 715.2 749.2 712 749.3 710 747 707.7 737.7 710 731.9 709.7 726.5 710.9 721.5 710.9 714.9 711.9 704.7 711.4 696.9 718.3 691.1 721.1 689 722.1 684.9 723.3 681.8 724.2 675.3 725 671.4 728.7 670 730 665.3 732.8 663.5 738 658.9 745.5 658.2 747.6 660.2 749.4 661 751.5 658.4 751.5 656.3 750.1 654.9 755.1 657.3 757.1 665.3 756.6 672.3 752 676.6 750.7 680.5 751.1 685.1 747.7 688.2 743.2 697.3 736.3 699.5 733.3" />
+						<circle class="cls-5" cx="432" cy="386.5" r="3.5" />
+						<path class="cls-2" d="M262.5,790.8c-.7,1.8,3.3,9.3,5.9,7.1S264.9,785,262.5,790.8Z" />
+						<path class="cls-2" d="M244.6,758.7c-.8,3.7,3.2,14.5,7.7,10.2S245.4,755.1,244.6,758.7Z" />
+						<path class="cls-2"
+							d="M522.8,823.8c5.5.4,4.7,8.6,3.6,13.4s-3.4,16.3,1.4,14.5c5.9-2.2,9.6-9.6,6.3-12.2s-2.8-19-1.3-23.1,11.5-1.1,8.1,5.3,6.2,5.6,6.2,12.7,5.5,3.4,11.5,1.5,4.8-5.2.8-9.7,3-10.8-2.5-14.5-9.2-9.3-4-10.5,20.7-10,18.9-13.7-23.6.6-25.5,7.3-17.3-.8-15.4-12.4,32.5-13.2,41.4-9.1,18.5-6.6,21.8-12.9-7,1.1-13.3,5.1-22.9-.5-31.3-3.5-8.2,5.2-15.2,6.2-5.6,16.7-9,18.6-3.4,13.4-10.2,24.1,2.2,12.6,7.7,12.9Z" />
+						<path class="cls-2"
+							d="M354.2,832.6c-.4-5.2,1.9-10.4,1.9-13s1.9-3.7,5.2-2.9,3-7.1.4-7.8-4-10.1-10.3-10.2-5.2,5.2-1.5,5.6,5.9,3.4,4.8,6-2.6-2.6-7.7-2.2-1.8-6.4-7.7-6.8-4.7-11.2-11-11.2-6.6-5.2-2.5-8.9-6.2-7.1-6.2-11.6-6.6-1.9-6.6-5.6-2.9-1.9-6.2-6.3-4.8-.4-7.7-3.8-7-5.3-9.6-4.2-8.5-4.9-10.6-10.8c-1.8-4.8-18.8-12.8-21-19.1s-8.1-9-18-8.7-13.9-10-16.2-5c-3,6.3,10.6,20.5,16.9,24.3s9.5,17.2,16.9,18,8,24.2,13.5,25.4,17.2,19.5,19,29.2,13.9,14.6,18,21.7,20.2,16.9,22.4,19.8,4.4,9.7,6.3,6.3,9.6,0,13.3.5,4.5-13.4,4.2-18.7Z" />
+						<path class="cls-2"
+							d="M636.4,774.6c8.1.8,4.5-4.1,4.5-9.3s-7.4-.8-7.4-3.4-2.5-13-8.5-4.9,1.8,28.4,6.5,27.6c4.1-.7-3.3-10.8,4.9-10Z" />
+						<path class="cls-2" d="M605.8,820.9c1.4,6,12.1,9.4,15.1,4.2s-16.7-11.1-15.1-4.2Z" />
+						<path class="cls-2"
+							d="M576.4,883.7c-10-1.5-16.6,5.9-26.6,2.1s-24.9-.1-23.3,3.2c1.4,3,10.3,3.4,20.3,3.8s18.8-5.1,25.5-5.4,14-2.1,4.1-3.7Z" />
+						<path class="cls-2"
+							d="M655.7,816c-9.6-3-26-.6-24.4,4.3,1.4,4.5,9.2,2.7,17,2.7s11.8,5.7,15.8,5.7,1.2-9.6-8.4-12.7Z" />
+						<path class="cls-2"
+							d="M460.9,879c-.3-4.5-14.8-.5-21.7-3.5s7.8-5.5,12.6-8.5-2.9-4.1-14.7-.4-25.4-8.3-25.8-3.1-21.4-2.3-26.5-6.1-25-8.7-29.1-1.6-7.6.7-5.9,7.4c1.1,4.5,5.9,1.9,9.2,1.9s1.8,6.3,6.6,7.1,20.6,5.3,22.1,2,16.2.1,23.6,6.1,24.3,6.5,31,5.4,14,4.5,16.6.8,7.4,6,14.8.5-12.4-3.5-12.8-8Z" />
+						<path class="cls-2"
+							d="M751.7,799.4c-5.5.3-6.3,10.1-11.1,10.1s-11.5,10-20.3,12.9-9.1-25.7-13.1-31.3-26.1-10.3-28.4-3.9-9.9,2.8-10.7,8.1c-.8,4.8,1.8,3.4,6.6,3.4s4.8,3.7,7,8.6,15.5,1.5,19.9,1.2,5.1,6-1.1,3.7-6.3,2.8-10.7,1.8-10.3-.8-7.4,1.8,7.7,5.2,7.6,11.2,8.5,4.9,8.5,0,4.4,1.5,12.9,3.8,2.6,5.6,11,6,27.6,6.9,35,12.5,2.2,9.3,6.9,14.6,6.2,11.2-.5,11.2-13.7,6.6-11.8,10,23.6-1.3,28.8-1.3c3.4,0,6.8,6.1,13.2,10.5l.4-79.4c-15.9-5.6-38.2-15.8-42.7-15.5Z" />
+						<path class="cls-2"
+							d="M591.5,892.8a11.8,11.8,0,0,1-4,1.7,8.36,8.36,0,0,1-1.9,3.6c-1,.8-2.9-.8-4-2.3-7.2,3-11,11.5-6,14.2s11.7-4.2,15.7-9c.6-.7,1.2-1.4,1.7-2.1a6.89,6.89,0,0,1,1.3-1.1,9.13,9.13,0,0,1,1.3-.8,27.15,27.15,0,0,0-4.1-4.2Z" />
+						<path class="cls-2"
+							d="M489.4,796.5c6.7-4.1,8.2-11.9,7.5-19.3s16.3-7.7,18.9-10.7-3.7-7.8-8.4-10.2-.7-7.1-4-10.1-8.8-10.8-4-11.2-3.3-7.1.8-9.3c.6-.3,1.2-.6,1.9-.9a15.46,15.46,0,0,0-5.9-2.1c-5.9,0-19.9-1.5-19.2,8.1s-8.1,5.9-7.4,11.1-4.5,5.2-3.8,11.9-3.7,3.7-11.1,7.4-4.4-2.3-11.8-2.3-8.1,3.7-12.6,5.2-13.3-.8-16.2,1.4-7.3-5.2-10.3-5.2c-1.4,0-2.9-4.1-3.7-8.1a3.33,3.33,0,0,0-1.4-.1c-4.8.3-12.8,13.1-8.2,17.4,5.5,5.3,4,13.4,6.5,17.5s10.7,4.9,10.7,12.7,6.9,20.1,11.7,16.8,8.5,1.5,10,4.9,12.9-2.5,16.6-1.8,15.1,3.1,15.8,7.5,11.1-.3,18.1-2.9,2.8-23.6,9.5-27.7Z" />
+						<path class="cls-2"
+							d="M516.5,900.8c2.2,3.4,8.5,3.4,11.1,5.7s11.8,7.1,11.8.8-25.3-10.2-22.9-6.5Z" />
+						<g class="cls-6">
+							<path class="cls-5"
+								d="M505.41,389l.11.58h.06l.11-.54,3.19-11.75h3.91l-5.21,16.06h-4l-5.18-16.06h3.89Z" />
+							<path class="cls-5" d="M518,393.38H514.3V377.32H518Z" />
+							<path class="cls-5"
+								d="M530.2,386.51h-5.66v4h6.78v2.87H520.81V377.32h10.52v2.87h-6.79v3.45h5.66Z" />
+							<path class="cls-5" d="M544.59,380.19h-4.24v13.19h-3.73V380.19h-4.17v-2.87h12.14Z" />
+							<path class="cls-5"
+								d="M559.5,393.38h-3.72l-5.88-10.1-.07,0v10.08h-3.72V377.32h3.72l5.88,10.09.07,0V377.32h3.72Z" />
+							<path class="cls-5"
+								d="M570.66,390.26h-4.77l-.93,3.12H561l5.24-16.06h4l5.25,16.06H571.6Zm-3.91-2.87h3l-1.5-5h-.06Z" />
+							<path class="cls-5"
+								d="M585.16,388.56h.07l3.63-11.24h4.93v16.06h-3.73V383H590l-3.54,10.36H584l-3.48-10.2h-.06v10.19h-3.73V377.32h4.88Z" />
+						</g>
+						<g class="cls-6">
+							<path class="cls-5"
+								d="M389.37,688.46a1.58,1.58,0,0,0-.57-1.32,7.13,7.13,0,0,0-2-1,15.44,15.44,0,0,1-4.44-2.06,3.74,3.74,0,0,1-1.45-3.17,3.86,3.86,0,0,1,1.69-3.26,8.1,8.1,0,0,1,8.71,0,4.17,4.17,0,0,1,1.63,3.62l0,.07h-3.61a2,2,0,0,0-.62-1.65,2.9,2.9,0,0,0-1.87-.52,2.41,2.41,0,0,0-1.6.5,1.54,1.54,0,0,0-.58,1.23,1.33,1.33,0,0,0,.6,1.13,11.52,11.52,0,0,0,2.25,1.06,12,12,0,0,1,4.22,2,4,4,0,0,1,1.44,3.27,3.87,3.87,0,0,1-1.66,3.31,7.32,7.32,0,0,1-4.39,1.2,8,8,0,0,1-4.62-1.29,4.43,4.43,0,0,1-1.84-4l0-.07h3.63a2.52,2.52,0,0,0,.69,2,3.2,3.2,0,0,0,2.11.59,2.72,2.72,0,0,0,1.74-.47A1.49,1.49,0,0,0,389.37,688.46Z" />
+							<path class="cls-5" d="M399.07,692.72h-3.71V676.65h3.71Z" />
+							<path class="cls-5"
+								d="M415.26,692.72h-3.72l-5.88-10.11-.06,0v10.09h-3.73V676.65h3.73l5.88,10.1.06,0V676.65h3.72Z" />
+							<path class="cls-5"
+								d="M430.51,690.5a6.73,6.73,0,0,1-2.36,1.73,9.21,9.21,0,0,1-3.92.72,6.66,6.66,0,0,1-4.86-1.83,6.39,6.39,0,0,1-1.86-4.76V683a6.49,6.49,0,0,1,1.82-4.75,6.27,6.27,0,0,1,4.67-1.84,6.87,6.87,0,0,1,4.65,1.38,4.54,4.54,0,0,1,1.51,3.75l0,.07h-3.49a2.28,2.28,0,0,0-.63-1.76,2.77,2.77,0,0,0-1.9-.57,2.51,2.51,0,0,0-2.1,1,4.22,4.22,0,0,0-.79,2.67v3.37a4.27,4.27,0,0,0,.79,2.7,2.62,2.62,0,0,0,2.21,1,6.17,6.17,0,0,0,1.61-.17,2.49,2.49,0,0,0,.94-.44v-2.86h-2.85v-2.48h6.58Z" />
+							<path class="cls-5"
+								d="M441.15,689.6h-4.77l-.93,3.12h-3.93l5.24-16.07h4L446,692.72h-3.93Zm-3.91-2.87h3.05l-1.5-5h-.06Z" />
+							<path class="cls-5"
+								d="M450.89,687.21v5.51h-3.72V676.65h6.13a6.65,6.65,0,0,1,4.53,1.46,5.19,5.19,0,0,1,0,7.65,6.64,6.64,0,0,1-4.53,1.45Zm0-2.87h2.41a2.44,2.44,0,0,0,1.85-.66,2.38,2.38,0,0,0,.64-1.72,2.47,2.47,0,0,0-.63-1.75,2.39,2.39,0,0,0-1.86-.69h-2.41Z" />
+							<path class="cls-5"
+								d="M474.92,686.13A6.67,6.67,0,0,1,473,691a6.53,6.53,0,0,1-4.91,1.93,6.54,6.54,0,0,1-6.85-6.82v-2.89a6.71,6.71,0,0,1,1.89-4.89,7.26,7.26,0,0,1,9.86,0,6.71,6.71,0,0,1,1.89,4.89Zm-3.71-2.91a4.67,4.67,0,0,0-.81-2.83,3,3,0,0,0-4.61,0,4.69,4.69,0,0,0-.79,2.83v2.91a4.71,4.71,0,0,0,.81,2.85,2.71,2.71,0,0,0,2.32,1.1,2.66,2.66,0,0,0,2.27-1.1,4.71,4.71,0,0,0,.81-2.85Z" />
+							<path class="cls-5"
+								d="M480.93,686.56v6.16H477.2V676.65h5.59a6.92,6.92,0,0,1,4.42,1.29,4.28,4.28,0,0,1,1.64,3.54,3.46,3.46,0,0,1-.66,2.13,4.57,4.57,0,0,1-1.94,1.46,3.61,3.61,0,0,1,2.13,1.4,4.31,4.31,0,0,1,.64,2.43v1a6.8,6.8,0,0,0,.19,1.44,1.92,1.92,0,0,0,.65,1.15v.22H486a1.84,1.84,0,0,1-.57-1.21,10.37,10.37,0,0,1-.13-1.62v-1a2.14,2.14,0,0,0-2.39-2.36Zm0-2.87h1.88a2.56,2.56,0,0,0,1.72-.51,1.82,1.82,0,0,0,.6-1.47,2.16,2.16,0,0,0-.61-1.59,2.38,2.38,0,0,0-1.73-.6h-1.86Z" />
+							<path class="cls-5"
+								d="M501,685.84h-5.67v4h6.79v2.87H491.61V676.65h10.52v2.87h-6.8V683H501Z" />
+						</g>
+						<path class="cls-2 bali"
+							d="M498.2,882.5c-1.5,3.3-7.8,4-11.5,1.4s-8.3,3.5-5.9,6.7a15.7,15.7,0,0,0,18,3.1c9.3-4.4,15.5-.3,17.7-5.1s-16.8-9.4-18.3-6.1Z" />
+						<line class="cls-7" x1="495.85" y1="890.17" x2="495.85" y2="934.97" />
+						<circle class="cls-3" cx="495.85" cy="890.07" r="4.2" />
+						<g class="cls-6">
+							<path class="cls-5"
+								d="M475.38,955.72V939.65h5.26a8.36,8.36,0,0,1,4.66,1.11,3.69,3.69,0,0,1,1.67,3.31,3.91,3.91,0,0,1-.52,2,1.42,1.42,0,1,0,.46,2.62,3.77,3.77,0,0,1,.69,2.24,4.18,4.18,0,0,1-1.57,3.55,7.32,7.32,0,0,1-4.53,1.21Zm3.73-9.37h1.47a3.49,3.49,0,0,0,2-.47,1.59,1.59,0,0,0,.67-1.4,1.74,1.74,0,0,0-.64-1.49,3.39,3.39,0,0,0-2-.47h-1.53Zm0,2.47v4h2.39a2.88,2.88,0,0,0,1.79-.47,1.71,1.71,0,0,0,.6-1.44,2.13,2.13,0,0,0-.53-1.56,2.46,2.46,0,0,0-1.73-.56h-2.52Z" />
+							<path class="cls-5"
+								d="M498.2,952.59h-4.78l-.93,3.13h-3.93l5.24-16.07h4l5.25,16.07h-3.93Zm-3.92-2.86h3.05l-1.5-5h-.06Z" />
+							<path class="cls-5" d="M507.94,952.85h6.89v2.87H504.21V939.65h3.73Z" />
+							<path class="cls-5" d="M520.78,955.72h-3.72V939.65h3.72Z" />
+						</g>
+						<g class="cls-6">
+							<path class="cls-5" d="M70.66,383.11H66.41V396.3H62.68V383.11H58.51v-2.87H70.66Z" />
+							<path class="cls-5"
+								d="M85.56,396.3H81.84v-6.46H75.9v6.46H72.17V380.24H75.9V387h5.94v-6.73h3.72Z" />
+							<path class="cls-5"
+								d="M96.73,393.18H92L91,396.3H87.09l5.25-16.06h4l5.25,16.06H97.67Zm-3.92-2.87h3.06l-1.5-5H94.3Z" />
+							<path class="cls-5" d="M106.69,396.3H103V380.24h3.72Z" />
+							<path class="cls-5" d="M113.21,393.43h6.89v2.87H109.48V380.24h3.73Z" />
+							<path class="cls-5"
+								d="M130.72,393.18h-4.78L125,396.3h-3.92l5.24-16.06h4l5.25,16.06h-3.92Zm-3.92-2.87h3.06l-1.5-5h-.07Z" />
+							<path class="cls-5"
+								d="M150.13,396.3h-3.72l-5.88-10.11-.07,0V396.3h-3.73V380.24h3.73l5.88,10.09.07,0V380.24h3.72Z" />
+							<path class="cls-5"
+								d="M152.68,396.3V380.24h5.88a6.55,6.55,0,0,1,4.75,1.84,6.34,6.34,0,0,1,1.91,4.74v2.89a6.32,6.32,0,0,1-1.91,4.75,6.55,6.55,0,0,1-4.75,1.84Zm3.73-13.19v10.32h2.15a2.55,2.55,0,0,0,2.1-1,4.22,4.22,0,0,0,.82-2.68V386.8a4.2,4.2,0,0,0-.82-2.66,2.57,2.57,0,0,0-2.1-1Z" />
+						</g>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container ftrditi1">
+			<main>
+				<h1>Featured Itineraries</h1>
+				<div class="row">
+					<div class="col-2" style="max-width: 13%;"></div>
+					<div class="col-sm-3">
+						<div class="card-thai">
+							<a href="Krabi-Phuket-Honeymoon-Package">
+								<div class="card-thai-body">
+									<h5 class="card-title">Krabi Phuket Honeymoon</h5>
+									<p class="card-text" style="color: white;">
+										Planning a honeymoon is a lot fun compared to planning a marriage. You merely
+										have
+										one honeymoon, well a minimum of that is what you hope for, thus build it epic!
+										Plan
+										a Kingdom of Thailand honeymoon! Head to some of the best beaches in Kingdom of
+										Thailand, or relax within the Thai jungle.</p>
+
+								</div>
+						</div></a>
+					</div>
+
+					<div class="col-sm-3">
+						<a href="Itineraries-Exotic-Singapore-Package-with-Sentosa-Island">
+							<div class="card-sing">
+								<div class="card-sing-body">
+									<h5 class="card-title">Cultural Pot, Singapore</h5>
+									<p class="card-text" style="color: white;">
+										The ideal town for people living with a continuing thirst for wanderlust,
+										Singapore is known for its iconic attractions. This mini-nation on the tip of
+										the Malay Peninsula defies the region’s usual stereotypes, and is, in many ways,
+										the complete opposite of its popular neighbors. Be it the Wings of Time</p>
+
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-sm-3">
+						<a href="The-Ultimate-Vietnam-Itinerary">
+							<div class="card-inside">
+								<div class="card-inside-body">
+									<h5 class="card-title">The Ultimate Vietnam</h5>
+									<p class="card-text" style="color: white;">
+										Whether you want to explore the limestone islands,
+										munch on Banh Mi in Hoi An or just leisurely stroll around
+										the buzzy markets in Ho Cho Minh City, Vietnam is one of the
+										most vibrant and culturally rich countries in Southeast Asia.</p>
+
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-1"></div>
+					<div class="col-3"></div>
+					<div class="col-sm-3">
+						<a href="Central-Highlight">
+							<div class="card-central">
+								<div class="card-central-body">
+									<h5 class="card-title">Tour The Off Beat Paths Of Central Vietnam</h5>
+									<p class="card-text" style="color: white;">Central Vietnam is the nation's most
+										extraordinary part: one that joins and has both world class beach and UNESCO
+										world's legacy site; wilderness of east-meet-west old quarter and culturally
+										unique facets, it also has profoundly protected national parks and modern food.
+										The place is loaded up with majestic urban areas, regal tombs</p>
+
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-sm-3">
+						<a href="Tour-the-Natural-Treasure-Indonasia">
+							<div class="card-bali">
+								<div class="card-bali-body">
+									<h5 class="card-title">Tour the Natural Treasure, Indonesia</h5>
+									<p class="card-text" style="color: white;">When it comes to arranging a superb
+										vacation in a wonderful country, Indonesia turns into the favored decision of
+										many. Without a doubt planning an Indonesian outing shocks you with a plenty of
+										natural treasures. Besides, the appealing archipelago additionally permits
+										sharing in various adventure exercises. More than 17 volcanic islands</p>
+
+								</div>
+							</div>
+						</a>
+					</div>
+
+
+
+
+				</div>
+			</main>
+		</div>
+
+
+
+		<footer class="">
+			<section class="bgfooter full-width full-height">
+				<div class="row full-width footer container-fluid">
+					<div class="col-sm-8">
+						<div class="row full-width">
+							<div class="col-sm-6 colpad footermenu">
+								<h2>OUR THEMED PACKAGES</h2>
+								<ol>
+									<li>
+										<a href="honeymoon-tour-packages">Honeymoon</a>
+									</li>
+									<li>
+										<a href="family-tour-packages">Family</a>
+									</li>
+									<li>
+										<a href="solo-tour-packages">Solo</a>
+									</li>
+									<li>
+										<a href="wildlife-tour-packages">WildLife</a>
+									</li>
+									<li>
+										<a href="friends-tour-packages">Friends</a>
+									</li>
+									<li>
+										<a href="fixed-departure-tour-packages">Fixed Departure</a>
+									</li>
+									<li>
+										<a href="/">&nbsp</a>
+									</li>
+									<li>
+										<a href="/">&nbsp</a>
+									</li>
+									<li>
+										<a href="/">&nbsp</a>
+									</li>
+									<li>
+										<a href="/">&nbsp</a>
+									</li>
+									<li>
+										<a href="/">&nbsp</a>
+									</li>
+									<li>
+										<a href="/">&nbsp</a>
+									</li>
+									<li>
+										<a href="/">&nbsp</a>
+									</li>
+								</ol>
+							</div>
+							<div class="col-sm-6 colpad footermenu">
+								<h2>OUR DESTINATIONS</h2>
+								<ol>
+									<li>
+										<a href="#">Middle East</a>
+									</li>
+									<li>
+										<a href="South-East-Asia">South East Asia</a>
+									</li>
+									<li>
+										<a href="East-Europe">Europe</a>
+									</li>
+									<li>
+										<a href="#">Australia</a>
+									</li>
+									<li>
+										<a href="#">Africa</a>
+									</li>
+									<li>
+										<a href="India-Sri-Lanka-Destination">India & Srilanka</a>
+									</li>
+
+								</ol>
+								<h2 class="topmargin">VISIT US ON : <a class="icon"
+										href="https://www.facebook.com/jetsaveindia/"><i
+											class="fab fa-facebook"></i></a> <a class="icon"
+										href="https://www.instagram.com/jetsaveindia/?hl=en"><i
+											class="fab fa-instagram"></i></a>
+
+									<a class="icon" href="https://twitter.com/_JetsaveIndia_"><i
+											class="fab fa-twitter"></i></a> <a class="icon              "
+										href="https://www.youtube.com/channel/UCopv8-9C0oPGZEXEVyt9SMw/videos"><i
+											class="fab fa-youtube"></i></a> </h2>
+								<ol class="d-inline-flex socialicons">
+
+
+
+
+								</ol>
+							</div>
+						</div>
+						<div id="newsletter" class="row full-width justify-content-center">
+							<span class="text-center full-width colmar">
+								<h1 class="formtext">
+									Get More Travel Stories
+								</h1>
+
+								<input type="email" name="email" value="Enter your email ID" class="formfill">
+								<input type="button" value="Submit" class="formbutton">
+
+							</span>
+						</div>
+						<div class="img-section">
+							<img src="/CSS/img/patner.png" width="50" height="50">
+							<img src="/CSS/img/partner1.jpg" width="50" height="50">
+							<img src="/CSS/img/partner2.jpg" width="50" height="50">
+							<img src="/CSS/img/partner3.jpg" width="50" height="50">
+							<img src="/CSS/img/partner4.jpg" width="50" height="50">
+							<img src="/CSS/img/partner5.jpg" width="50" height="50">
+							<img src="/CSS/img/partner6.jpg" width="50" height="50">
+							<img src="/CSS/img/partner7.jpg" width="50" height="50">
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<h1 class="Indiatext">
+							Here's a Good Reason to visit us!
+						</h1>
+						<span id="footermap">
+							<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" class="Indiafooter">
+								<g>
+									<path
+										d="M72.634,205.637c1.952,7.58,5.985,14.635,3.589,22.211
+									c-2.05,6.485-1.789,12.792-0.763,19.227c1.457,9.146,2.825,18.317,4.694,27.384c5.044,24.476,17.316,46.534,23.845,70.524
+									c0.15,0.555,0.74,0.979,1.094,1.486c6.472,9.28,10.047,19.821,11.947,30.751c1.353,7.783,4.854,13.956,10.216,19.252
+									c5.359,5.297,12.315,4.709,14.993-2.302c3.238-8.482,9.495-9.508,17.378-10.009c-6.951-5.379-3.257-11.354,1.336-12.851
+									c7.803-2.548,7.277-7.608,6.411-12.923c-1.061-6.492,0.063-12.151,3.221-17.77c2.799-4.981,3.583-10.513,2.889-16.172
+									c-0.75-6.118-1.633-12.22-2.528-18.32c-0.687-4.669,0.658-10.894,4.226-11.22c8.451-0.765,11.181-10.715,19.684-10.49
+									c1.986,0.054,4.47-1.592,4.938-3.756c1.401-6.471,6.876-8.855,11.098-12.818c6.253-5.865,13.876-10.407,18.578-17.896
+									c4.093-6.514,9.734-10.94,17.048-13.583c6.47-2.342,11.276-7.072,12.111-14.007c1.181-9.795,4.943-13.246,14.694-11.749
+									c9.374,1.439,11.729-1.032,10.113-10.632c-0.358-2.132-0.092-4.669-1.172-6.333c-4.646-7.163-0.772-17.751-10.049-23.254
+									c-3.52-2.084,0.299-5.416,2.119-6.645c5.497-3.715,5.863-6.387-0.45-9.356c-1.906-0.899-3.665-2.566-2.987-5.177
+									c0.41-1.577,1.541-3.005,3.167-2.987c5.615,0.069,13.598,1.841,14.569,5.502c2.673,10.074,9,8.323,15.771,7.827
+									c3.388-0.25,6.797-0.207,10.196-0.217c2.121-0.007,4.53-0.41,5.333,2.429c0.646,2.28,0.004,4.346-1.664,5.941
+									c-1.559,1.49-3.299,2.798-5.01,4.122c-3.443,2.661-5.546,5.84-4.085,10.389c0.754,2.353,1.432,4.771,4.235,5.655
+									c5.793,1.834,3.284-6.123,7.724-6.242c3.175,2.675,2.615,7.21,4.567,10.61c1.586,2.762,1.11,7.731,5.715,7.271
+									c5.709-0.573,3.202-5.488,3.589-8.859c0.386-3.36,1.406-6.659,1.614-10.02c0.254-4.115,0.823-7.319,6.119-7.174
+									c3.567,0.098,4.341-3.016,5.054-5.709c2.486-9.403,4.598-18.916,7.393-28.225c2.438-8.124,7.493-13.96,16.541-15.113
+									c1.533-0.195,5.143,0.997,3.997-1.269c-2.602-5.147,5.865-10.958,1.499-12.307c-7.843-2.415-9.275-9.048-13.536-13.761
+									c-2.496-2.759-5.026-1.892-7.265,0.214c-2.441,2.294-4.976,3.56-8.338,2.269c-4.593-1.762-6.905,1.574-10.342,3.756
+									c-8.939,5.68-13.981,16.443-25.286,18.922c-3.858,0.845-3.278,2.856-0.618,5.046c5.537,4.55,3.473,7.08-2.474,8.055
+									c-5.774,0.943-11.603,1.555-17.402,2.338c-9.615,1.298-13.119-1.193-14.945-10.878c-0.412-2.193-0.497-4.492-3.245-4.887
+										 c-2.391-0.344-4.46,0.986-5.392,2.904c-1.182,2.436-2.761,5.597-2.108,7.848c3.477,11.97-3.36,12.241-11.813,11.114
+									c-2.742-0.366-5.476-0.946-8.228-1.048c-10.202-0.37-18.145-8.678-27.139-9.599c-14.369-1.468-26.537-5.996-38.36-13.677
+									c-9.947-6.467-11.424-10.777-3.335-19.988c3.852-4.386,1.917-5.347-1.566-8.124c-9.144-7.29-23.381-10.356-22.557-26.049
+									c9.268,1.138,13.528-2.407,9.066-8.294c-5.78-7.624-2.728-12.075,2.268-17.36c2.093-2.211,4.22-4.585,5.567-7.268
+									c1.755-3.487,4.224-7.529,1.396-11.292c-2.667-3.549-6.834-5.249-11.43-4.749c-2.746,0.297-5.763,0.515-8.09,1.798
+									c-8.798,4.854-14.759,1.323-20.884-5.271c-9.692-10.437-20.814-16.929-35.813-9.951c-4.457,2.073-8.564,4.43-10.069,8.831
+									c-1.828,5.347,4.827,4.375,6.785,7.174c2.539,3.625,9.62,5.176,5.881,11.644c-7.062,12.209-5.008,21.547,6.496,29.928
+									c2.596,1.889,6.108,2.995,7.591,6.337c-1.857,3.31-7.346,3.534-7.005,8.156c0.656,8.888-5.727,14.112-10.484,19.876
+									c-6.365,7.714-12.625,15.537-19.459,22.91c-5.58,6.025-11.104,8.428-18.61,5.543c-7.527-2.893-8.16,4.857-11.993,7.569
+									c-2.568,1.82-4.779,5.659-1.813,7.914c6.168,4.694,3.866,13.905,10.854,18.158c2.075,1.265,2.82,5.463,3.273,8.453
+									c0.568,3.734,2.165,7.906-5.545,6.841c-5.816-0.801-12.099,0.108-18.214-0.533c-4.546-0.471-8.455,2.636-10.822,5.561
+									c-2.45,3.03,1.87,6.05,3.704,8.642c5.777,8.171,13.57,8.425,23.717,3.313c-5.684,8.442-12.354,9.334-20.18,8.888
+									c1.991,7.428,7.844,11.412,12.091,16.418c3.968,4.677,8.086,9.483,15.702,6.706C64.723,218.513,72.617,216.679,72.634,205.637z" />
+									<path
+										d="M72.634,205.637c-0.018,11.042-7.911,12.876-15.371,15.595
+									c-7.616,2.777-11.734-2.029-15.702-6.706c-4.247-5.006-10.1-8.99-12.091-16.418c7.826,0.446,14.496-0.445,20.18-8.888
+									c-10.146,5.111-17.939,4.857-23.717-3.313c-1.834-2.592-6.154-5.612-3.704-8.642c2.367-2.925,6.276-6.032,10.822-5.561
+									c6.115,0.642,12.397-0.268,18.214,0.533c7.71,1.065,6.113-3.107,5.545-6.841c-0.453-2.99-1.198-7.188-3.273-8.453
+									c-6.987-4.252-4.686-13.463-10.854-18.158c-2.967-2.255-0.756-6.094,1.813-7.914c3.833-2.711,4.466-10.462,11.993-7.569
+									c7.506,2.885,13.03,0.482,18.61-5.543c6.834-7.373,13.094-15.196,19.459-22.91c4.758-5.764,11.141-10.988,10.484-19.876
+									c-0.341-4.622,5.147-4.847,7.005-8.156c-1.482-3.342-4.995-4.448-7.591-6.337C92.953,52.1,90.899,42.762,97.96,30.553
+									c3.739-6.467-3.342-8.019-5.881-11.644c-1.958-2.799-8.613-1.827-6.785-7.174c1.505-4.401,5.612-6.757,10.069-8.831
+									c14.998-6.978,26.12-0.486,35.813,9.951c6.125,6.594,12.086,10.125,20.884,5.271c2.327-1.283,5.344-1.5,8.09-1.798
+									c4.596-0.5,8.763,1.2,11.43,4.749c2.827,3.763,0.358,7.805-1.396,11.292c-1.348,2.683-3.475,5.057-5.567,7.268
+									c-4.995,5.286-8.048,9.737-2.268,17.36c4.462,5.887,0.201,9.432-9.066,8.294c-0.824,15.693,13.413,18.76,22.557,26.049
+									c3.483,2.777,5.418,3.737,1.566,8.124c-8.089,9.211-6.612,13.521,3.335,19.988c11.823,7.682,23.991,12.209,38.36,13.677
+									c8.994,0.921,16.937,9.229,27.139,9.599c2.752,0.102,5.485,0.682,8.228,1.048c8.453,1.127,15.29,0.855,11.813-11.114
+									c-0.652-2.251,0.927-5.412,2.108-7.848c0.932-1.918,3.001-3.248,5.392-2.904c2.748,0.395,2.833,2.693,3.245,4.887
+									c1.826,9.686,5.33,12.176,14.945,10.878c5.8-0.783,11.628-1.396,17.402-2.338c5.946-0.975,8.011-3.505,2.474-8.055
+									c-2.66-2.189-3.24-4.201,0.618-5.046c11.305-2.479,16.347-13.242,25.286-18.922c3.437-2.182,5.749-5.518,10.342-3.756
+									c3.362,1.291,5.896,0.025,8.338-2.269c2.238-2.106,4.769-2.973,7.265-0.214c4.261,4.712,5.693,11.346,13.536,13.761
+									c4.366,1.348-4.101,7.159-1.499,12.307c1.146,2.266-2.464,1.073-3.997,1.269c-9.048,1.153-14.103,6.989-16.541,15.113
+									c-2.795,9.309-4.906,18.821-7.393,28.225c-0.713,2.693-1.486,5.807-5.054,5.709c-5.296-0.145-5.865,3.059-6.119,7.174
+									c-0.208,3.36-1.229,6.659-1.614,10.02c-0.387,3.371,2.12,8.286-3.589,8.859c-4.604,0.46-4.129-4.51-5.715-7.271
+									c-1.952-3.4-1.393-7.936-4.567-10.61c-4.439,0.119-1.931,8.076-7.724,6.242c-2.804-0.885-3.481-3.303-4.235-5.655
+									c-1.461-4.549,0.642-7.729,4.085-10.389c1.711-1.323,3.451-2.632,5.01-4.122c1.668-1.595,2.31-3.662,1.664-5.941
+									c-0.803-2.838-3.212-2.436-5.333-2.429c-3.399,0.011-6.809-0.033-10.196,0.217c-6.771,0.497-13.098,2.248-15.771-7.827
+									c-0.972-3.661-8.954-5.434-14.569-5.502c-1.626-0.018-2.757,1.41-3.167,2.987c-0.678,2.61,1.081,4.278,2.987,5.177
+									c6.313,2.969,5.947,5.641,0.45,9.356c-1.82,1.229-5.639,4.561-2.119,6.645c9.276,5.503,5.403,16.091,10.049,23.254
+									c1.08,1.664,0.813,4.201,1.172,6.333c1.615,9.6-0.739,12.071-10.113,10.632c-9.751-1.497-13.514,1.954-14.694,11.749
+									c-0.835,6.935-5.642,11.665-12.111,14.007c-7.313,2.643-12.955,7.069-17.048,13.583c-4.702,7.489-12.325,12.031-18.578,17.896
+									c-4.222,3.963-9.697,6.348-11.098,12.818c-0.468,2.164-2.951,3.81-4.938,3.756c-8.503-0.225-11.232,9.726-19.684,10.49
+									c-3.567,0.326-4.912,6.551-4.226,11.22c0.896,6.101,1.778,12.202,2.528,18.32c0.694,5.659-0.09,11.19-2.889,16.172
+									c-3.157,5.618-4.281,11.277-3.221,17.77c0.866,5.314,1.392,10.375-6.411,12.923c-4.593,1.497-8.287,7.472-1.336,12.851
+									c-7.883,0.501-14.14,1.526-17.378,10.009c-2.678,7.011-9.634,7.599-14.993,2.302c-5.361-5.296-8.863-11.469-10.216-19.252
+									c-1.9-10.93-5.476-21.471-11.947-30.751c-0.354-0.508-0.943-0.932-1.094-1.486c-6.528-23.99-18.801-46.049-23.845-70.524
+									c-1.869-9.066-3.237-18.237-4.694-27.384c-1.026-6.435-1.287-12.741,0.763-19.227C78.62,220.271,74.586,213.217,72.634,205.637z" />
+								</g>
+							</svg>
+						</span>
+						<span class="d-inline-flex footerlocic">
+							<div id="popup4" class="overlay">
+								<div class="popup">
+									<img src="/img/Footer/coffee_in_Delhi_H.O..png" width="20%" height="auto">
+									<h3
+										style="color: black; font-size: 40px; font-family: 'Stalemate'; margin-top: -7%; margin-left: 19%;">
+										Auormatic Coffee and Scenic Places in Delhi</h3><br>
+									<h4 style="color: black; font-size: 17px;">Address:- 30/28, IIIrd Floor,
+										Opposite Mughal
+										Mahal Restaurant,
+										East Patel Nagar, New Delhi, Delhi 110008</h4><br>
+									<h4 style="color: black; font-size: 17px">Contact:-
+										7290099970,8588829128,8178669522
+										Email- kanika.segan@jetsavetours.com
+									</h4><br>
+
+									<h4 style="color: black; font-size:17px">
+
+										Website : www.jetsavetours.com
+									</h4>
+
+									<a class="close" href="#footerlocation4">&times;</a>
+
+								</div>
+							</div>
+							<a href="#popup4">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 400 400"
+									ID="footerlocation1">
+									<g>
+										<path d="M198.242,339.812c-49.068-59.315-96.884-117.269-115.047-192.772
+										c-11.882-49.396,8.23-98.723,49.873-126.726c40.538-27.239,93.845-27.075,134.412,0.437c41.287,28.002,60.637,77.752,49.463,127.08
+										C304.5,202.703,248.551,294.123,198.242,339.812z M240.008,120.209c-0.123-21.598-18.043-39.558-39.681-39.762
+										c-21.652-0.232-39.83,17.333-40.389,39.012c-0.572,22.565,18.341,41.574,40.88,41.056
+										C222.375,160.025,240.143,141.738,240.008,120.209z" />
+										<path class="jetsaveblack" d="M60.493,400c0-13.137,0-24.541,0-37.187c93.382,0,185.66,0,279.015,0
+										c0,12.672,0,24.077,0,37.187C247.08,400,154.801,400,60.493,400z" />
+									</g>
+								</svg>
+							</a>
+							<div id="popup5" class="overlay">
+								<div class="popup">
+									<img src="/img/Footer/Fresh_Salad_In_Gurugram.png" width="20%" height="auto">
+									<h3
+										style="color: black; font-size: 35px; font-family: 'Stalemate'; margin-top: -7%; margin-left: 19%;">
+										Brimming City with well-dressed salads of Gurgaon</h3><br>
+									<h4 style="color: black; font-size: 17px;">Address:- F-16, Lower Ground Floor
+										Sushant
+										Shopping Arcade, Sushant
+										Lok-1, Gurgaon - 122009.</h4><br>
+									<h4 style="color: black; font-size: 17px">Contact:-
+										7290099970,8588829128,8178669522
+										Email- kanika.segan@jetsavetours.com
+									</h4><br>
+
+									<h4 style="color: black; font-size:17px">
+
+										Website : www.jetsavetours.com
+									</h4>
+
+									<a class="close" href="#footerlocation4">&times;</a>
+
+								</div>
+							</div>
+							<a href="#popup5">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 400 400"
+									ID="footerlocation2">
+									<g>
+										<path d="M198.242,339.812c-49.068-59.315-96.884-117.269-115.047-192.772
+										c-11.882-49.396,8.23-98.723,49.873-126.726c40.538-27.239,93.845-27.075,134.412,0.437c41.287,28.002,60.637,77.752,49.463,127.08
+										C304.5,202.703,248.551,294.123,198.242,339.812z M240.008,120.209c-0.123-21.598-18.043-39.558-39.681-39.762
+										c-21.652-0.232-39.83,17.333-40.389,39.012c-0.572,22.565,18.341,41.574,40.88,41.056
+										C222.375,160.025,240.143,141.738,240.008,120.209z" />
+										<path class="jetsaveblack" d="M60.493,400c0-13.137,0-24.541,0-37.187c93.382,0,185.66,0,279.015,0
+										c0,12.672,0,24.077,0,37.187C247.08,400,154.801,400,60.493,400z" />
+									</g>
+								</svg>
+							</a>
+							<div id="popup6" class="overlay">
+								<div class="popup">
+									<img src="/img/Footer/Rasgulla_in_Kolkata.png" width="20%" height="auto">
+									<h3
+										style="color: black; font-size: 40px; font-family: 'Stalemate'; margin-top: -7%; margin-left: 19%;">
+										Rasgulla, Trams & Warm Hearts in Kolkata</h3><br>
+									<h4 style="color: black; font-size: 17px;">Address:- 55/55/1, Chowringhee Road,
+										2nd
+										Floor,
+										Room No-29,
+										Chowringhee Court, (Above Maharaja Restaurant) Kolkata - 700 071</h4><br>
+									<h4 style="color: black; font-size: 17px">Contact:-
+										7290099970,8588829128,8178669522
+										Email- kanika.segan@jetsavetours.com
+									</h4><br>
+
+									<h4 style="color: black; font-size:17px">
+
+										Website : www.jetsavetours.com
+									</h4>
+
+									<a class="close" href="#footerlocation4">&times;</a>
+
+								</div>
+							</div>
+							<a href="#popup6">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 400 400"
+									ID="footerlocation3">
+									<g>
+										<path d="M198.242,339.812c-49.068-59.315-96.884-117.269-115.047-192.772
+										c-11.882-49.396,8.23-98.723,49.873-126.726c40.538-27.239,93.845-27.075,134.412,0.437c41.287,28.002,60.637,77.752,49.463,127.08
+										C304.5,202.703,248.551,294.123,198.242,339.812z M240.008,120.209c-0.123-21.598-18.043-39.558-39.681-39.762
+										c-21.652-0.232-39.83,17.333-40.389,39.012c-0.572,22.565,18.341,41.574,40.88,41.056
+										C222.375,160.025,240.143,141.738,240.008,120.209z" />
+										<path class="jetsaveblack" d="M60.493,400c0-13.137,0-24.541,0-37.187c93.382,0,185.66,0,279.015,0
+										c0,12.672,0,24.077,0,37.187C247.08,400,154.801,400,60.493,400z" />
+									</g>
+								</svg>
+							</a>
+							<div id="popup7" class="overlay">
+								<div class="popup">
+									<img src="/img/Footer/Bollywood_cutting_Chai_with_Samosa_in_Mumbai 03.png"
+										width="20%" height="auto">
+									<h3
+										style="color: black; font-size: 40px; font-family: 'Stalemate'; margin-top: -7%; margin-left: 19%;">
+										Bollywood Cutting Chai with Samosa in
+										Mumbai</h3><br>
+									<h4 style="color: black; font-size: 17px;">Address:- 401,402,403 4th Floor,Davar
+										House
+										197/199 Dr
+										D.N Road, Fort Mumbai 400001</h4><br>
+									<h4 style="color: black; font-size: 17px">Contact:-
+										7290099970,8588829128,8178669522
+										Email- kanika.segan@jetsavetours.com
+									</h4><br>
+
+									<h4 style="color: black; font-size:17px">
+
+										Website : www.jetsavetours.com
+									</h4>
+
+									<a class="close" href="#footerlocation4">&times;</a>
+
+								</div>
+							</div>
+							<a href="#popup7">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 400 400"
+									ID="footerlocation4">
+									<g>
+										<path d="M198.242,339.812c-49.068-59.315-96.884-117.269-115.047-192.772
+										c-11.882-49.396,8.23-98.723,49.873-126.726c40.538-27.239,93.845-27.075,134.412,0.437c41.287,28.002,60.637,77.752,49.463,127.08
+										C304.5,202.703,248.551,294.123,198.242,339.812z M240.008,120.209c-0.123-21.598-18.043-39.558-39.681-39.762
+										c-21.652-0.232-39.83,17.333-40.389,39.012c-0.572,22.565,18.341,41.574,40.88,41.056
+										C222.375,160.025,240.143,141.738,240.008,120.209z" />
+										<path class="jetsaveblack" d="M60.493,400c0-13.137,0-24.541,0-37.187c93.382,0,185.66,0,279.015,0
+										c0,12.672,0,24.077,0,37.187C247.08,400,154.801,400,60.493,400z" />
+									</g>
+								</svg>
+							</a>
+							<div id="popup8" class="overlay">
+								<div class="popup">
+									<img src="/img/Footer/Vada_Pao_in_Pune.png" width="20%" height="auto">
+									<h3
+										style="color: black; font-size: 40px; font-family: 'Stalemate'; margin-top: -7%; margin-left: 19%;">
+										Fastest streatfood for fastest minds in Pune</h3><br>
+									<h4 style="color: black; font-size: 17px;">Address:- Office no. 201, Gulmohar
+										Centre
+										Point,
+										Opp. Viman Nagar
+										Entrance, Off Nagar Road, Pune - 411014</h4><br>
+									<h4 style="color: black; font-size: 17px">Contact:-
+										7290099970,8588829128,8178669522
+										Email- kanika.segan@jetsavetours.com
+									</h4><br>
+
+									<h4 style="color: black; font-size:17px">
+
+										Website : www.jetsavetours.com
+									</h4>
+
+									<a class="close" href="#footerlocation4">&times;</a>
+								</div>
+							</div>
+							<a href="#popup8">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 400 400"
+									ID="footerlocation5">
+									<g>
+										<path d="M198.242,339.812c-49.068-59.315-96.884-117.269-115.047-192.772
+										c-11.882-49.396,8.23-98.723,49.873-126.726c40.538-27.239,93.845-27.075,134.412,0.437c41.287,28.002,60.637,77.752,49.463,127.08
+										C304.5,202.703,248.551,294.123,198.242,339.812z M240.008,120.209c-0.123-21.598-18.043-39.558-39.681-39.762
+										c-21.652-0.232-39.83,17.333-40.389,39.012c-0.572,22.565,18.341,41.574,40.88,41.056
+										C222.375,160.025,240.143,141.738,240.008,120.209z" />
+										<path class="jetsaveblack" d="M60.493,400c0-13.137,0-24.541,0-37.187c93.382,0,185.66,0,279.015,0
+										c0,12.672,0,24.077,0,37.187C247.08,400,154.801,400,60.493,400z" />
+									</g>
+								</svg>
+							</a>
+							<div id="popup9" class="overlay">
+								<div class="popup">
+									<img src="/img/Footer/Biryani_in_Hyderabad copy.png" width="20%" height="auto">
+									<h3
+										style="color: black; font-size: 40px; font-family: 'Stalemate'; margin-top: -7%; margin-left: 19%;">
+										Hyderabad's Biryani + saalan + salad = evergreen classic</h3><br>
+									<h4 style="color: black; font-size: 17px;">Address:- Jetsave India Tours Pvt Ltd
+										C/o
+										UNIGLOBE Sameera Travel
+										2-30-44, Staff Road, Wahab Nagar, Sikh Village, Secunderabad - 500 009 </h4>
+									<br>
+									<h4 style="color: black; font-size: 17px">Contact:-
+										7290099970,8588829128,8178669522
+										Email- kanika.segan@jetsavetours.com
+									</h4><br>
+
+									<h4 style="color: black; font-size:17px">
+
+										Website : www.jetsavetours.com
+									</h4>
+
+									<a class="close" href="#footerlocation4">&times;</a>
+								</div>
+							</div>
+							<a href="#popup9">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 400 400"
+									ID="footerlocation6">
+									<g>
+										<path d="M198.242,339.812c-49.068-59.315-96.884-117.269-115.047-192.772
+										c-11.882-49.396,8.23-98.723,49.873-126.726c40.538-27.239,93.845-27.075,134.412,0.437c41.287,28.002,60.637,77.752,49.463,127.08
+										C304.5,202.703,248.551,294.123,198.242,339.812z M240.008,120.209c-0.123-21.598-18.043-39.558-39.681-39.762
+										c-21.652-0.232-39.83,17.333-40.389,39.012c-0.572,22.565,18.341,41.574,40.88,41.056
+										C222.375,160.025,240.143,141.738,240.008,120.209z" />
+										<path class="jetsaveblack" d="M60.493,400c0-13.137,0-24.541,0-37.187c93.382,0,185.66,0,279.015,0
+										c0,12.672,0,24.077,0,37.187C247.08,400,154.801,400,60.493,400z" />
+									</g>
+								</svg>
+							</a>
+							<div id="popup10" class="overlay">
+								<div class="popup">
+									<img src="/img/Footer/dosa_in_Bengaluru.png" width="20%" height="auto">
+									<h3
+										style="color: black; font-size: 40px; font-family: 'Stalemate'; margin-top: -7%; margin-left: 19%;">
+										Dosa & Sambhar - the majistic Combo of Bengaluru</h3><br>
+									<h4 style="color: black; font-size: 17px;">Address:- No 2/2 Rajani Nest, 2nd
+										Floor
+										Bangiappa Garden,Behind
+										ICICI Bank Langford Road Bangalore-560027 </h4><br>
+									<h4 style="color: black; font-size: 17px">Contact:-
+										7290099970,8588829128,8178669522
+										Email- kanika.segan@jetsavetours.com
+									</h4><br>
+
+									<h4 style="color: black; font-size:17px">
+
+										Website : www.jetsavetours.com
+									</h4>
+
+									<a class="close" href="#footerlocation4">&times;</a>
+								</div>
+							</div>
+							<a href="#popup10">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 400 400"
+									ID="footerlocation7">
+									<g>
+										<path d="M198.242,339.812c-49.068-59.315-96.884-117.269-115.047-192.772
+										c-11.882-49.396,8.23-98.723,49.873-126.726c40.538-27.239,93.845-27.075,134.412,0.437c41.287,28.002,60.637,77.752,49.463,127.08
+										C304.5,202.703,248.551,294.123,198.242,339.812z M240.008,120.209c-0.123-21.598-18.043-39.558-39.681-39.762
+										c-21.652-0.232-39.83,17.333-40.389,39.012c-0.572,22.565,18.341,41.574,40.88,41.056
+										C222.375,160.025,240.143,141.738,240.008,120.209z" />
+										<path class="jetsaveblack" d="M60.493,400c0-13.137,0-24.541,0-37.187c93.382,0,185.66,0,279.015,0
+										c0,12.672,0,24.077,0,37.187C247.08,400,154.801,400,60.493,400z" />
+									</g>
+								</svg>
+							</a>
+							<div id="popup11" class="overlay">
+								<div class="popup">
+									<img src="/img/Footer/MysorePak_In_Chennai.png" width="20%" height="auto">
+									<h3
+										style="color: black; font-size: 40px; font-family: 'Stalemate'; margin-top: -7%; margin-left: 19%;">
+										Scrumptious Mysore Pak of Chennai</h3><br>
+									<h4 style="color: black; font-size: 17px;">Address:- 102, Marshalls Road, Tripti
+										Apartments, Ground Floor, B
+										Block, Egmore, Chennai - 600008 </h4><br>
+									<h4 style="color: black; font-size: 17px">Contact:-
+										7290099970,8588829128,8178669522
+										Email- kanika.segan@jetsavetours.com
+									</h4><br>
+
+									<h4 style="color: black; font-size:17px">
+
+										Website : www.jetsavetours.com
+									</h4>
+
+									<a class="close" href="#footerlocation4">&times;</a>
+								</div>
+							</div>
+							<a href="#popup11">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 400 400"
+									ID="footerlocation8">
+									<g>
+										<path d="M198.242,339.812c-49.068-59.315-96.884-117.269-115.047-192.772
+										c-11.882-49.396,8.23-98.723,49.873-126.726c40.538-27.239,93.845-27.075,134.412,0.437c41.287,28.002,60.637,77.752,49.463,127.08
+										C304.5,202.703,248.551,294.123,198.242,339.812z M240.008,120.209c-0.123-21.598-18.043-39.558-39.681-39.762
+										c-21.652-0.232-39.83,17.333-40.389,39.012c-0.572,22.565,18.341,41.574,40.88,41.056
+										C222.375,160.025,240.143,141.738,240.008,120.209z" />
+										<path class="jetsaveblack" d="M60.493,400c0-13.137,0-24.541,0-37.187c93.382,0,185.66,0,279.015,0
+										c0,12.672,0,24.077,0,37.187C247.08,400,154.801,400,60.493,400z" />
+									</g>
+								</svg>
+							</a>
+
+						</span>
+						<span id="footermob">
+							<h3 class="tophead text-center">HeadOffice</h3>
+							<h3 class="text-center">New Delhi 30/28, III floor, Opposite Mughal Mehal Restaurant,
+								East Patel Nagar, New Delhi, Delhi 110008</h3>
+							<h3 class="text-center">Hyderabad</h3>
+							<h3 class="text-center">Chennai</h3>
+							<h3 class="text-center">Bangalore</h3>
+							<h3 class="text-center">Pune</h3>
+							<h3 class="text-center">Kolkata</h3>
+							<h3 class="text-center">Gurugram</h3>
+							<h3 class="text-center">Mumbai</h3>
+							<h3 class="text-center">Delhi</h3>
+						</span>
+					</div>
+				</div>
+			</section>
+		</footer>
+
+
+
+
+
+		<script src="./assets/js/script.js"></script>
+		<script>
+
+			function resetPos() {
+				$('.slider ul li').removeClass('transition');
+				$('.slider ul li').removeClass('left right');
+			}
+
+			//clicks
+			$('.prev').on('click', function () {
+				$('.slider ul li').addClass('transition right');
+
+				setTimeout(function () {
+					prev();
+					resetPos();
+				}, 500);
+			});
+
+			$('.next').on('click', function () {
+				$('.slider ul li').addClass('transition left');
+
+				setTimeout(function () {
+					next();
+					resetPos();
+				}, 500);
+			});
+
+
+
+			///////////////////////////////////////////////////////////////
+			function init() {
+				$('.slider ul li').each(function () {
+					var curPos = $(this).index();
+					$(this).css('order', curPos + 1);
+				});
+			}
+
+			function prev() {
+				var slider = $('.slider');
+				var sliderLength = slider.find('ul li').length;
+				$('.slider ul li').each(function () {
+					var curPos = parseInt($(this).css('order'));
+					var sliderLength = slider.find('ul li').length;
+					if (curPos < sliderLength) {
+						$(this).css('order', curPos + 1);
+					}
+					else {
+						curPos = 1;
+						$(this).css('order', curPos);
+					}
+				});
+			}
+
+			function next() {
+				var slider = $('.slider');
+				var sliderLength = slider.find('ul li').length;
+				$('.slider ul li').each(function () {
+					var curPos = parseInt($(this).css('order'));
+					var sliderLength = slider.find('ul li').length;
+					if (curPos > 0) {
+						$(this).css('order', curPos - 1);
+					}
+					else {
+						curPos = sliderLength - 1;
+						$(this).css('order', curPos);
+					}
+				});
+			}
+
+			$(document).ready(function () {
+				init();
+			});
+
+		</script>
+
+	</body>
+
+</html>

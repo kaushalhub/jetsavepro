@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jetsave Travelogue edit template</title>
+    <link rel="icon" href="Menu/1.png" type="image/jpg" size="36*36">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <style type="text/css">
+        .logo {
+            float: left;
+            margin-top: 10px;
+            position: absolute;
+        }
+
+        .upload {
+            height: 200px;
+            width: 300px;
+            float: left;
+            margin-left: 550px;
+            position: relative;
+            margin-top: 100px;
+            color: #F5F5F5;
+        }
+
+        .icon {
+            fill: #F5F5F5;
+        }
+
+        .text {
+            top: 100px;
+            position: relative;
+            text-align: center;
+            float: left;
+            left: 150px;
+            background-color: #F5F5F5;
+            height: 100px;
+            width: 1000px;
+            box-shadow: 5px 10px #888888;
+            border: 2px solid transparent;
+            border-radius: 5px;
+        }
+
+        .enter {
+            top: 300px;
+            position: relative;
+            float: left;
+            left: 200px;
+            background-color: #F5F5F5;
+            height: 1500px;
+            width: 600px;
+            box-shadow: 5px 10px #888888;
+            border: 2px solid transparent;
+            border-radius: 5px;
+        }
+
+        .enter .image {
+            margin-top: 32px;
+            margin-left: 12px;
+            float: left;
+        }
+
+        .enter .intro {
+            float: right;
+            text-align: left;
+            margin-top: 32px;
+        }
+
+        .enter hr {
+            margin: 32px 20px 48px 10px;
+            background-color: black;
+        }
+
+        .subhead {
+            color: #ef3a3a;
+        }
+
+        .psmall {
+            font-size: 14px;
+        }
+
+        .enter select {
+            background-color: #F5F5F5;
+            border: none;
+            font-size: 24px;
+        }
+
+        .enter b {
+            font-size: 24px;
+        }
+
+        .enter input {
+            height: 40px;
+            width: 550px;
+            margin-left: 20px;
+            margin-right: 20px;
+            border: 2px solid transparent;
+            border-radius: 10px;
+        }
+
+        .enter textarea {
+            border: 2px solid transparent;
+            border-radius: 10px;
+            margin: 56px 20px 48px 20px;
+        }
+
+        .enter button {
+            margin-top: 32px;
+            margin-bottom: 32px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            background-color: red;
+            color: white;
+            height: 50px;
+            width: 150px;
+            margin-left: 200px;
+        }
+
+        ::placeholder {
+            color: black;
+        }
+
+        .back {
+            background-color: #484848;
+            position: relative;
+            height: 1600px;
+            width: 100%;
+            z-index: -1;
+            top: 1000px;
+        }
+
+        .input--file {
+            position: relative;
+            color: red;
+        }
+
+        .input--file input[type="file"] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/editblog/insert" method="post" enctype="multipart/form-data">
+        <div class="logo col-md-6 col-md-6">
+            <img src="/img/logo.png" height="100px" width="150px">
+        </div>
+        <div class="upload">
+            <?xml version="1.0" standalone="no"?>
+
+            <svg class="icon" height="200" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M513.503237 500.541017 447.314769 431.267281 275.443329
+                 628.272143 204.985628 565.28253 102.504582 693.368744 817.047578
+                  693.368744 817.047578 565.28253 649.078005 328.596923ZM254.126838
+                   394.08545c47.573505 0 86.135776-37.72316 86.135776-84.267219
+                    0-46.530756-38.566364-84.251869-86.135776-84.251869-47.570435
+                     0-86.135776 37.72316-86.135776 84.251869C167.993109 356.364337
+                      206.557426 394.08545 254.126838 394.08545zM921.496441
+                       726.764342c-0.192382-50.959625 0-489.153666 0-531.820418
+                        0-42.668799-24.427342-66.657142-68.321038-66.827011-43.893696-0.170892-738.092341 0-784.830829 0-46.740534 0-68.547189 29.985942-68.321038
+                         66.827011 0.223081 36.842093 0 493.713518 0 531.820418
+                          0 38.108946 21.659299 67.011206 68.321038 66.827011
+                           46.660716-0.182149 740.015134 0.971118 784.830829
+                            1.044796C897.991098 794.706757 921.689846
+                             777.721921 921.496441 726.764342zM68.344574
+                              729.916125l0-0.002047L68.344574 194.945971l785.697569
+                               0 0 534.970154L68.344574 729.916125zM1023.977487
+                                295.182906c0.013303-53.276391-49.440016-66.827011-68.321038-66.827011l0.86674 509.208421c0 0 15.312754
+                                 91.543949-55.141878 91.543949l-798.87673-0.017396c0 18.451234
+                                  13.751189 66.739007 68.323085 66.827011 54.56985 0.086981
+                                   729.366609 0.005117 784.828782 0 55.463196-0.005117
+                                    68.420299-27.606755 68.321038-68.913533C1023.88232
+                                     785.696546 1023.969301 348.459297 1023.977487 295.182906z" />
+            </svg>
+
+            <input type="file" class="form-control col-md-10" name="blogimage">
+
+        </div>
+        <div class="text">
+            <input type="text" name="blogtext" class="form-control" placeholder="Enter Text"
+                style="height:100%; text-align: left; top: 0;">
+        </div>
+        <div class="enter">
+            <div class="row col-md-12 col-lg-12 col-xs-12">
+                <div class="image col-md-3 col-lg-3 col-xs-3">
+                    <img src="/img/1.png" height="100px" width="100px" name="blogimage">
+                </div>
+                <div class="intro col-md-8 col-lg-8 col-xs-8">
+                    <h1>Jetsave Blogger</h1>
+                    <p id="date" class="psmall subhead">
+
+                        <b>Select Tour Location</b>
+                        <select name="blogarea" id="blogarea" class="form-control"></select>
+                        <b>Select Tour Type</b>
+                        <select name="typename" id="typename" class="form-control"></select>
+
+                </div>
+            </div>
+            <hr>
+
+            <input type="text" name="tripexprience" placeholder="Trip Experience-Verified Users only...">
+            <textarea rows="5" cols="75" name="sharejourny"
+                placeholder="Share your journey with others... Start typing..."></textarea>
+            <textarea class="para" rows="2" cols="75" name="paragraph" placeholder="Paragraph Heading"></textarea>
+            <textarea class="para" rows="15" cols="75" name="sharewhole"
+                placeholder="Share Your Whole Journey With Us"></textarea>
+            <input type="text" name="shortstory" placeholder="Start Typing.......">
+            <hr>
+            <button type="submit">Publish</button>
+    </form>
+    </div>
+    <div class="back">
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<Script>
+    $.getJSON("/blogarea/allblogarea", data => {
+        project = data;
+        console.log(data);
+        fillDropDown("blogarea", data, "Choose Location", 0);
+    });
+
+    $.getJSON("/addtype/alltype", data => {
+        project = data;
+        console.log(data);
+        a("typename", data, "Choose type", 0);
+    });
+
+    function fillDropDown(id, data, label, selectedid = 0) {
+        $(`#${id}`).empty();
+        $(`#${id}`).append(
+            $("<option>")
+                .val("null")
+                .text(label)
+        );
+        $.each(data, (i, item) => {
+            if (item.id == selectedid) {
+                $(`#${id}`).append(
+                    $("<option selected>")
+                        .val(item.id)
+                        .text(item.blogareaname)
+                );
+            } else {
+                $(`#${id}`).append(
+                    $("<option>")
+                        .val(item.id)
+                        .text(item.blogareaname)
+                );
+            }
+        });
+    };
+
+    function a(id, data, label, selectedid = 0) {
+        $(`#${id}`).empty();
+        $(`#${id}`).append(
+            $("<option>")
+                .val("null")
+                .text(label)
+        );
+        $.each(data, (i, item) => {
+            if (item.id == selectedid) {
+                $(`#${id}`).append(
+                    $("<option selected>")
+                        .val(item.id)
+                        .text(item.typename)
+                );
+            } else {
+                $(`#${id}`).append(
+                    $("<option>")
+                        .val(item.id)
+                        .text(item.typename)
+                );
+            }
+        });
+    };
+
+</Script>
+
+
+</html>

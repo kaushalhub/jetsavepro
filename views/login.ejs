@@ -1,0 +1,288 @@
+<title>Login With JET-SAVE</title>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body,
+  html {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    font-family: "Lato", sans-serif;
+  }
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #0b7c82;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #0b7c82;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #0b7c82;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: #0b7c82;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  button:focus {
+    outline: 0;
+  }
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/img//Home Page Header Image.png');
+    padding: 50px;
+  }
+  .max-width {
+    max-width: 414px;
+    width: 100%;
+    margin: auto;
+    height: 736px;
+  }
+
+  .mb-screen {
+    width: 100%;
+    height: 80%;
+    border: 15px solid #f5f6f7;
+    border-radius: 50px;
+    background: linear-gradient(#47d7c4, #13a3ac);
+    padding: 10px;
+    box-shadow: 0px 0px 40px #0000007a;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  .mb-screen:before {
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 22px;
+    background: #f5f6f7;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+  }
+  .d-flex {
+    display: flex;
+  }
+  .flex-center {
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .hd-icons i {
+    margin-left: 2px;
+  }
+  .logo {
+    font-size: 120px;
+    padding: 50px 0px;
+  }
+  .logo i {
+    text-shadow: 0px 0px 15px #00000073;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .input-box {
+    flex: 1;
+    background: #ffffff8a;
+    height: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    padding: 10px;
+    border-radius: 6px;
+    align-items: center;
+  }
+
+  .input-box input {
+    background: transparent;
+    border: 0;
+    font-size: 15px;
+    
+    color: #800b0b;
+  }
+
+  .input-box input:focus {
+    outline: 0;
+  }
+
+  .lg-btn {
+    margin-top: 15px;
+  }
+  .lg-btn button {
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    background:red;
+    color:white;
+    border: 0px;
+    transition: all 0.3s;
+  }
+  
+  .mb-screen:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 5px;
+    left: 0;
+    background: #0000002e;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .cloud {
+    animation: 10s cloud linear infinite;
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 7vmax 1vmax white, -4vmax 5vmax white, 2vmax 6vmax white,
+      9vmax 5vmax white, 0 0.5vmax 1vmax rgba(0, 0, 0, 0.125),
+      7vmax 1.5vmax 1vmax rgba(0, 0, 0, 0.125),
+      -4vmax 5.5vmax 1vmax rgba(0, 0, 0, 0.125),
+      2vmax 6.5vmax 1vmax rgba(0, 0, 0, 0.125),
+      9vmax 5.5vmax 1vmax rgba(0, 0, 0, 0.125);
+    height: 10vmax;
+    left: 4vmax;
+    position: absolute;
+    top: 0.5vmax;
+    width: 10vmax;
+  }
+  .cloud:nth-child(2) {
+    animation-direction: reverse;
+    animation-duration: 15s;
+    padding: 1.5vmax;
+    top: 10vmax;
+    transform: rotateY(90deg) scale(1.25, 1);
+  }
+  .cloud:nth-child(3) {
+    bottom: 3vmax;
+    animation-direction: reverse;
+    animation-duration: 25s;
+    animation-name: large-cloud;
+    padding: 1vmax;
+    top: auto;
+    transform: scale(4);
+  }
+  .cloud:nth-child(4) {
+    animation-duration: 30s;
+    animation-name: large-cloud;
+    bottom: 7vmax;
+    top: auto;
+    transform: rotateY(180deg) scale(3, 2);
+  }
+  a{
+    text-decoration: none;
+    
+  }
+  @keyframes cloud {
+    from {
+      left: 100%;
+    }
+    to {
+      left: -50%;
+    }
+  }
+  @keyframes large-cloud {
+    from {
+      left: 200%;
+    }
+    to {
+      left: -150%;
+    }
+  }
+</style>
+<div class="cloud"></div>
+<div class="cloud"></div>
+<div class="cloud"></div>
+<div class="cloud"></div>
+<div class="wrapper">
+  <div class="max-width">
+    <div class="mb-screen">
+      <div class="d-flex">
+        <div class="flex-1 time">Welcome</div>
+        <div class="hd-icons">
+          <i class="fa fa-signal" aria-hidden="true"></i>
+          <i class="fa fa-wifi" aria-hidden="true"></i>
+          <i class="fa fa-battery-full" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="logo d-flex flex-center flex- animated zoomIn">
+        <a href="/"<i class="fa fa-plane" aria-hidden="true" style="color:red"></i></a>
+      </div>
+      <div class="login-details">
+        <div class="title animated fadeInLeft">
+          <center>Login With Jetsave</center>
+           
+        </div>
+        <form action="/travelogue-guest/all" method="post">
+        <div class="input-box animated  fadeInRight">
+          <input
+            type="text"
+            name="username"
+            placeholder="Username"
+            class="flex-1"
+          />
+        </div>
+
+        <div class="input-box animated  fadeInLeft">
+          <input
+            type="password"
+            name="psw"
+            placeholder="password"
+            class="flex-1"
+          />
+          <span class="forgot"><a href=""></a></span>
+        </div>
+        <div class="lg-btn d-flex flex-1 animated  fadeInRight">
+          <button class="flex-1">Log In</button>
+
+       
+          
+              
+          </form>
+          
+        </div>
+        <div class="lg-btn d-flex flex-1 animated  fadeInRight">
+         <button class="flex-1"><a href="/signup" style="color: white;">Signup</a></button>
+        
+        
+          
+        
+        </div>
+      </div>
+    
+    </div>
+    
+  </div>
+</div>
+

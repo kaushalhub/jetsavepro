@@ -1,0 +1,220 @@
+		/*navbar start*/
+    .headersmall{
+      display: none;
+    }
+
+
+    
+            @media only screen and (max-width: 600px) {
+
+
+              #our-expertcarousesl{
+                display: none;
+              }
+                
+
+              .lodersmrt .svg-calLoadersmrt{
+                width: 230px;
+                height: 230px;
+                margin-top: 50%;
+                transform-origin: 115px 115px;
+                animation: 1.4s linear infinite loader-spin;
+                /* vertical-align: middle; */
+                /* text-align: center; */
+                /* align-self: center; */
+                margin-left: 26%;
+  }
+            .svglogo {
+                height: 50px;
+                width: 50px;
+                filter: white;
+                position: fixed;
+                float: left;
+                left: 10px;
+                display: none;
+            }
+            
+            .headersmall {
+              background-color: black;
+              box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+              position: fixed;
+              width: 100%;
+              z-index: 999999;
+              top: 0px;
+              display: block;
+              height: 11%;
+            }
+
+            .main-des{
+                  text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 1em;
+    width: 121%;
+    margin-top: - 3%;
+    margin-left: -9%;
+            }
+
+            #south_asia{
+                  width: 258% !important;
+    margin-top: 16% !important;
+    margin-left: -16%;
+   
+                }
+
+            .india-images{
+              display: none;
+            }
+            #myVideo{
+              display: none;
+            }
+
+            .headersmall ul {
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              overflow: hidden;
+              background-color: #fff;
+            }
+
+            .headersmall li a {
+              display: block;
+              padding: 20px 20px;
+              border-right: 1px solid #f4f4f4;
+              text-decoration: none;
+            }
+
+            .headersmall li a:hover,
+            .headersmall .menu-btn:hover {
+              background-color: black;
+            }
+
+            .headersmall .logo {
+              display: block;
+              float: left;
+              font-size: 2em;
+              padding: 10px 20px;
+              text-decoration: none;
+            }
+            .logo img{
+              height: 50px;
+              width: 80px;
+              z-index: 1;
+            }
+            /* menu */
+
+            .headersmall .menu {
+              clear: both;
+              max-height: 0;
+              transition: max-height .2s ease-out;
+            }
+
+            /* menu icon */
+
+            .headersmall .menu-icon {
+                            cursor: pointer;
+                  display: inline-block;
+                  float: right;
+                  padding: 25px 53px;
+                  position: relative;
+                  /* user-select: none; */
+                  margin-top: 1%;
+                  color: #a62b2b;
+                  width: 26%;
+                          }
+
+            .headersmall .menu-icon .navicon {
+                        background-color: white;
+              display: block;
+              height: 25px;
+              position: relative;
+              transition: background .2s ease-out;
+              width: 31px;
+                      }
+
+            .headersmall .menu-icon .navicon:before,
+            .headersmall .menu-icon .navicon:after {
+              background: white;
+              content: '';
+              display: block;
+              height: 100%;
+              position: absolute;
+              transition: all .2s ease-out;
+              width: 100%;
+            }
+
+            .headersmall .menu-icon .navicon:before {
+              top: 5px;
+            }
+
+            .headersmall .menu-icon .navicon:after {
+              top: -5px;
+            }
+
+            /* menu btn */
+
+            .headersmall .menu-btn {
+              display: none;
+            }
+
+            .headersmall .menu-btn:checked ~ .menu {
+                  max-height: 500px;
+    width: 100%;
+    background-color: black;
+    margin-top: -7%;
+            }
+
+            .headersmall .menu-btn:checked ~ .menu-icon .navicon {
+              background: transparent;
+            }
+
+            .headersmall .menu-btn:checked ~ .menu-icon .navicon:before {
+              transform: rotate(-45deg);
+            }
+
+            .headersmall .menu-btn:checked ~ .menu-icon .navicon:after {
+              transform: rotate(45deg);
+            }
+
+            .headersmall .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+            .headersmall .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+              top: 0;
+            }
+
+
+
+              @media (min-width: 700px ) {
+                  .headersmall li {
+                    display: none;  
+                  }
+              }
+
+          
+            /* 48em = 768px */
+
+            @media (min-width: 600px) {
+              .headersmall li {
+                float: left;
+              }
+              .headersmall li a {
+                text-decoration: none;
+                color: white;
+                padding: 20px 30px;
+              }
+              .headersmall .menu {
+                clear: none;
+                float: right;
+                max-height: none;
+                background-color: transparent;
+              }
+              .headersmall .menu-icon {
+                display: none;
+              }
+            }
+            @media only screen and (min-width:851px){
+                .headersmall {
+                    display: none;
+                }
+            }
+/*navbar end*/}
+

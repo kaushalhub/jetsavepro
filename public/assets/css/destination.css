@@ -1,0 +1,273 @@
+.main-menu,.aus,.southeastasia,.westeurope,.southasia{
+    height: 464px;
+    width: 100%;
+    left: 18%;
+    margin-top: 12%;
+    
+  }
+
+  .main-menu-west-europe{
+    height: 523px;
+    width: auto;
+    left: -30%;
+    margin-top: 16%;
+    position: absolute;
+  }
+
+  .itinaeary-detail {
+   
+  /* bottom: 0; */
+  top: 0;
+  /* margin-top: 0%; */
+  width: 500px;
+  
+  background-color: #252424;
+  height: auto;
+  color: white;
+  border-radius: 20px;
+  padding : 5%;
+  }
+
+  .dubai,.austraila,.thailand,.vietnam,.singapore,.egypt,.sey,
+  .finland,.sweden,.norbay,.uk,.portugal,.spain,.italy,.germany,.france,.america,
+  .turkey,.greece,.crotia,.ladakh,.jammu,.uttrakhand,.raj,.gujrat,.mp,.goa,.kerla,.tn,.ani,.sri,.brazil{
+    fill: #f7d0d0 !important;
+    -webkit-transition: fill 2s ease-out;
+-moz-transition: fill 2s ease-out;
+-o-transition: fill 2s ease-out;
+transition: fill 2s ease-out;
+  }
+
+  .dubai:hover{
+    fill: red !important;
+    cursor: pointer;
+  }
+  .austraila:hover{
+    fill: red !important;
+    cursor: pointer;
+  }
+  .thailand:hover{
+    fill: red !important;
+    cursor: pointer;
+  }
+  .vietnam:hover{
+    fill: red !important;
+    cursor: pointer;
+  }
+  .singapore:hover{
+    fill: red !important;
+    cursor: pointer;
+  }
+  
+  .egypt:hover{
+    fill: red !important;
+    cursor: pointer;
+  }
+  .sey:hover{
+    fill: red !important;
+    cursor: pointer;
+  }
+  .finland:hover{
+    fill: red !important;
+    cursor: pointer;
+  }
+  .sweden:hover{
+    fill: red !important;
+    cursor: pointer;
+  }
+  .norbay:hover{
+    fill: red !important;
+    cursor: pointer;
+  }
+  .uk:hover{
+    fill: red !important;
+    cursor: pointer;
+  }
+  .portugal:hover{
+    fill: red !important;
+    cursor: pointer;
+  }
+  .spain:hover{
+    fill: red !important;
+    cursor: pointer;
+  }
+  .italy:hover{
+    fill: red !important;
+    cursor: pointer;
+  }
+  .germany:hover{
+    fill: red !important;
+    cursor: pointer;
+  }
+  .france:hover{
+    fill: red !important;
+    cursor: pointer;
+  }
+  .america:hover{
+    fill: red !important;
+    cursor: pointer;
+  }
+  .turkey:hover{
+      fill: red !important;
+    cursor: pointer;
+  }
+  .greece:hover{
+      fill: red !important;
+    cursor: pointer;
+  }
+  .crotia:hover{
+      fill: red !important;
+    cursor: pointer;
+  }
+  
+  .ladakh:hover {
+    fill: red !important;
+    cursor: pointer;
+  }
+  .jammu:hover {
+    fill: red !important;
+    cursor: pointer;
+  }
+  .uttrakhand:hover {
+    fill: red !important;
+    cursor: pointer;
+  }
+  .raj:hover {
+    fill: red !important;
+    cursor: pointer;
+  }
+  .gujrat:hover {
+    fill: red !important;
+    cursor: pointer;
+  }
+  .mp:hover {
+    fill: red !important;
+    cursor: pointer;
+  }
+  .goa:hover {
+    fill: red !important;
+    cursor: pointer;
+  }
+  .kerla:hover {
+    fill: red !important;
+    cursor: pointer;
+  }
+  .tn:hover {
+    fill: red !important;
+    cursor: pointer;
+  }
+ 
+  .ani:hover {
+    fill: red !important;
+    cursor: pointer;
+  }
+  .sri:hover {
+    fill: red !important;
+    cursor: pointer;
+  }
+    .image img{
+    width: 508px;
+      height: auto;
+      
+      /* right: 31%; */
+      margin-top: 6%;
+  }
+
+.head{
+position: absolute;
+margin-top: 50%;
+margin-left: 41%;
+}
+
+.related {
+position: relative;
+width: 50%;
+}
+
+.iti {
+display: grid;
+grid-template-columns: repeat(3, auto);
+grid-gap: 4em; 
+width: 50%;
+height: 449px;
+margin-top: 112%;
+position: relative;
+margin-left: 16%;
+}
+
+.overlay {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 16%;
+right: 0;
+height: 100%;
+width: 50%;
+opacity: 0;
+transition: .5s ease;
+background-color: #008CBA;
+}
+
+.related:hover .overlay {
+opacity: 1;
+}
+
+a{
+text-decoration: none;
+color: black;
+}
+
+.text {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.container-more{
+position: absolute;
+text-align: center;
+width: 80%;
+margin: 0 auto;
+}
+
+main{
+text-align: center;
+display: grid;
+grid-template-columns: repeat(3, auto);
+grid-gap: 4em; 
+margin-top: 2em; 
+}
+
+.card{
+background-image: url(https://c0.wallpaperflare.com/preview/261/335/654/india-north-sikkim-mountains-snow.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: .4em;
+height: 500px;
+margin: 5% 0;
+
+}
+
+.card-body{
+display: none;
+}
+
+.card:hover{
+background-color: #2b252599;
+background-size: cover;
+color: black;
+text-align: center;
+width: 100%;
+color: white;    
+}
+
+.card:hover .card-body{
+display: block;
+vertical-align: middle;
+}

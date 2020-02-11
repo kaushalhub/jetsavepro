@@ -1,0 +1,53 @@
+	
+
+			#animLogo {
+			    z-index: 9999999999;
+			    position: fixed;
+			    width: 20rem;
+			    left: 50%;
+			    top: 50%;
+			    transform: translateX(-50%) translateY(-50%);
+			}
+
+			.introAnim {
+			    display: block;
+			    height: 25%;
+			    background: #00CC6F;
+			    /* Old browsers */
+			    background: -moz-linear-gradient(top, #00c9eb 0%, #00c9eb 100%);
+			    /* FF3.6-15 */
+			    background: -webkit-linear-gradient(top, #ff7400 0%, #00c9eb 100%);
+			    /* Chrome10-25,Safari5.1-6 */
+			    background: linear-gradient(to bottom, #00c9eb 0%, #00c9eb 100%);
+			    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00C9EB",
+			            endColorstr="#00C9EB",
+			            GradientType=0);
+			    /* IE6-9 */
+			    width: 100%;
+			    z-index: 9999999;
+			    top: 0;
+			}
+
+			.animA {
+			    position: absolute;
+			    top: 0;
+			    border-right: 0.0625em solid #fff;
+			}
+
+			.animB {
+			    position: absolute;
+			    top: 25%;
+			    border-right: 0.0625em solid #fff;
+			}
+
+			.animC {
+			    position: absolute;
+			    top: 50%;
+			    border-right: 0.0625em solid #fff;
+			}
+
+			.animD {
+			    position: absolute;
+			    top: 75%;
+			}

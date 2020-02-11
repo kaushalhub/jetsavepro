@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        background-image: url(https://www.tipgroup.com.uy/admin/imagenes/paquetes/2017_5_23_17_39_32lux.jpg);
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-repeat: no-repeat;
+        }
+        
+        .login {
+        width: 329px;
+        height: 477px;
+        background: #fff;
+        color: black;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        padding: 30px 30px;
+        }
+        
+ .photo {
+        width: 320px;
+        height: 420px;
+        background: #fff;
+        color: black;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        padding: 30px 30px;
+        }
+
+        h1 {
+        margin: 0;
+        padding: 0 0 10px;
+        text-align: center;
+        font-size: 22px;
+        font-family: 'Raleway', sans-serif;
+        }
+        
+        .login p {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+        }
+        
+        .login input {
+        width: 100%;
+        margin-bottom: 20px;
+        }
+        
+        .login input[type="text"],
+        input[type="password"] {
+        border: none;
+        border-bottom: 1px solid #000;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        font-size: 16px;
+        }
+        
+        .login input[type="submit"] {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #de7015;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 20px;
+        text-align: center;
+        }
+        
+        .login input[type="create"] {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #c83e6a;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 20px;
+        text-align: center;
+        }
+        
+        .login input[type="facebook"] {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #1f4272;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 20px;
+        text-align: center;
+        }
+        
+        .login input[type="submit"]:hover,
+        .login input[type="create"]:hover,
+        .login input[type="facebook"]:hover {
+        cursor: pointer;
+        background: #383838;
+        letter-spacing: 1px;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+        transition: all 0.4s ease 0s;
+        }
+        
+        .login a {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        }
+        
+        .login a:hover {
+        color: #757575;
+        }
+        </style>
+<body>
+
+     <div class="row">
+        <h1> Edit Profile </h1>
+        <form action="/editform/updateimage" method="post" enctype="multipart/form-data">
+            <input type="file" name="image">
+            <input type="submit" value="save">
+        </form>
+    </div>
+
+    <div class="login">
+        <h1> Edit Profile </h1>
+        <form action="/editform/update" method="post">
+            <input type="text" name="name" value="<%=result[0].name%>">
+            <input type="text" name="username" value="<%=result[0].username%>">
+            <input type="text" name="email" value="<%=result[0].email%>">
+           
+            <textarea rows="10" cols="37" name="bio"><%= result[0].bio %></textarea>
+            <input type="submit" value="save">
+           
+
+           
+        </form>
+    </div>
+
+
+</body>
+</html>

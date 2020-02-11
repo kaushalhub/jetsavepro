@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Jetsave V1</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Jetsave Blogs</title>
+    <link rel="icon" href="Menu/1.png" type="image/jpg" size="36*36">
+    <link rel="stylesheet" type="text/css" href="./assets/css/Jetsave.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <style type="text/css">
+        .svglogo {
+            fill: red;
+        }
+
+        .source {
+            font-size: 44% !important;
+        }
+
+        .top {
+            background-image: url("/image/blog/banner.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+            width: 102%;
+            margin: -2%;
+            background-position: center;
+            position: absolute;
+        }
+
+        .buttonabout {
+            font-size: 1em;
+            padding: 10px;
+            color: #fff;
+            border: 2px solid #06D85F;
+            border-radius: 20px/50px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+        }
+
+        .buttonabout:hover {
+            background: #06D85F;
+        }
+
+        .overlayabout {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .overlayabout:target {
+            visibility: visible;
+            opacity: 1;
+            z-index: 9999;
+        }
+
+        .popup,
+        .eety {
+            margin: 70px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            width: 50%;
+            height: 55%;
+            position: relative;
+
+        }
+
+
+
+        .popup h2 {
+            margin-top: -32%;
+            margin-left: 47%;
+            color: #333;
+            font-family: Tahoma, Arial, sans-serif;
+        }
+
+        #h2 {
+            margin-top: 2%;
+            margin-left: 47%;
+            color: #333;
+            font-family: Tahoma, Arial, sans-serif;
+        }
+
+        .popup .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            transition: all 200ms;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .popup .close:hover {
+            color: #06D85F;
+        }
+
+        .popup .content {
+            max-height: 30%;
+            overflow: auto;
+        }
+
+        .blog {
+            top: 327px;
+            position: relative;
+            float: left;
+            left: 10px;
+            background-color: #F5F5F5;
+            height: auto;
+            width: 600px;
+            box-shadow: 5px 10px #888888;
+            border: 2px solid transparent;
+            border-radius: 5px;
+        }
+
+        .blog p {
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        .blog h2 {
+            margin-top: 48px;
+        }
+
+        .blog img {
+            margin: -2px;
+            width: 100%;
+            margin-top: -1%;
+        }
+
+        .relatedt {
+            text-align: center;
+            position: relative;
+            top: 3388px;
+
+        }
+
+        .relatedt::after {
+            content: "";
+            display: inline;
+            height: 4px;
+            width: 35%;
+            background-color: black;
+            position: absolute;
+            left: 800px;
+            top: 20px;
+        }
+
+        .relatedt::before {
+            content: "";
+            display: inline;
+            height: 4px;
+            width: 35%;
+            background-color: black;
+            position: absolute;
+            left: 10px;
+            top: 20px;
+        }
+
+        .thumbnailt {
+            position: absolute;
+            top: 600px;
+            margin-top: 20px;
+            border: 2px solid black;
+            border-radius: 8px;
+            border-collapse: separate;
+            border-spacing: 15px;
+        }
+
+        .thumbnailt img {
+            border: 2px solid trasparent;
+            border-radius: 10px;
+            margin-left: 50px;
+        }
+
+        .captiont h3,
+        h5 {
+            text-align: center;
+        }
+
+        .captiont h5 {
+            color: red;
+        }
+
+        .captiont h6 {
+            text-align: left;
+        }
+
+        .captiont {
+            margin: 15px;
+            text-align: center;
+        }
+
+        .related {
+            float: left;
+            position: relative;
+            top: 1200px;
+            left: 20px;
+        }
+
+        .related::after {
+            content: "";
+            display: inline;
+            height: 4px;
+            width: 170%;
+            background-color: black;
+            position: absolute;
+            left: 400px;
+            top: 20px;
+        }
+
+        .thumbnail {
+            position: absolute;
+            top: 1200px;
+            margin-top: 20px;
+        }
+
+        .thumbnail img {
+            border: 2px solid trasparent;
+            border-radius: 10px;
+        }
+
+        .relatedb {
+            text-align: center;
+            position: relative;
+            top: 1600px;
+
+        }
+
+        .relatedb::after {
+            content: "";
+            display: inline;
+            height: 4px;
+            width: 35%;
+            background-color: black;
+            position: absolute;
+            left: 700px;
+            top: 20px;
+        }
+
+        .relatedb::before {
+            content: "";
+            display: inline;
+            height: 4px;
+            width: 35%;
+            background-color: black;
+            position: absolute;
+            left: 10px;
+            top: 20px;
+        }
+
+        .thumbnail1 {
+            position: absolute;
+            top: 1600px;
+            margin-top: 20px;
+        }
+
+        .thumbnail1 img {
+            border: 2px solid trasparent;
+            border-radius: 10px;
+        }
+
+        /* test code*/
+        .subhead {
+            color: #ef3a3a;
+        }
+
+        .psmall {
+            font-size: 14px;
+        }
+
+        /*Foooter section*/
+
+      
+
+        .full-height {
+            height: 102%;
+        }
+
+
+        .socialicons li {
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 50px;
+            padding-left: 20px;
+        }
+
+
+        .colmar {
+            margin: 0px 4% 0px 8%;
+        }
+
+
+        .formtext {
+            font-family: 'Stalemate', cursive;
+            color: #fff;
+            text-align: center;
+            font-size: 86px;
+            font-weight: 200px;
+        }
+
+        
+
+        
+
+        .Indiatext {
+            font-family: 'Stalemate', cursive;
+            color: #fff;
+            text-align: center;
+            font-size: 75px;
+        }
+
+
+       
+
+
+
+
+        .formfill {
+            width: 300px;
+            height: 40px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #fff;
+            border-radius: 5px;
+        }
+
+        .formbutton {
+            background-color: #ef3a3a;
+            border-color: #ef3a3a;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 5px;
+            width: 100px;
+            text-align: center;
+            margin-left: -25px;
+            height: 41px;
+        }
+
+        .blogtext {
+            text-align: center;
+            margin-bottom: 2px;
+            margin: top;
+            margin-top: 29%;
+            position: absolute;
+            color: white;
+            margin-left: 2%;
+            background-color: #2b252599;
+
+        }
+
+        .map {
+            float: left;
+            color: white;
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: 125%;
+            left: 15%;
+            background-image: url("/CSS/img/India.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            z-index: 1;
+        }
+
+        .map:hover {
+            /* float: left;
+        color: white;
+        height:300px;
+        width: 300px;
+        position: absolute;
+        top: 30%;
+        left: 15%;*/
+            background-image: url("/CSS/img/Compass.png");
+            transition: 0.5s;
+            /*background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 1;*/
+
+        }
+
+        .globe {
+            float: right;
+            fill: white;
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            top: 150%;
+            left: 57%;
+            background-image: url("/CSS/img/World.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            z-index: 1;
+        }
+
+        .globe:hover {
+            background-image: url("/CSS/img/Compass.png");
+            transition: 0.5s;
+        }
+
+        @media only screen and (max-width: 450px) {
+            .map {
+                float: left;
+                color: white;
+                height: 200px;
+                width: 200px;
+                position: absolute;
+                top: 30%;
+                left: 30%;
+                background-image: url("/CSS/img/india.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                z-index: 1;
+            }
+
+            .globe {
+                float: right;
+                fill: white;
+                position: absolute;
+                height: 200px;
+                width: 200px;
+                top: 70%;
+                right: 25%;
+                background-image: url("/CSS/img/world.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                z-index: 1;
+            }
+
+            .globe:hover {
+                background-image: url("/CSS/img/compass.png");
+            }
+
+            .map:hover {
+                background-image: url("/CSS/img/compass.png");
+            }
+        }
+
+        h5,
+        h4 {
+            color: white;
+            font-size: 15px;
+        }
+
+        .rightsvg:hover {
+            fill: #ffffff;
+        }
+
+        .rightsvg {
+            margin-right: 10%;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+            document.getElementById(".open").style.width = "0%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 100) {
+                    $(".open").css("fill", "black");
+                } else {
+                    $(".open").css("fill", "white");
+                }
+            })
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".our-hover").hide();
+            $(".map-hover").hide();
+            $(".closebutn").hide();
+            $(".get").hide();
+            $(".box").hide();
+            $(".embark").hide();
+            $(".main-nav1-item").hide();
+            $(".header-top-item").hide();
+            $(".open").click(function () {
+                $(".closebutn").show();
+                $(".open").hide();
+                $(".carousel-people").hide();
+                $(".carousel-indicators").hide();
+                $(".main-nav1-item").show();
+
+                $(".header-top-item").show();
+                $("#carouselslider").hide();
+                // full website hide
+                $("#aboutjetsavedetails").hide();
+                $("#our-expertcarousesl").hide();
+                $("#travellerblogcarousel").hide();
+                $("#peoplechoicetours").hide();
+                $("#verifiedtravellercarousel").hide();
+                $(".trade").hide();
+                $(".footer").hide();
+                $(".bgfooter").hide();
+                $(".advanture").show();
+                $(".wrapper").hide();
+                $(".follow").hide();
+                $(".blog").hide();
+                $(".leftmenufix").hide();
+
+
+                // fullwebsite hide end
+            });
+        });
+
+        $(document).ready(function () {
+            $(".closebutn").hide();
+            $(".our-hover").hide();
+            $(".activity-hover").hide();
+            $(".embark").hide();
+            $(".get").hide();
+            $(".box").hide();
+            $(".closebutn").click(function () {
+                $(".open").show();
+                $(".closebutn").hide();
+                $(".carousel-people").show();
+                //$(".carousel-indicators").show();
+                $(".main-nav1-item").hide();
+                $(".header-top-item").hide();
+                // full website show
+                $("#carouselslider").show();
+                $("#aboutjetsavedetails").show();
+                $("#our-expertcarousesl").show();
+                $("#travellerblogcarousel").show();
+                $("#peoplechoicetours").show();
+                $("#verifiedtravellercarousel").show();
+                $(".trade").show();
+                $(".footer").show();
+                $(".bgfooter").show();
+                $(".advanture").show();
+                $(".wrapper").show();
+                $(".follow").show();
+                $(".blog").show();
+                $(".our-hover").hide();
+                $(".activity-hover").hide();
+                $(".map-hover").hide();
+                $(".box").hide();
+                $(".embark").hide();
+                $(".get").hide();
+                $(".leftmenufix").show();
+
+                // fullwebsite show end
+            });
+        });
+
+
+        // our hover part
+        $(document).ready(function () {
+            $(".our-hover").hide();
+            $(".activity-hover").hide();
+            $(".map-hover").hide();
+            $(".get").hide();
+            $(".box").hide();
+            $(".embark").hide();
+            $(".our").hover(function () {
+
+                $(".our-hover").fadeIn();
+                $(".activity-hover").hide();
+                $(".map-hover").hide();
+                $(".get").hide();
+                $(".box").hide();
+                $(".embark").hide();
+
+            });
+        });
+
+        // our hover part end
+
+        // activity hover part
+        $(document).ready(function () {
+            $(".activity-hover").hide();
+            $(".our-hover").hide();
+            $(".map-hover").hide();
+            $(".get").hide();
+            $(".box").hide();
+            $(".embark").hide();
+            $(".activity").hover(function () {
+
+                $(".activity-hover").fadeIn();
+                $(".our-hover").hide();
+                $(".map-hover").hide();
+                $(".get").hide();
+                $(".box").hide();
+                $(".embark").hide();
+
+            });
+        });
+
+        // activity	 hover part end
+        // hover part start
+        $(document).ready(function () {
+            $(".activity-hover").hide();
+            $(".our-hover").hide();
+            $(".map-hover").hide();
+            $(".box").hide();
+            $(".get").hide();
+            $(".embark").hide();
+            $(".india-hover").hover(function () {
+
+                $(".map-hover").fadeIn();
+                $(".activity-hover").hide();
+                $(".our-hover").hide();
+                $(".get").hide();
+                $(".box").hide();
+                $(".embark").hide();
+
+            });
+        });
+        // hover part end
+
+        // now part start
+        $(document).ready(function () {
+            $(".activity-hover").hide();
+            $(".our-hover").hide();
+            $(".map-hover").hide();
+            $(".get").hide();
+            $(".box").hide();
+            $(".embark").hide();
+            $(".inspire").hover(function () {
+                $(".get").fadeIn();
+                $(".activity-hover").hide();
+                $(".our-hover").hide();
+                $(".map-hover").hide();
+                $(".box").hide();
+                $(".embark").hide();
+            });
+        });
+        // now part end
+
+        // box part start
+        $(document).ready(function () {
+            $(".activity-hover").hide();
+            $(".our-hover").hide();
+            $(".map-hover").hide();
+            $(".get").hide();
+            $(".box").hide();
+            $(".embark").hide();
+            $(".meeting").hover(function () {
+                $(".box").fadeIn();
+                $(".activity-hover").hide();
+                $(".our-hover").hide();
+                $(".map-hover").hide();
+                $(".get").hide();
+                $(".embark").hide();
+
+            });
+        });
+        // box part end
+
+
+        // about part start
+        $(document).ready(function () {
+            $(".activity-hover").hide();
+            $(".our-hover").hide();
+            $(".map-hover").hide();
+            $(".get").hide();
+            $(".box").hide();
+            $(".embark").hide();
+            $(".redplane").hover(function () {
+                $(".embark").fadeIn();
+                $(".activity-hover").hide();
+                $(".our-hover").hide();
+                $(".map-hover").hide();
+                $(".get").hide();
+                $(".box").hide();
+            });
+        });
+        // about part end
+    </script>
+    <script>
+        function openNav1() {
+            document.getElementById("myNav1").style.height = "100%";
+        }
+
+        function closeNav1() {
+            document.getElementById("myNav1").style.height = "0%";
+        }
+    </script>
+
+    </scipt>
+
+    </script>
+    
+  <header>
+        <div class="headersmall">
+    
+            <div id="myNav1" class="overlay1">
+                <a href="javascript:void(0)" class="closebtn1" onclick="closeNav1()">&times;</a>
+                <div class="overlay-content1">
+                    <a href="/our-destination">Our Destinations</a>
+                    <a href="/activity">Our Themed Activities</a>
+                    <a href="/itineraries">Explore Itineraries</a>
+                    <a href="/profile">All Travel Blogs</a>
+                    <a href="/myprofile">Jet-settern Travelogue</a>
+                    <a href="/about">About Jetsave</a>
+                </div>
+            </div>
+            <span class="open1" style="font-size:30px;cursor:pointer" onclick="openNav1()">&#9776;
+            </span>
+            <div>
+    
+                <div class="container-fluid full-width header on-top">
+                    <div class="header-wrapper on-top">
+                        <div id="logo" class="d-inline on-top">
+                            <a href="/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"
+                                    class="svglogo on-top">
+                                    <g class="svglogo on-top">
+                                        <g>
+                                            <path d="M52.839,282.828h1.649v22.211h-1.649V282.828z" />
+                                            <path
+                                                d="M60.963,288.856h1.555v3.015c1.079-1.903,2.887-3.395,5.838-3.395c4.094,0,6.474,2.792,6.474,6.663v9.899
+                                                                        h-1.555v-9.614c0-3.331-1.873-5.521-5.141-5.521c-3.173,0-5.616,2.41-5.616,5.774v9.36h-1.555V288.856z" />
+                                            <path d="M79.37,297.012v-0.063c0-5.268,3.966-8.472,7.869-8.472c3.237,0,5.331,1.84,6.664,3.87v-10.471h1.555
+                                                                        v23.163h-1.555v-3.617c-1.396,2.126-3.458,3.999-6.664,3.999C83.336,305.421,79.37,302.279,79.37,297.012z M93.998,296.979v-0.063
+                                                                        c0-4.156-3.236-6.948-6.6-6.948c-3.522,0-6.347,2.57-6.347,6.917v0.063c0,4.252,2.951,6.981,6.347,6.981
+                                                                        C90.762,303.93,93.998,301.105,93.998,296.979z" />
+                                            <path
+                                                d="M101.395,282.511h1.936v2.126h-1.936V282.511z M101.585,288.856h1.555v16.183h-1.555V288.856z" />
+                                            <path
+                                                d="M107.933,300.344v-0.064c0-3.363,2.887-5.267,7.076-5.267c2.253,0,3.808,0.285,5.363,0.698v-0.698
+                                                                        c0-3.268-1.999-4.95-5.331-4.95c-1.968,0-3.586,0.54-5.077,1.301l-0.571-1.364c1.777-0.825,3.522-1.396,5.744-1.396
+                                                                        c2.189,0,3.935,0.603,5.109,1.777c1.079,1.079,1.65,2.57,1.65,4.569v10.09h-1.523v-2.696c-1.111,1.554-3.11,3.078-6.188,3.078
+                                                                        C111.169,305.421,107.933,303.707,107.933,300.344z M120.403,298.979v-1.841c-1.364-0.349-3.173-0.73-5.489-0.73
+                                                                        c-3.427,0-5.331,1.523-5.331,3.776v0.063c0,2.349,2.221,3.713,4.696,3.713C117.579,303.961,120.403,301.93,120.403,298.979z" />
+                                            <path
+                                                d="M143.507,284.351h-7.742v-1.522H152.9v1.522h-7.743v20.688h-1.65V284.351z" />
+                                            <path d="M152.173,297.012v-0.063c0-4.538,3.522-8.472,8.346-8.472c4.791,0,8.282,3.87,8.282,8.408v0.063
+                                                                        c0,4.538-3.522,8.473-8.346,8.473C155.664,305.421,152.173,301.549,152.173,297.012z M167.119,297.012v-0.063
+                                                                        c0-3.903-2.919-7.013-6.664-7.013c-3.84,0-6.6,3.142-6.6,6.949v0.063c0,3.903,2.919,7.013,6.664,7.013
+                                                                        C164.358,303.961,167.119,300.819,167.119,297.012z" />
+                                            <path
+                                                d="M173.278,298.757v-9.9h1.555v9.615c0,3.332,1.872,5.521,5.14,5.521c3.174,0,5.617-2.411,5.617-5.774
+                                                                        v-9.361h1.555v16.183h-1.555v-3.014c-1.079,1.904-2.888,3.396-5.839,3.396C175.658,305.421,173.278,302.629,173.278,298.757z" />
+                                            <path d="M193.05,288.856h1.555v4.601c1.27-2.888,3.966-4.98,7.171-4.854v1.714h-0.158
+                                                                        c-3.745,0-7.013,2.823-7.013,8.092v6.631h-1.555V288.856z" />
+                                            <path d="M204.348,303.009l0.921-1.237c1.776,1.365,3.744,2.125,5.807,2.125c2.189,0,3.902-1.205,3.902-3.077
+                                                                        v-0.063c0-1.903-2.031-2.602-4.283-3.236c-2.634-0.762-5.553-1.556-5.553-4.442v-0.063c0-2.602,2.189-4.475,5.33-4.475
+                                                                        c1.937,0,4.125,0.698,5.744,1.777l-0.825,1.301c-1.491-0.983-3.269-1.618-4.982-1.618c-2.221,0-3.68,1.206-3.68,2.824v0.063
+                                                                        c0,1.809,2.189,2.476,4.506,3.142c2.602,0.729,5.33,1.682,5.33,4.537v0.063c0,2.888-2.476,4.728-5.585,4.728
+                                                                        C208.632,305.356,206.062,304.405,204.348,303.009z" />
+                                            <path
+                                                d="M231.387,282.828h8.061c4.886,0,8.25,2.507,8.25,6.791v0.062c0,4.665-4.03,7.077-8.663,7.077h-5.997v8.281
+                                                                        h-1.65V282.828z M239.13,295.234c4.125,0,6.917-2.157,6.917-5.458v-0.063c0-3.522-2.729-5.363-6.728-5.363h-6.282v10.884H239.13z" />
+                                            <path
+                                                d="M250.904,288.856h1.809l6.125,14.438l6.188-14.438h1.744l-7.266,16.311h-1.333L250.904,288.856z" />
+                                            <path d="M271.882,300.883v-10.598h-2.348v-1.429h2.348v-5.172h1.556v5.172h5.68v1.429h-5.68v10.439
+                                                                        c0,2.316,1.364,3.141,3.235,3.141c0.794,0,1.46-0.158,2.381-0.571v1.46c-0.825,0.381-1.618,0.571-2.633,0.571
+                                                                        C273.913,305.325,271.882,303.961,271.882,300.883z" />
+                                            <path d="M293.59,282.828h1.649v20.688h13.043v1.522H293.59V282.828z" />
+                                            <path d="M313.107,300.883v-10.598h-2.348v-1.429h2.348v-5.172h1.556v5.172h5.68v1.429h-5.68v10.439
+                                                                        c0,2.316,1.363,3.141,3.236,3.141c0.793,0,1.46-0.158,2.379-0.571v1.46c-0.824,0.381-1.617,0.571-2.633,0.571
+                                                                        C315.138,305.325,313.107,303.961,313.107,300.883z" />
+                                            <path d="M323.423,297.012v-0.063c0-5.268,3.966-8.472,7.87-8.472c3.235,0,5.33,1.84,6.662,3.87v-10.471h1.556
+                                                                        v23.163h-1.556v-3.617c-1.396,2.126-3.459,3.999-6.662,3.999C327.389,305.421,323.423,302.279,323.423,297.012z M338.051,296.979
+                                                                        v-0.063c0-4.156-3.236-6.948-6.601-6.948c-3.521,0-6.346,2.57-6.346,6.917v0.063c0,4.252,2.95,6.981,6.346,6.981
+                                                                        C334.814,303.93,338.051,301.105,338.051,296.979z" />
+                                            <path d="M345.066,302.343h2.095v2.696h-2.095V302.343z" />
+                                        </g>
+                                        <g>
+                                            <path d="M182.684,254.675h-2.93c-1.401,0-2.166-0.637-2.675-1.656l-10.191-19.745h-0.255l-7.006,19.745
+                                                                        c7.261,2.549,16.178,3.95,23.439,3.95c1.063,0,2.104-0.03,3.123-0.088l1.073-2.782
+                                                                        C185.893,254.469,184.365,254.675,182.684,254.675z" />
+                                            <path
+                                                d="M72.881,221.555v0.254c0,16.562,8.408,23.312,18.217,23.312c7.643,0,15.159-3.312,19.363-11.719h0.255
+                                                                        c-3.313,16.051-13.249,23.567-28.153,23.567c-16.051,0-31.209-9.683-31.209-32.103c0-23.566,15.031-32.994,31.974-32.994
+                                                                        c13.503,0,27.897,6.369,27.897,26.878c0,0.383,0,1.274-0.127,2.804H72.881z M72.881,219.261h18.726
+                                                                        c0.127-1.655,0.127-3.312,0.127-3.821c0-16.689-3.439-21.146-8.662-21.146C76.703,194.293,73.136,200.79,72.881,219.261z" />
+                                            <path d="M157.718,195.439H142.05v42.548c0,5.732,2.548,9.044,6.751,9.044c3.312,0,5.988-2.166,7.389-4.713
+                                                                        l0.255,0.127c-1.274,7.134-6.497,14.523-18.599,14.523c-11.083,0-16.561-5.988-16.561-17.453v-44.077h-7.006v-2.547h5.732
+                                                                        c2.038,0,2.675,0,3.949-1.401l17.834-20h0.255v21.401h15.668V195.439z" />
+                                            <path
+                                                d="M315.543,255.948h-14.521l-16.688-48.407c-1.019-2.93-1.528-4.458-2.676-6.751l-3.948-7.644v-0.255h31.847
+                                                                        v0.255l-4.331,7.262c-0.764,1.273-0.892,1.654-0.382,3.184l12.738,38.473l9.81-28.663c0.891-2.42,0.509-2.93-0.383-4.841
+                                                                        l-7.516-15.414v-0.255h21.911v0.255l-8.663,14.904c-1.528,2.548-2.165,3.44-2.93,5.732L315.543,255.948z" />
+                                            <path
+                                                d="M361.656,221.555v0.254c0,16.562,8.407,23.312,18.216,23.312c7.644,0,15.159-3.312,19.363-11.719h0.255
+                                                                        c-3.312,16.051-13.248,23.567-28.152,23.567c-16.051,0-31.211-9.683-31.211-32.103c0-23.566,15.032-32.994,31.976-32.994
+                                                                        c13.502,0,27.897,6.369,27.897,26.878c0,0.383,0,1.274-0.127,2.804H361.656z M361.656,219.261h18.726
+                                                                        c0.127-1.655,0.127-3.312,0.127-3.821c0-16.689-3.438-21.146-8.661-21.146C365.478,194.293,361.91,200.79,361.656,219.261z" />
+                                            <path d="M17.16,177.962c0-1.652-0.127-2.034-1.271-3.051l-8.389-8.007v-0.254h42.328v0.254l-8.389,8.007
+                                                                        c-1.144,1.017-1.271,1.398-1.271,3.051v63.047c0,25.168-13.728,40.93-40.04,41.819L0,282.573
+                                                                        c11.948-6.102,17.16-18.049,17.16-34.064V177.962z" />
+                                            <path d="M197.461,218.242l-8.153-3.567c-7.516-3.312-11.72-5.987-11.72-11.593c0-5.986,4.713-8.916,10.318-8.916
+                                                                        h1.783c1.784,0,2.166,0.636,2.93,1.911l9.936,17.707h0.255l7.134-18.471c-8.28-2.547-16.178-3.439-22.42-3.439
+                                                                        c-16.179,0-26.115,8.026-26.115,20.127c0,9.045,5.35,14.777,12.356,18.089l8.663,4.076c4.889,2.257,8.257,3.939,10.204,6.012
+                                                                        l7.906-20.488C199.55,219.185,198.522,218.704,197.461,218.242z" />
+                                            <path
+                                                d="M279.367,245.376c-0.764,1.528-1.911,2.292-3.567,2.292c-2.547,0-3.694-2.42-3.438-7.387l0.764-18.09
+                                                                        c0-0.383,0.128-3.313,0.128-4.586c0-9.81-2.293-16.051-6.37-19.873c-4.585-4.331-11.21-5.86-19.745-5.86
+                                                                        c-8.152,0-17.197,0.414-25.731,3.471l7.13,18.479h0.256l11.212-18.001c0.765-1.402,0.892-1.529,3.44-1.529
+                                                                        c6.623,0,9.3,5.858,9.3,14.649v0.638l-0.256,13.63c-3.44-2.421-8.025-3.439-13.503-3.439c-2.59,0-5.209,0.409-7.687,1.214
+                                                                        l6.161,15.966c0-0.037-0.003-0.071-0.003-0.109c0-7.39,3.694-13.122,10.317-13.122c1.656,0,3.185,0.257,4.714,0.765l-0.255,18.6
+                                                                        v0.127c-1.656,2.547-4.459,4.458-7.261,4.458c-1.44,0-2.749-0.432-3.861-1.254l3.126,8.101c3.709-2.159,6.52-5.62,7.996-9.902
+                                                                        c0.383,8.024,6.625,12.356,13.886,12.356c6.114,0,10.446-2.803,12.484-7.007c0.764-1.528,1.018-3.439,1.018-4.586H279.367z" />
+                                            <polygon points="248.329,265.087 248.316,265.087 248.329,265.119    " />
+                                            <polygon points="228.536,213.823 221.406,195.344 228.536,213.823    " />
+                                            <polygon class="logojet"
+                                                points="247.667,146.066 247.667,139.905 222.799,120.079 222.799,101.412 217.15,94.579 214.201,94.579 
+                                                                        208.552,101.412 208.552,120.079 183.684,139.905 183.684,146.066 209.534,137.678 211.796,161.163 204.545,168.278 
+                                                                        204.545,171.49 215.676,168.278 226.807,171.49 226.807,168.278 219.555,161.163 221.817,137.678   " />
+                                        </g>
+                                    </g>
+                                </svg>
+                        </div>
+                        <!-- Main Menu -->
+                        <div id="myNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400"
+                                    class="closebutn">
+                                    <g>
+                                        <rect width="60.607" height="60.607" />
+                                        <rect x="339.393" width="60.607" height="60.607" />
+                                        <rect x="84.855" y="84.849" width="60.607" height="60.606" />
+                                        <rect x="254.537" y="84.849" width="60.607" height="60.606" />
+                                        <rect x="169.696" y="169.697" width="60.607" height="60.606" />
+                                        <rect x="84.855" y="254.537" width="60.607" height="60.607" />
+                                        <rect x="254.537" y="254.537" width="60.607" height="60.607" />
+                                        <rect y="339.394" width="60.607" height="60.606" />
+                                        <rect x="339.393" y="339.394" width="60.607" height="60.606" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <div class="overlay-content">
+                                <nav class="main-nav1 on-top">
+                                    <!-- Top Menu -->
+                                    <div class="header-top d-inline-flex on-top">
+                                        <div class="header-top-newsletter header-top-item">
+                                            <a href="#newsletter">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 400 400">
+                                                    <path d="M399.231,69.371c-3.333-12.157-12.45-19.251-25.156-19.27
+                                                                                            c-42.292-0.037-84.548-0.018-126.84-0.018c-72.867,0-145.771,0.046-218.601-0.055c-8.642-0.018-16.551,1.556-22.08,8.504
+                                                                                            C3.662,62.157,2.124,66.899,0,71.138c0,85.93,0,171.86,0,257.78c0.256,0.604,0.586,1.172,0.769,1.795
+                                                                                            c3.332,12.12,12.633,19.26,25.156,19.26c41.083,0,82.204,0,123.325,0c74.295,0,148.59,0,222.885,0
+                                                                                            c15.05,0,22.886-5.858,27.426-20.395c0.073-0.238,0.293-0.439,0.439-0.66c0-85.92,0-171.851,0-257.78
+                                                                                            C399.744,70.552,399.414,69.975,399.231,69.371z M26.181,82.314c2.6-5.236,6.921-7.369,12.669-7.36
+                                                                                            c33.065,0.055,66.13,0.028,99.195,0.028c74.332,0.009,148.663,0.027,222.995-0.019c4.76,0,8.715,1.318,11.534,5.245
+                                                                                            c3.295,4.559,3.003,6.5-1.392,9.877c-55.987,42.915-111.937,85.82-167.924,128.726c-1.025,0.787-2.087,1.501-3.369,2.435
+                                                                                            c-22.08-16.935-43.867-33.632-65.69-50.329c-35.408-27.17-70.816-54.367-106.298-81.408C24.899,87.249,24.716,85.207,26.181,82.314z
+                                                                                             M374.845,281.17c-1.136-0.622-2.124-1.062-3.04-1.684c-25.229-16.99-50.494-34.018-75.686-51.08
+                                                                                            c-7.287-4.926-14.574-4.156-18.857,2.087c-4.321,6.279-2.49,13.273,4.796,18.382c29.659,20.688,59.319,41.395,88.979,62.102
+                                                                                            c4.211,2.929,4.504,4.54,1.538,8.751c-2.783,3.954-6.701,5.383-11.461,5.383c-33.871-0.073-67.704-0.036-101.538-0.036
+                                                                                            c-73.307,0-146.613,0-219.883,0.036c-5.163,0-9.484-1.208-12.45-5.712c-1.684-2.527-1.867-4.229,1.099-6.335
+                                                                                            c30.208-21.494,60.308-43.189,90.443-64.774c4.687-3.369,7.067-7.689,5.822-13.42c-1.978-8.972-11.937-12.578-19.7-7.195
+                                                                                            c-18.272,12.724-36.47,25.484-54.742,38.209c-7.14,4.998-14.28,9.979-21.457,14.958c-1.025,0.714-2.087,1.354-3.515,2.252
+                                                                                            c0-54.54,0-108.605,0-163.301c1.611,1.199,2.966,2.124,4.248,3.112c53.863,41.147,107.763,82.305,161.662,123.443
+                                                                                            c6.372,4.889,11.351,4.907,17.686,0.073c53.899-41.157,107.763-82.296,161.662-123.443c1.318-0.989,2.673-1.932,4.395-3.177
+                                                                                            C374.845,173.829,374.845,227.271,374.845,281.17z" />
+                                                </svg>
+                                                <h4 class="d-inline top-link">Newsletter</h4>
+                                            </a>
+                                        </div>
+                                        <div class="header-top-contact header-top-item">
+                                            <a href="/contactus">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 400 400">
+                                                    <path d="M368.067,296.197c-21.953-14.245-44.344-27.782-67.078-40.637
+                                                                                        c-13.22-7.489-26.244-4.244-35.806,6.634c-16.294,18.611-24.978,19.221-41.563,0.805c-28.979-32.173-57.468-64.857-85.812-97.604
+                                                                                        c-16.732-19.27-16.098-26.734,2.245-44.308c14.684-14.111,17.025-26.209,7.805-44.687c-9.806-19.537-19.855-38.953-30.197-58.198
+                                                                                        c-9.513-17.77-18.05-21.197-37.466-15.977C37.119,13.825,13.118,52.827,23.265,96.33c2.976,12.855,6.537,26.258,13.123,37.466
+                                                                                        c20.196,34.355,40.539,68.784,63.467,101.349c39.222,55.687,85.079,105.299,145.717,138.521
+                                                                                        c20.409,11.182,42.702,27.12,67.107,26.304c6.598-0.221,13.463-2.459,19.231-5.646c26.393-14.659,36.985-40.758,45.767-68.71
+                                                                                        C381.092,314.76,378.214,302.831,368.067,296.197z" />
+                                                </svg>
+                                                <h4 class="d-inline top-link">Contact Us</h4>
+                                            </a>
+                                        </div>
+    
+                                        <div class="header-top-book header-top-item">
+                                            <a href="https://jetsavetours.in">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 400 400">
+                                                    <path d="M399.9,13.641c-4.49-4.464-8.93-8.916-13.418-13.393
+                                            c-50.403-2-81.191,30.117-111.148,63.832c-4.198,4.684-8.149,10.563-13.516,13.039c-11.369,5.184-23.956,12.796-35.424,11.844
+                                            c-52.548-4.33-105.097-10.16-157.256-17.797c-22.59-3.306-35.325,5.051-46.157,24.481c50.012,25.86,98.999,51.22,150.182,77.689
+                                            c-22.005,27.408-43.425,50.61-60.795,76.568c-21.811,32.495-48.646,48.692-88.46,41.569c-6.587-1.17-14.296,4.171-21.517,6.513
+                                            c-0.83,2.611-1.61,5.246-2.391,7.882c48.841,14.051,79.141,46.644,94.998,93.972c22.054-14.343,13.467-32.591,13.613-47.426
+                                            c0.195-20.175,1.903-38.447,22.933-47.889c4.83-2.146,8.051-6.465,12.344-9.93c27.03-22.054,54.11-44.009,83.092-67.503
+                                            c27.129,52.428,52.451,101.341,78.066,150.793c26.445-21.323,26.348-21.323,23.177-49.039c-5.123-44.595-8.1-89.556-15.857-133.7
+                                            c-5.513-31.496,1.903-54.196,26.787-73.944C373.6,93.879,401.9,62.018,399.9,13.641z" />
+                                                </svg>
+    
+                                                <h4 class="d-inline top-link" id="test">VISA</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="main-nav1-item text-center our">
+                                        <div><a href="/our-destination">
+                                                <h5>Our</h5>
+                                                <h4>Destinations</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="main-nav1-item text-center activity">
+                                        <div> <a href="/our-themed-packages">
+                                                <h5>Our Themed</h5>
+                                                <h4>Activities</h4>
+                                            </a></div>
+                                    </div>
+                                    <!-- <div class="main-nav1-item text-center india-hover">
+                                        <div><a href="/destinationpage">
+                                                <h5>Explore</h5>
+                                                <h4>Itineraries</h4>
+                                            </a></div>
+                                    </div> -->
+                                    <div class="main-nav1-item text-center inspire">
+                                        <div><a href="/travelogue-guest">
+                                                <h5>All Travel</h5>
+                                                <h4>Blog</h4>
+                                            </a></div>
+                                    </div>
+                                    <div class="main-nav1-item text-center meeting">
+                                        <div><a href="/my-profile">
+                                                <h5>Jet-setter</h5>
+                                                <h4>Travelogue</h4>
+                                            </a></div>
+                                    </div>
+                                    <div class="main-nav1-item text-center redplane">
+                                        <div><a href="/about-jetsave">
+                                                <h5>About</h5>
+                                                <h4>Jetsave</h4>
+                                            </a></div>
+                                    </div>
+    
+                                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400"
+                                            viewBox="0 0 400 400" class="open" fill="black">
+                                            <g>
+                                                <rect width="60.607" height="60.607" />
+                                                <rect x="84.855" width="60.607" height="60.607" />
+                                                <rect x="169.696" width="60.607" height="60.607" />
+                                                <rect x="254.537" width="60.607" height="60.607" />
+                                                <rect x="339.393" width="60.607" height="60.607" />
+                                                <rect y="84.849" width="60.607" height="60.606" />
+                                                <rect x="84.855" y="84.849" width="60.607" height="60.606" />
+                                                <rect x="169.696" y="84.849" width="60.607" height="60.606" />
+                                                <rect x="254.537" y="84.849" width="60.607" height="60.606" />
+                                                <rect x="339.393" y="84.849" width="60.607" height="60.606" />
+                                                <rect y="169.697" width="60.607" height="60.606" />
+                                                <rect x="84.855" y="169.697" width="60.607" height="60.606" />
+                                                <rect x="169.696" y="169.697" width="60.607" height="60.606" />
+                                                <rect x="254.537" y="169.697" width="60.607" height="60.606" />
+                                                <rect x="339.393" y="169.697" width="60.607" height="60.606" />
+                                                <rect y="254.537" width="60.607" height="60.607" />
+                                                <rect x="84.855" y="254.537" width="60.607" height="60.607" />
+                                                <rect x="169.696" y="254.537" width="60.607" height="60.607" />
+                                                <rect x="254.537" y="254.537" width="60.607" height="60.607" />
+                                                <rect x="339.393" y="254.537" width="60.607" height="60.607" />
+                                                <rect y="339.394" width="60.607" height="60.606" />
+                                                <rect x="84.855" y="339.394" width="60.607" height="60.606" />
+                                                <rect x="169.696" y="339.394" width="60.607" height="60.606" />
+                                                <rect x="254.537" y="339.394" width="60.607" height="60.606" />
+                                                <rect x="339.393" y="339.394" width="60.607" height="60.606" />
+                                            </g>
+                                        </svg>
+                                    </span>
+    
+                                </nav>
+                                <!--
+                                                            our hover part
+                                                        -->
+                                <div class="container col-md-4 our-hover">
+                                    <h1>
+                                        <center>Travel With Us</center>
+                                    </h1>
+                                    <center>
+                                        <h3>To Facinating Destinations</h3>
+                                    </center>
+                                    <img style="float: left; margin: 0px 90px 80px 0px;"
+                                        src="/CSS/img/followjetsave.png" width="120%" />
+                                    <a href="/our-destination"><svg xmlns="http://www.w3.org/2000/svg" class="aeroplanered"
+                                            width="80" height="80" fill="red" viewBox="0 0 400 400">
+                                            <path d="M400,207.826c-26.76,29.073-61.535,31.146-97.268,27.039
+                                                                            c-25.803-2.991-43.191,5.862-58.227,27.238c-21.017,30.03-45.264,57.707-68.075,86.461c-14.197,17.826-14.157,17.906-41.755,14.955
+                                                                            c13.759-43.39,27.398-86.301,42.034-132.283c-26.17-2.755-52.358-5.417-78.497-8.45c-25.948-3.013-42.396-7.081-62.36,12.479
+                                                                            c-8.654,8.454-14.237,23.968-35.254,19.541C18.784,218.275,20.1,181.904,0,145.573c1.954-1.077,3.948-2.153,5.942-3.19
+                                                                            c5.503,2.832,13.041,4.188,16.191,8.694c18.903,27.118,43.749,33.26,75.134,27.078c25.044-4.945,50.847-5.981,79.402-9.092
+                                                                            c-14.277-44.905-27.916-87.856-41.914-131.725c17.508-4.945,29.711-2.433,40.838,12.563c25.762,34.536,52.721,68.275,80.598,101.177
+                                                                            c6.102,7.138,17.746,10.05,27.318,13.599c4.546,1.675,10.209,0.559,15.354,0.279c36.81-2.153,73.181-2.951,101.137,27.358
+                                                                            C400,197.498,400,202.603,400,207.826z" />
+                                        </svg></a>
+    
+    
+                                </div>
+                                <!--our hover end-->
+    
+                                <!--Activity hover start-->
+                                <div class="container-activity activity-hover container">
+                                    <h1 style="color: white;">Pick Your Kind of Tour</h1>
+                                    <div class="activity" ">
+                                        <ul class="mekajet" style="display: flex; margin-left: 15%;">
+                                           
+                                                <div class="item">
+                                                    <a href="family-tour-packages"><img class="navimage" src="/image/Home-Page/5.jpg" width="150" height="auto;"></a>
+                                                </div>
+                    
+                                                <div class="item">
+                                                    <a href="honeymoon-tour-packages"><img class="navimage" src="/image/Home-Page/honey.jpg" width="150" height="auto;"></a>
+                                                </div>
+                                            
+                                           
+                                                <div class="item">
+                                                    <a href="friends-tour-packages"><img class="navimage" src="/image/Home-Page/7.jpg" width="150" height="auto;"></a>
+                                                </div>
+                                            
+                                            
+                                                <div class="item">
+                                                    <a href="wildlife-tour-packages"><img class="navimage" src="image/Home-Page/wildlife.jpg" width="150" height="auto;"></a>
+                                                </div>
+                                            
+                                          
+                                                <div class="item">
+                                                    <a href="solo-tour-packages"> <img class="navimage" src="image/Home-Page/solotravel.jpg" width="150" height="auto;"></a>
+                                                </div>
+                                              
+                                            
+                                                <div class="item">
+                                                    <a href="fixed-departure-tour-packages">  <img class="navimage" src="image/fixed.jpg" width="150" height="auto;"></a>
+                                                </div>
+
+                                                <div class="item">
+                                                    <a href="spritual-tour-packages"> <img class="navimage" src="/image/Home-Page/spritual.jpg" width="150" height="auto;"></a>         
+                                                </div>
+                                                                    
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--Activity hover end-->
+                                <!--Hover part Start-->
+                                <!-- <div class="container-fluid full-width header on-top map-hover">
+                                    <div class="container-hover">
+                                        <div class="row">
+                                            <a href="/destinationpage">
+                                                <div class="map col-md-6 col-xs-12">
+                                                </div>
+                                            </a>
+                                            <a href="/travel_east">
+                                                <div class="globe col-md-6 col-xs-12">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!--Now part start-->
+    
+                                <div class="get">
+    
+                                    <a href="/travelogue-guest"><button class="now">
+    
+                                            Read On...
+                                        </button></a>
+                                </div>
+                                <!--Now part end-->
+                                <!--input box start-->
+                                <div class="input-box box">
+    
+                                    <a href="/travelogue-guest"><button class="browser">Browser
+                                            Travelogue</button></a>
+                                    <h3 style="color:white; text-decoration:none;">See Where your fellow jetsetters
+                                        are <a href="/travelogue-guest"
+                                            style="text-decoration: none; color:red">Travelling</a></h3>
+    
+                                    <h3 style="color: white;">Become a Part of the Jetsave Community.<span
+                                            style="color: red" color="red"><a href="/signup"
+                                                style="text-decoration: none; color:red"> Signup</a></span></h3>
+    
+                                    <h3 style="color: white;">Just want to see how aswome we are? <span
+                                            style="color: red" color="red"> <a href="/travelogue-guest"
+                                                style="text-decoration: none; color:red">Browse as Guest</a></span>
+    
+                                </div>
+                                <!--Input box end-->
+                                <!--About page-->
+                                <div class="embark">
+                                    <h2 style="font-family:arial; font-size:50px; color:white;">Embark on the</h2>
+                                    <h2
+                                        style="color:white; font-family:Brush Script MT, Brush Script Std, cursive; font-size:75px; margin-left:200px;">
+                                        Jetsave Journey <a href="/about-jetsave"><svg xmlns="http://www.w3.org/2000/svg"
+                                                fill="red" class="aboutjet" width="100" height="100"
+                                                viewBox="0 0 400 400">
+                                                <path d="M400,207.826c-26.76,29.073-61.535,31.146-97.268,27.039
+                                                                                    c-25.803-2.991-43.191,5.862-58.227,27.238c-21.017,30.03-45.264,57.707-68.075,86.461c-14.197,17.826-14.157,17.906-41.755,14.955
+                                                                                    c13.759-43.39,27.398-86.301,42.034-132.283c-26.17-2.755-52.358-5.417-78.497-8.45c-25.948-3.013-42.396-7.081-62.36,12.479
+                                                                                    c-8.654,8.454-14.237,23.968-35.254,19.541C18.784,218.275,20.1,181.904,0,145.573c1.954-1.077,3.948-2.153,5.942-3.19
+                                                                                    c5.503,2.832,13.041,4.188,16.191,8.694c18.903,27.118,43.749,33.26,75.134,27.078c25.044-4.945,50.847-5.981,79.402-9.092
+                                                                                    c-14.277-44.905-27.916-87.856-41.914-131.725c17.508-4.945,29.711-2.433,40.838,12.563c25.762,34.536,52.721,68.275,80.598,101.177
+                                                                                    c6.102,7.138,17.746,10.05,27.318,13.599c4.546,1.675,10.209,0.559,15.354,0.279c36.81-2.153,73.181-2.951,101.137,27.358
+                                                                                    C400,197.498,400,202.603,400,207.826z" />
+                                            </svg></a>
+                                    </h2>
+                                    <a href="/about-jetsave"><svg xmlns="http://www.w3.org/2000/svg" class="playbutton"
+                                            fill="white" width="50" height="50" viewBox="0 0 400 400">
+                                            <g>
+                                                <path
+                                                    d="M52.352,400c-8.14,0-27.471-3.43-31.151-35.228l-0.07-1.235l0.066-330.695C22.468,21.482,30.771,0,53.085,0
+                                                                                        c3.873,0,7.982,0.691,12.218,2.057l2.04,0.901l292.772,167.586c2.416,1.554,18.969,12.854,18.752,30.645
+                                                                                        c-0.146,12.124-7.878,23.013-22.978,32.35L77.843,391.73C75.356,393.351,64.42,400,52.352,400z M42.585,362.895
+                                                                                        c1.952,15.65,7.619,15.65,9.767,15.65c5.591,0,12.341-3.806,13.846-4.826l0.723-0.453l278.02-158.179
+                                                                                        c7.759-4.806,12.424-10.032,12.473-14.157c0.063-5.35-6.781-10.982-8.485-12.089L57.74,22.181
+                                                                                        c-1.718-0.482-3.279-0.727-4.655-0.727c-7.878,0-10.092,10.804-10.5,13.336V362.895z" />
+                                                <path
+                                                    d="M203.438,368.202l159.463-92.056c3.353-1.941,4.498-6.223,2.563-9.581l-0.244-0.419c-1.935-3.359-6.223-4.505-9.575-2.57
+                                                                                        l-159.464,92.062c-3.352,1.935-4.504,6.229-2.563,9.575l0.245,0.433C195.798,368.998,200.086,370.144,203.438,368.202z" />
+                                            </g>
+                                        </svg></a>
+    
+                                </div>
+                                <!--About page end-->
+    </header>
+    <div class="top">
+
+        <h1 class="blogtext">8 Pristine Resorts and Private Beaches to Enjoy Your Honeymoon In Maldives!</h1>
+
+      
+
+
+        <div class="container">
+            <div class="blog">
+                <p>
+                    The romantic aroma is in the air, dear vacationers! A holiday is an extraordinary time to revive
+                    your love and flavor up your life, be it your first holiday together or your wedding honeymoon trip.
+                    A romantic break is a much-appreciated experience, and it does a lot to your love life. What better
+                    place to explore with your loved one, than the Maldives?
+                
+                    <br><br> The shimmering so blue, so evident and true beaches in the Maldives are the ideal romantic
+                    spots, not only for honeymooners but for every couple who’s searching for a shooting and joyful
+                    holiday! The beaches are nestled in the midst of lovely coral islands and give you relationship
+                    goals to be ticked off your bucket list. What’s more, regardless of whether you want to dive in the
+                    waters or simply sit by the beach, to have a romantic experience.</b>
+                </p><br>
+               
+
+                <p class="qote" style="background-color: #ffedbc;
+                padding: 4%;">It could even be for both of you to build a lovely bond in such a wonderful location,
+                    which makes it even more special. Maybe, it is every last bit of it… the mood, the climate, the
+                    location, the mystery gazes, the golden sky, being with one another and so on, that works
+                    beautifully. </p>
+
+                <br>
+
+                <p>The Maldives <a href="/Idyllic-Honeymoon-Package-For-Maldives" style="color: red;">(Book Your Exotic
+                        Honeymoon Now) </a>is considered to be one of the most romantic destinations on the planet, for
+                    all good reasons. There’s something amazingly romantic about being in the Maldives, especially when
+                    you are on your honeymoon. Maybe the serenity immerses you as you take a dip in the delightful
+                    turquoise waters, or perhaps it’s just strolling along the seashore, hand in hand with your
+                    companion while the sunsets. It’s no wonder honeymooners flock here in droves.
+
+                    <br><br> With such a beautiful place to visit, we know selecting your special retreat can be a ton
+                    of pressure. Water villas and honeymoons go flawlessly together, and many couples fantasize about
+                    staying in one during their unforgettable trip of a lifetime — that is the reason we have sent our
+                    hotel investigators to find which Maldives <a href="/Idyllic-Honeymoon-Package-For-Maldives"
+                        style="color: red;">(Book Your Exotic Honeymoon Now)</a> resorts offer the most privacy, the
+                    highest levels of extravagance and luxury, and the prettiest settings.
+
+                </p>
+
+                <p class="qote2" style="background-color: #b6cebc;
+                    padding: 11%;">We have done the groundwork for you! Go through our list of top 8 honeymoon resorts
+                    and private beaches in the
+                    Maldives, and surprise your darling today with a get-away
+                    with Jestave India!</p><br> 
+                
+                    <center>
+                        <h3 style="color: black;">1| <br>
+                            Ocean Grand</h3>
+                    </center><br>
+                
+                <img src="/image/blog/one.jpg" alt="ocean-grand-maldives Jetsave" height="300px" width="auto">
+                <p class="source">Source: sunsandmaldives.com</p><br>
+
+                <p>
+                    The unblemished lagoon of Hulhumale welcomes you to take a dip in it and overlook every one of your
+                    worries. With your dearest by your side, there’s nothing else to do except forget the world you came
+                    from as you are going to enter a voyage that will clear the way of romance among the two of you.
+                    Romantic dinners, sunset cruises, blue waters and those special stolen glances among you and your
+                    dearest awaits you!
+                </p><br>
+                <p>Amenities: From deluxe rooms to rooms with an ocean view, they’ve got it all. They have excursions
+                    like Morning or Night Fishing, Site Snorkeling, Sunset Cruise, Island Hopping, and Dolphin Safari
+                    among other things.</p><br>
+                <p style="color: red; text-align: center;">
+                    Location: Crystal View lot 10717, Kaani Magu
+                </p><br>
+                <p style="text-align: center;">
+                    <center>
+                        <h3 style="color: black;">2|<br>
+                            LUX Resorts
+                        </h3>
+                    </center><br>
+                </p>
+                <img src="/image/blog/two.png" height="300px" width="auto">
+                <p class="source">Source: www.luxurylagoonholiday.com</p><br>
+                <p> Transform your honeymoon dream into a reality at this serene and gorgeous hideaway called Lux
+                    Resorts. Situated on Dhidhoofinolhu, in the South Ari Atoll, Lux is your go-to-heaven island
+                    where you can sit back, unwind and appreciate the tranquil environment. For those with the
+                    adventure streak, you can turn into an ensured PADI driver or snorkel around the island, the
+                    decision is yours. If that is insufficient and you’re searching for greater activity then
+                    there’s consistently the alternative of sports – from swimming to tennis courts to a full
+                    prepared wellness focus – they have you covered. </p><br>
+                <p>Amenities: The Lux has 193 private villas, gym, tennis court, dive centre, two restaurants and 2
+                    bars.</p><br>
+                <p style="color: red; text-align: center;">Location: South Ari Atoll, Dhidhiifinolhu, Maldives.</p><br>
+                <center>
+                    <h3 style="color: black;">3|<br>
+                        Taj Exotica Resort & Spa</h3>
+                </center><br>
+                <img src="/image/blog/three.jpg" height="300px" width="auto">
+                <p class="source">Source: www.booking.com</p><br>
+                <p>What’s a better way to make the most of your honeymoon than relaxing, getting quality time with your
+                    other half with a beautiful view? Forget the world behind you and let yourselves take in the joys at
+                    Taj Exotica, a paradise on earth sort of a spot – impeccable to start up your romance. In fact, you
+                    can even amaze your life partner with a private dinner, particularly organized for you two by the
+                    awesome staff at Taj.</p><br>
+                <p>Amenities: Water sports, 3 restaurants and a bar, spa, villas and suites.</p><br>
+                <p style="color: red; text-align: center;">Location: Emboodhu Finolhu, South Male Atoll 02117, Maldives.</p><br>
+                <center>
+                    <h3 style="color: black;">4|<br>
+                        Gili Lankanfushi Resort</h3>
+                </center><br>
+                <img src="/image/blog/four.jpg" height="300px" width="auto">
+                <p class="source">Source: twistedsifter.com</p>
+                <p>Pamper and spoil Ruin yourselves at this seven-star hotel which offers you a super luxurious stay.
+                    Prepare to take in the fresh, crisp unadulterated air and venture out into what will be the most
+                    romantic honeymoon of your lives. Situated in the North Male Atoll of Maldives, Gili Lankanfushi
+                    (Book Your Exotic Honeymoon Now) is encompassed by miles and miles of blue perfect water. Whether
+                    the estate suite or the residence, the decision is yours. Alongside a lot of privacy, sun decks,
+                    private semi-outdoors bathrooms and your own passageway to the blue waters.</p><br>
+                <p>Amenities: Gili Lankanfushi has over 24 villa suites, 5 Gili lagoon villas, 6 luxury villas known as
+                    the Residence, 2 family villas and a private reserve.</p><br>
+                <p style="color: red; text-align: center;">Location: Lankanfushi Island, North Malé Atoll, Republic of Maldives, Maldives.
+                </p><br>
+                <center>
+                    <h3 style="color: black;">5|<br>
+                        Four Seasons Resort</h3>
+                </center><br>
+                <img src="/image/blog/five.jpg" height="300px" width="auto">
+                <p class="source">Source: robbreport.com</p><br>
+                <p>Absorb the magnificence of Landaa Giraavaru clear sky and blue waters. While you are doing that,
+                    overlook the digital world behind for a couple of days, as you set foot onto the place that is known
+                    for excellent landscapes and nature’s stunning homestead. Be invited by the floods of the Indian
+                    Ocean just as the benevolent staff of the Four Seasons. Make the most of your stay here as you
+                    invest energy becoming acquainted with one another and gaze into the brilliant golden nightfall.</p>
+                <br>
+                <p>At night, satiate your taste buds with some champagne and good food while listening to the sounds of
+                    the waves meeting the shore. Get in on the Manta mania, by becoming a manta ray scientist for a day.
+                    So hop on to a dhoni and spot these beautiful creatures.</p><br>
+                <p>Amenities: Right from beach villas to beach bungalows and a set of special rooms that need to be
+                    booked much in advance like the Landaa Estate, the Four Seasons’s hotel offers a few options for
+                    accommodation.</p><br>
+                <p style="color: red; text-align: center;">Location: Four Seasons Resort Maldives, Landaa Giraavaru, Baa Atoll</p><br>
+                <center>
+                    <h3 style="color: black;">6|<br>
+                        Lily Beach Hotel</h3>
+                </center><br>
+                <img src="/image/blog/six.jpg" height="300px" width="auto">
+                <p class="source">Source: www.budgetmaldives.com</p><br>
+                <p>Jump into the immaculate waters of the South Ari Atoll… home to some wonderful coral sites just as to
+                    the Lily Beach Resort and Spa. It’s the ideal place to visit for those on their honeymoon and need
+                    to bond over a little adventure. Aside from being encompassed by the blue skies and the turquoise
+                    water, Lily Beach has lavish green vegetation, and an outlandish house reef only a couple of meters
+                    from the shore.</p><br>
+                <p>Be set up to spoil yourselves, pamper your stomach with food, treat yourselves to a couple’s massage
+                    session at the Tamara Spa. Ask and you will get… the extraordinary 4-course romantic candle light
+                    dinner by the beach to up the romantic levels between you two.</p><br>
+                <p>Remember to watch the dazzling sun set as you take a dip in a bathing pavilion and sip on some bubbly
+                    as the perfect finale!</p><br>
+                <p>Amenities: Lily Beach has 4 restaurants and 3 bars, they offer half-and full – day excursions, sunset
+                    cruise among other romantic trips, beach villas, lagoon villas and water villas for stay.</p><br>
+                <p style="color: red; text-align: center;">Location: Lily Beach Resort & Spa, Huvahendhoo, Maldives, South Ari Atoll.</p><br>
+                <center>
+                    <h3 style="color: black;">7|<br>
+                        Fodhdhoo Beach Heaven Guest House</h3>
+                </center><br>
+                <img src="/image/blog/seven.png" height="300px" width="auto">
+                <p class="source">Source: images.thrillophilia.com</p><br>
+                <p>If you’re on a budget, then this makes for the ideal fit as you can rampage spend on exercises like
+                    swimming or going for an outing to another island. You and your newlywed can go on an adventure
+                    exploring the islands of Maldives. An unattractive guest house, where food is comprehensive in the
+                    package.</p><br>
+                <p>A lagoon that will seem like it was made for just the two of you, the Beach Heaven Guest House make
+                    an idyllic spot for your honeymoon.</p><br>
+                <p>Amenities: Restaurant, rooms, island transfers, water sports, and activities, picnics to other
+                    islands, romantic beach dinner, Manta trips.</p><br>
+                <p style="color: red; text-align: center;">Location: Fodhdhoo</p><br>
+                <center>
+                    <h3 style="color: black;">8|<br>
+                        Bandos Resort</h3>
+                </center><br>
+                <img src="/image/blog/eight.jpg" height="300px" width="auto">
+                <p class="source">Source: overwaterbungalowsguide.com
+                </p><br>
+                <p>Welcome to one piece of heaven in Maldives. You will be spoilt with the view of the flawless blue
+                    waters and here at the Bandos, you will be spoilt for choice with the types of rooms accessible.
+                    From Classic to standard, to special rooms, to garden villas and Jacuzzi beach villas or Jacuzzi
+                    pool villas and water villas, Bandos resort has you down for getting spoiled and pampered.</p><br>
+                <p>What else can you do to pamper yourselves on your honeymoon? Book a couple’s massage session or swim
+                    in the blue waters or the pool at sunset. The atmosphere at Bandos is sure to up those romance
+                    levels.
+
+                </p><br>
+                <p>Amenities: Classic, Standard and Deluxe rooms, Garden, Jacuzzi beach/pool and Water Villas,
+                    Restaurants, Bar, Watersports, and Diving.</p><br>
+                    <p style="color: red; text-align: center;">Location: North Male Atoll</p><br>
+                    <p style="background-color: #ccffea; padding: 5%;">Go off the grid for your post-wedding getaway by escaping to one of these fantasy resorts with Jetsave India and enjoy a carefree, full of love honeymoon! </p>
+            </div>
+        </div>
+
+
+
+        <!-- Footer section -->
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+            </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+            </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+            </script>
+
+        <!-- script from code pen for testing -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.jsd"></script>
+
+        <!-- Greensock GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+        <!-- hamburger icon -->
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+                document.getElementById(".open").style.width = "0%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+        <script>
+            $(document).ready(function () {
+                $(".closebtn").hide();
+                $(".main-nav1-item").hide();
+                $(".header-top-item").hide();
+                $(".open").click(function () {
+                    $(".closebtn").show();
+                    $(".open").hide();
+                    $(".carousel-people").hide();
+                    $(".carousel-indicators").hide();
+                    $(".main-nav1-item").show();
+
+                    $(".header-top-item").show();
+
+                });
+            });
+
+            $(document).ready(function () {
+                $(".closebtn").hide();
+                $(".closebtn").click(function () {
+                    $(".open").show();
+                    $(".closebtn").hide();
+                    $(".carousel-people").show();
+                    $(".carousel-indicators").show();
+                    $(".main-nav1-item").hide();
+                    $(".header-top-item").hide();
+
+                });
+            });
+        </script>
+
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    var scroll = $(window).scrollTop();
+                    if (scroll > 100) {
+                        $(".open").css("fill", "black");
+                    } else {
+                        $(".open").css("fill", "white");
+                    }
+                })
+            });
+
+
+
+            // $('.submit').click(function(){
+            //     const id = $(this).attr('id');
+            //     alert('a')
+            //     alert(id)
+            // })
+        </script>
+
+
+        <script>
+            $('#bokmak').click(function () {
+                const bookmarkid = $(this).attr('bookmark')
+                $.post(`/Itineraries/bookmark`, {
+                    bookmarkid
+                }, data => {
+                    alert('All Ready Bookmarked')
+                })
+            })
+        </script>
+</body>
+
+</html>
