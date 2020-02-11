@@ -2,28 +2,9 @@
     .headersmall{
       display: none;
     }
-
-
     
-            @media only screen and (max-width: 600px) {
-
-
-              #our-expertcarousesl{
-                display: none;
-              }
+            @media only screen and (max-width: 450px) {
                 
-
-              .lodersmrt .svg-calLoadersmrt{
-                width: 230px;
-                height: 230px;
-                margin-top: 50%;
-                transform-origin: 115px 115px;
-                animation: 1.4s linear infinite loader-spin;
-                /* vertical-align: middle; */
-                /* text-align: center; */
-                /* align-self: center; */
-                margin-left: 26%;
-  }
             .svglogo {
                 height: 50px;
                 width: 50px;
@@ -31,42 +12,18 @@
                 position: fixed;
                 float: left;
                 left: 10px;
-                display: none;
             }
             
             .headersmall {
-              background-color: black;
+              background-color:rgba(0,0,0,0.8);
               box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
               position: fixed;
               width: 100%;
-              z-index: 999999;
+              z-index: 3;
               top: 0px;
               display: block;
-              height: 11%;
-            }
+              height: 5%;
 
-            .main-des{
-                  text-align: center;
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    grid-gap: 1em;
-    width: 121%;
-    margin-top: - 3%;
-    margin-left: -9%;
-            }
-
-            #south_asia{
-                  width: 258% !important;
-    margin-top: 16% !important;
-    margin-left: -16%;
-   
-                }
-
-            .india-images{
-              display: none;
-            }
-            #myVideo{
-              display: none;
             }
 
             .headersmall ul {
@@ -86,7 +43,7 @@
 
             .headersmall li a:hover,
             .headersmall .menu-btn:hover {
-              background-color: black;
+              background-color: #f4f4f4;
             }
 
             .headersmall .logo {
@@ -100,6 +57,7 @@
               height: 50px;
               width: 80px;
               z-index: 1;
+
             }
             /* menu */
 
@@ -112,25 +70,23 @@
             /* menu icon */
 
             .headersmall .menu-icon {
-                            cursor: pointer;
-                  display: inline-block;
-                  float: right;
-                  padding: 25px 53px;
-                  position: relative;
-                  /* user-select: none; */
-                  margin-top: 1%;
-                  color: #a62b2b;
-                  width: 26%;
-                          }
+              cursor: pointer;
+              display: inline-block;
+              float: right;
+              padding: 16px 13px;
+              position: relative;
+              user-select: none;
+              color: white;
+            }
 
             .headersmall .menu-icon .navicon {
-                        background-color: white;
+              background-color:white;
               display: block;
-              height: 25px;
+              height: 2px;
               position: relative;
               transition: background .2s ease-out;
-              width: 31px;
-                      }
+              width: 18px;
+            }
 
             .headersmall .menu-icon .navicon:before,
             .headersmall .menu-icon .navicon:after {
@@ -158,10 +114,7 @@
             }
 
             .headersmall .menu-btn:checked ~ .menu {
-                  max-height: 500px;
-    width: 100%;
-    background-color: black;
-    margin-top: -7%;
+              max-height: 500px;
             }
 
             .headersmall .menu-btn:checked ~ .menu-icon .navicon {
@@ -181,18 +134,9 @@
               top: 0;
             }
 
-
-
-              @media (min-width: 700px ) {
-                  .headersmall li {
-                    display: none;  
-                  }
-              }
-
-          
             /* 48em = 768px */
 
-            @media (min-width: 600px) {
+            @media (min-width: 48em) {
               .headersmall li {
                 float: left;
               }
@@ -217,4 +161,3 @@
                 }
             }
 /*navbar end*/}
-
